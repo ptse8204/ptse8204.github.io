@@ -4,3 +4,6 @@ is a junior year undegraduate student currently at UC San Diego majoring in both
 ## Current Projects
 * craveforcapes
 * How much my tuition is worth?
+
+## Resume
+[Click Here!](/resume.pdf)
