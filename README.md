@@ -1,6 +1,4 @@
-# Edwin Tse
-is a junior year undegraduate student currently at UC San Diego majoring in both Data Science and Business Economics. He is actively working on his personal project and finding an internship :)
+My personal website
 
-## Current Projects
-* craveforcapes
-* How much my tuition is worth?
+I don't really need a read me for this, I guess?
+PLEASE DON't ReadMe (º_º)
