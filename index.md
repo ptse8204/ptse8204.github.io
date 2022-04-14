@@ -5,5 +5,3 @@ is a junior year undegraduate student currently at UC San Diego majoring in both
 * craveforcapes
 * How much my tuition is worth?
 
-## Resume
-[Click Here!](/resume.pdf)
