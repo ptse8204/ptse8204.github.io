@@ -2,7 +2,7 @@
 is a junior year undegraduate student currently at UC San Diego majoring in both Data Science and Business Economics. He is actively working on his personal project and finding an internship :)
 
 ## Current Projects
-* craveforcapes
+* [craveforcapes](https://ptse8204.github.io/craveforcapes/)
 * How much my tuition is worth?
 
 ## Resume
