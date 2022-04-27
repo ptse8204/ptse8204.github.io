@@ -5,5 +5,9 @@ is a junior year undegraduate student currently at UC San Diego majoring in both
 * [craveforcapes](https://ptse8204.github.io/craveforcapes/)
 * How much my tuition is worth?
 
+## Past Projects
+* [How remote learning due to COVID-19 affects students’ academic performance.](https://ptse8204.github.io/final.pdf)
+* I'll bring more out :)
+
 ## Resume
 [Click Here!](/resume.pdf)
