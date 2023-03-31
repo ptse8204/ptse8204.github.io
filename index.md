@@ -1,3 +1,9 @@
+---
+layout: page
+title: About me
+subtitle: ...
+---
+
 # Edwin Tse
 is a senior year undegraduate student currently at UC San Diego majoring in both Data Science and Business Economics, minoring in Urban Planning and Studies. He is actively working on his personal projects and finding work :)
 
