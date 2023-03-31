@@ -1,3 +1,3 @@
-theme: jekyll-theme-cayman
+remote_theme: daattali/beautiful-jekyll@5.0.0
 title: Edwin Tse
 description: I love to fidget with data
