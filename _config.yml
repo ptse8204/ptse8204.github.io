@@ -1,6 +1,6 @@
 remote_theme: daattali/beautiful-jekyll@5.0.0
 title: Edwin Tse
-description: I love to fidget with data
+description: Everyone says that there is no amount of words could correctly describe him.
 
 
 ###############################################
@@ -20,7 +20,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "/img/icon.jpeg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
