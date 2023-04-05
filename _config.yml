@@ -9,7 +9,7 @@ description: Everyone says that there is no amount of words could correctly desc
 
 navbar-links:
   About Me: "https://ptse8204.github.io/index.md"
-  Resources:
+  Current Projects:
     - Airfare Project: "https://ptse8204.github.io/flightpricebias/"
     - craveforcapes: "https://ptse8204.github.io/craveforcapes"
 
