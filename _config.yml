@@ -8,11 +8,10 @@ description: Everyone says that there is no amount of words could correctly desc
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "https://ptse8204.github.io/index.md"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Airfare Project: "https://ptse8204.github.io/flightpricebias/"
+    - craveforcapes: "https://ptse8204.github.io/craveforcapes"
 
 ################
 # --- Logo --- #
