@@ -10,7 +10,7 @@ subtitle: ...
 * [Airfare Prediction Model and Price Discrimination Investigation Project](https://ptse8204.github.io/flightpricebias/)
 
 ## Past Projects
-* Still working to bring them out
+* [How remote learning due to COVID-19 affects students’ academic performance.](https://ptse8204.github.io/final_project.pdf)
 
 # Business and Economics Related
 ## Current
@@ -22,3 +22,4 @@ subtitle: ...
 
 # Fun Related
 * [Automated Morning and Night Greets on iMessage](https://ptse8204.github.io/imshortcuts.md)
+
