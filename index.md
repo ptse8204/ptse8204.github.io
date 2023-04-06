@@ -11,3 +11,7 @@ His strong expertise across muiltiple fields, allows him to talk a lot more than
 
 ## Resume
 [Click Here!](/EdwinTseResume.pdf)
+
+## Fast Access
+My lack of UX/UI experience thought making this would be a good idea
+| [Projects 💡](/projects.md) | Posts ⌨️ | Something Fun 😆 |
