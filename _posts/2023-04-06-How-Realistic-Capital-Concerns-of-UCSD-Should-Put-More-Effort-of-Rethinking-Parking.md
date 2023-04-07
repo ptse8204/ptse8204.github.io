@@ -2,11 +2,11 @@
 layout: post
 title: How Realistic Capital Concerns of UCSD Should Put More Effort of Rethinking Parking
 subtitle: I tried to demonstrate with my horrible writing skills, of why UC San Diego is in a big risk of a financial fallout.
+cover-img: /assets/img/peppercanyon1.webp
+thumbnail-img: /assets/img/peppercanyon1.webp
+share-img: /assets/img/peppercanyon1.webp
 tags: [UCSD, finance, housing crisis, urban planning]
 ---
-<!-- cover-img: /assets/img/path.jpg -->
-<!-- thumbnail-img: /assets/img/thumb.png -->
-<!-- share-img: /assets/img/path.jpg -->
 
 It has been no secret that UCSD have a shortage of space, both for housing and parking. The La Jolla Campus currently hosts 13678 parking spaces, and 22060 beds (after the completion of Pepper Canyon West). Which combined are still less than the currently 41065 of students enrolled in UCSD (according to 3rd Week Enrolment by UCSD IR department). To make this equation work, there must be students that are forced to take public transit or somehow get to school without occupying a parking space.
 
