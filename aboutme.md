@@ -17,3 +17,4 @@ My lack of UX/UI experience thought making this would be a good idea
 
 [Projects 💡](/projects.md) | Posts ⌨️ | Something Fun 😆 
 -------|--------|---------
+|||
