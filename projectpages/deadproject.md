@@ -2,17 +2,22 @@
 layout: page
 title: Failed, Dead, and Shelved Projects
 subtitle: Yep! Dead!
-full-width: true
+cover-img: https://user-images.githubusercontent.com/88422737/230711987-8602dbaa-2e08-4a3f-a8d2-7c0de1e46cde.png
 ---
+
 I think a lot of people tends to put a lot of their success on their webpage, however, equally important, I think some of my failed attempts might just be worth to be look into. It is also a better way to understand my approach to work in general, as I tend to learn through these kinds of mistakes. A lot of these projects never made it out of its infancy...
 
 # [Project Upcyle](/assets/ProjectUpcycle.pdf) – *Winter 2018*
   - Essentially a fundraising plan for a club (called Enactus) that relies on the CRV taxes of California (quite high, typical Cali), by asking for can and bottle donations. I believe from my calculation is financially feasible to run a scheme as such, and someone actually did use such to fundraise to some degree of success. However, it is very labor intensive process, and it would be not easy to be managed in a student organization perspective.
+
+
 # [Solutions for beruby](https://docs.google.com/presentation/d/1FrR5l_Tn3_pjkn-LJznG3mQnEn9_DHTagOAZq07nA3I/edit?usp=sharing) – *Fall 2018*
   - My first ever case competition was with beruby – a cash-back rewards company. Essentially, the main business solution from us is reimagining their business model into a subscription base to retain customers (since that was their biggest problem). 
   - There is so much left to be desired in this project in my opinion for this model to be work with, as I believe customer retention is still one of the main issue of cash-back rewards company, and this could still be a feasible growth solution. I think this is actually a drastic departure from any cash-back company's original business model and also its clientele, so I think that's the reason why it didn't ending happening. 
   - I also learn quite a lot in teamworking and building decks and brainstorming business ideas in general. 
   - The slides prior to the thank you slide are the slide that we presented and the ones after are the reference slides and some ideas extension for the stuff prior.
+
+
 # Muiltiple QR-code Verification Method – *2018-2020*
   - This is my failed attempt of getting a patent. This idea never moved out from the grant seeking stage because of lack of my personal commitment during the time.
   - Essentially, this is the absract that I wrote for my grant application: 
