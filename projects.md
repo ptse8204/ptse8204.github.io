@@ -5,7 +5,7 @@ subtitle: A page to link my projects and stuff :)
 ---
 
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://kit.fontawesome.com/4f47b40950.js" crossorigin="anonymous"></script>
 </head>
 
 # Data Related
