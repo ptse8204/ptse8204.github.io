@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How Realistic Capital Concerns of UCSD Should Put More Effort of Rethinking Parking
+title: How Long-Term Debt of UCSD Should Put More Effort into Rethinking Housing
 subtitle: I tried to demonstrate with my horrible writing skills, of why UC San Diego is in a big risk of a financial fallout.
 cover-img: /assets/img/peppercanyon1.webp
 thumbnail-img: /assets/img/peppercanyon1.webp
@@ -8,11 +8,13 @@ share-img: /assets/img/peppercanyon1.webp
 tags: [UCSD, finance, housing crisis, urban planning]
 ---
 
-It has been no secret that UCSD have a shortage of space, both for housing and parking. The La Jolla Campus currently hosts 13678 parking spaces, and [22060 beds (after the completion of Pepper Canyon West)](https://www.lajollalight.com/news/story/2022-09-08/uc-san-diego-breaks-ground-on-tallest-campus-housing-complex-in-its-history#:~:text=The%20%24365%20million,State%20and%20UCLA.). Which combined are still less than the currently 41065 of students enrolled in UCSD [(according to 3rd Week Enrolment by UCSD IR department)](https://ir.ucsd.edu/third-week/index.html). To make this equation work, there must be students that are forced to take public transit or somehow get to school without occupying a parking space.
+### [This article is posted on my medium page](https://medium.com/@tsepaksang8/how-realistic-capital-concerns-of-ucsd-should-put-more-effort-into-rethinking-housing-75b2e5c5d3f1)
 
-This should not be a challenge, as student are free to live around the campus and a (somewhat) good transit network surrounding the campus to commute. However, when the housing cost kept rising, off-campus housing becomes more and more unobtainable and most stakeholders in UCSD agree on the necessity for facilitating such a concern by building more on campus housing. As a result, UCSD currently boosted one of nation’s largest university housing inventory.
+It has been no secret that UCSD has a shortage of space, both for housing and parking. The La Jolla Campus currently hosts 13678 parking spaces and [22060 beds (after the completion of Pepper Canyon West)](https://www.lajollalight.com/news/story/2022-09-08/uc-san-diego-breaks-ground-on-tallest-campus-housing-complex-in-its-history#:~:text=The%20%24365%20million,State%20and%20UCLA.). Which combined are still less than the currently 41065 students enrolled in UCSD [(according to 3rd Week Enrolment by UCSD IR department)](https://ir.ucsd.edu/third-week/index.html). To make this equation work, there must be students that are forced to take public transit or somehow get to school without occupying a parking space.
 
-Though many sees the building spree as a triumph for students housing solution, not many people recognized that there are many drawbacks to it. For one, limited land resource creates conflict of land uses to house academic activities or the student population. When a student dorm was built, it is likely that an academic facility could not be built because of it.
+This should not be a challenge, as students can live around the campus and have a (somewhat) good transit network surrounding the campus to commute. However, when the housing cost kept rising, off-campus housing became more and more unobtainable, and most stakeholders in UCSD agreed on the necessity for facilitating such a concern by building more on-campus housing. As a result, UCSD currently boosted one of the nation’s most extensive university housing inventories.
+
+Though many see the building spree as a triumph for students' housing solution, not many people recognize that there are many drawbacks to it. For one, limited land resource creates a conflict between land uses to house academic activities and the student population. When a student dorm was built, it is likely that an academic facility could not be built because of it.
 
 ![image](https://user-images.githubusercontent.com/88422737/230517494-1be4ae3f-4b0f-4403-a550-066f07ffa2e3.png)
 *Credit: (Faculty Workgroup on Budget Priorities research)[https://sites.google.com/ucsd.edu/budgetcuts/debt?authuser=0]*
