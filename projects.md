@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My Projects
-subtitle: A page to link my projects and stuff :)
+subtitle: Page to link my projects :)
 ---
 
 <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/></head>
@@ -30,5 +30,5 @@ subtitle: A page to link my projects and stuff :)
 # Fun Related
 * [Automated Morning and Night Greets on iMessage](https://ptse8204.github.io/imshortcuts.md)
 
-# [My failed, dead, and shelved projects](/projectpages/deadproject)
+# [Failed, dead, and shelved projects](/projectpages/deadproject)
 I think a lot of people tends to put a lot of their success on their webpage, however, equally important, I think some of my failed attempts might just be worth to be look into. It is also a better way to understand my approach to work in general, as I tend to learn through these kinds of mistakes. A lot of these projects never made it out of its infancy...
