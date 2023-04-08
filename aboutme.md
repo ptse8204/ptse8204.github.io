@@ -21,7 +21,7 @@ My lack of UX/UI experience thought making this would be a good idea
   <table>
   <tr>
     <th><a href="/projects">Projects 💡</a></th>
-    <th> Posts ⌨️</th>
+    <th><a href="https://medium.com/@tsepaksang8">Posts on Medium ⌨️</a></th>
     <th>Something Fun 😆 </th>
   </tr>
   </table>
