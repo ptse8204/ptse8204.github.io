@@ -4,6 +4,10 @@ title: My Projects
 subtitle: A page to link my projects and stuff :)
 ---
 
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
 # Data Related
 ## Current
 * [craveforcapes](https://ptse8204.github.io/craveforcapes/)
