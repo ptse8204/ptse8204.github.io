@@ -4,6 +4,4 @@ source "https://rubygems.org"
 
 gemspec
 
-source "https://token:TOKEN@dl.fontawesome.com/basic/fontawesome-pro/ruby/" do
-  gem "font-awesome-pro-sass", "6.4.0"
-end
+gem 'jekyll-font-awesome-sass'
