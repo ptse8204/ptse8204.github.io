@@ -20,14 +20,15 @@ subtitle: A page to link my projects and stuff :)
 * [An investigation of UC San Diego Long-Term Debt Load](https://ptse8204.github.io/2023/04/06/How-Realistic-Capital-Concerns-of-UCSD-Should-Put-More-Effort-of-Rethinking-Parking.html)
 
 ## Past Projects
+<i class="fa-sharp fa-solid fa-spinner fa-spin fa-lg"></i> Loading...
 
 # Urban Planning Related
-<span class="fa-duotone fa-spinner-third fa-spin fa-bounce" aria-hidden="true"></span>  Loading...
-<i class="fa-solid fa-spinner fa-spin-pulse"></i>
-<i class="fa-duotone fa-spinner-third fa-spin"></i>
+<i class="fa-sharp fa-solid fa-spinner fa-spin fa-lg"></i> Loading...
+
 
 # Fun Related
 * [Automated Morning and Night Greets on iMessage](https://ptse8204.github.io/imshortcuts.md)
 
 # My failed, dead, and shelved projects
 I think a lot of people tends to put a lot of their success on their webpage, however, equally important, I think some of my failed attempts might just be worth to be look into. It is also a better way to understand my approach to work in general, as I tend to learn through these kinds of mistakes.
+<i class="fa-solid fa-ellipsis fa-bounce"></i> Still Loading...
