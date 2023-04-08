@@ -4,6 +4,8 @@ title: My Projects
 subtitle: A page to link my projects and stuff :)
 ---
 
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/></head>
+
 # Data Related
 ## Current
 * [craveforcapes](https://ptse8204.github.io/craveforcapes/)
@@ -21,6 +23,8 @@ subtitle: A page to link my projects and stuff :)
 
 # Urban Planning Related
 <span class="fa-duotone fa-spinner-third fa-spin fa-bounce" aria-hidden="true"></span>  Loading...
+<i class="fa-solid fa-spinner fa-spin-pulse"></i>
+<i class="fa-duotone fa-spinner-third fa-spin"></i>
 
 # Fun Related
 * [Automated Morning and Night Greets on iMessage](https://ptse8204.github.io/imshortcuts.md)
