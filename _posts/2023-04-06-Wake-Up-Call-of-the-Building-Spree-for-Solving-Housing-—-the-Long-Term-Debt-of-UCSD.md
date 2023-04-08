@@ -17,7 +17,7 @@ This should not be a challenge, as students can live around the campus and have 
 Though many see the building spree as a triumph for students' housing solution, not many people recognize that there are many drawbacks to it. For one, limited land resource creates a conflict between land uses to house academic activities and the student population. When a student dorm was built, it is likely that an academic facility could not be built because of it.
 
 ![image](https://user-images.githubusercontent.com/88422737/230517494-1be4ae3f-4b0f-4403-a550-066f07ffa2e3.png)
-*Credit: (Faculty Workgroup on Budget Priorities research)[https://sites.google.com/ucsd.edu/budgetcuts/debt?authuser=0]*
+*Credit: [Faculty Workgroup on Budget Priorities research](https://sites.google.com/ucsd.edu/budgetcuts/debt?authuser=0)*
 
 Even more important than the space problem is the capital cost involved in building these facilities. The alarming rate of increase in debt means that the way and the pace that these capital projects may not be sustainable and should rethink upon. The [Faculty Workgroup on Budget Priorities] (https://sites.google.com/ucsd.edu/budgetcuts/debt?authuser=0) research shows from 2012–2019, there was a staggering 183% of long-term debt growth during that period which transformed UCSD from one of the smallest debt-load campuses with the most outstanding long-term debt among all UC campuses.
 
