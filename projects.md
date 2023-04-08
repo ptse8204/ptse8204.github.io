@@ -1,7 +1,7 @@
 ---
 layout: page
 title: My Projects
-subtitle: ...
+subtitle: A page to link my projects and stuff :)
 ---
 
 # Data Related
@@ -11,10 +11,11 @@ subtitle: ...
 
 ## Past Projects
 * [How remote learning due to COVID-19 affects students’ academic performance.](https://ptse8204.github.io/final_project.pdf)
+* [US Hate Crimes Visualization Using Hate Crimes](https://ptse8204.github.io/DSC-106-Final-Project/)
 
 # Business and Economics Related
 ## Current
-* An investigation of UC San Diego Long-Term Debt Load
+* [An investigation of UC San Diego Long-Term Debt Load](https://ptse8204.github.io/2023/04/06/How-Realistic-Capital-Concerns-of-UCSD-Should-Put-More-Effort-of-Rethinking-Parking.html)
 
 ## Past Projects
 
