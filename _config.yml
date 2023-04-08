@@ -1,6 +1,8 @@
 remote_theme: daattali/beautiful-jekyll
 title: Edwin Tse
 description: Everyone says that there is no amount of words could correctly describe him.
+gems:
+  - jekyll-font-awesome-sass
 
 
 ###############################################
