@@ -9,7 +9,9 @@ subtitle: A page to link my projects and stuff :)
 # Data Related
 ## Current
 * [craveforcapes](https://ptse8204.github.io/craveforcapes/)
+  - A project that analyze UC San Diego's CAPE data to achieve various goals
 * [Airfare Prediction Model and Price Discrimination Investigation Project](https://ptse8204.github.io/flightpricebias/)
+  - An investigation onto unfair practices employed by airlines towards fare pricing.
 
 ## Past Projects
 * [How remote learning due to COVID-19 affects students’ academic performance.](https://ptse8204.github.io/final_project.pdf)
