@@ -4,10 +4,6 @@ title: My Projects
 subtitle: A page to link my projects and stuff :)
 ---
 
-<head>
-<script src="https://kit.fontawesome.com/4f47b40950.js" crossorigin="anonymous"></script>
-</head>
-
 # Data Related
 ## Current
 * [craveforcapes](https://ptse8204.github.io/craveforcapes/)
@@ -24,7 +20,7 @@ subtitle: A page to link my projects and stuff :)
 ## Past Projects
 
 # Urban Planning Related
-<i class="fa-duotone fa-spinner-third fa-spin fa-bounce">Loading...</i> 
+<i class="fa-duotone fa-spinner-third fa-spin fa-bounce"></i> Loading...
 
 # Fun Related
 * [Automated Morning and Night Greets on iMessage](https://ptse8204.github.io/imshortcuts.md)
