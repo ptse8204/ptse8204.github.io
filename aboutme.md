@@ -24,4 +24,5 @@ My lack of UX/UI experience thought making this would be a good idea
     <th> Posts ⌨️</th>
     <th>Something Fun 😆 </th>
   </tr>
+  </table>
 </div>
