@@ -2,7 +2,7 @@
 layout: page
 title: Failed, Dead, and Shelved Projects
 subtitle: Yep! Dead!
-cover-img: https://user-images.githubusercontent.com/88422737/230711987-8602dbaa-2e08-4a3f-a8d2-7c0de1e46cde.png
+cover-img: https://user-images.githubusercontent.com/88422737/230712140-9e7f9e13-2113-4ac0-a4f4-f1ec5cbbb382.png
 ---
 
 I think a lot of people tends to put a lot of their success on their webpage, however, equally important, I think some of my failed attempts might just be worth to be look into. It is also a better way to understand my approach to work in general, as I tend to learn through these kinds of mistakes. A lot of these projects never made it out of its infancy...
