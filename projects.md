@@ -23,12 +23,13 @@ subtitle: A page to link my projects and stuff :)
 <i class="fa-sharp fa-solid fa-spinner fa-spin fa-lg"></i> Loading...
 
 # Urban Planning Related
-<i class="fa-sharp fa-solid fa-spinner fa-spin fa-lg"></i> Loading...
-
+<i class="fa-solid fa-ellipsis fa-bounce"></i> Still Loading...
 
 # Fun Related
 * [Automated Morning and Night Greets on iMessage](https://ptse8204.github.io/imshortcuts.md)
 
 # My failed, dead, and shelved projects
-I think a lot of people tends to put a lot of their success on their webpage, however, equally important, I think some of my failed attempts might just be worth to be look into. It is also a better way to understand my approach to work in general, as I tend to learn through these kinds of mistakes.
-<i class="fa-solid fa-ellipsis fa-bounce"></i> Still Loading...
+I think a lot of people tends to put a lot of their success on their webpage, however, equally important, I think some of my failed attempts might just be worth to be look into. It is also a better way to understand my approach to work in general, as I tend to learn through these kinds of mistakes. A lot of these projects never made it out of its infancy...
+* [Project Upcyle](/assets/ProjectUpcycle.pdf)
+  - Essentially a fundraising plan for a club that relies on the CRV taxes of California (quite high, typical Cali), by asking for can and bottle donations
+
