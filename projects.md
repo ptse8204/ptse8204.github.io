@@ -20,7 +20,7 @@ subtitle: A page to link my projects and stuff :)
 ## Past Projects
 
 # Urban Planning Related
-<i class="fa-duotone fa-spinner-third fa-spin fa-bounce"></i> Loading...
+<span class="fa-duotone fa-spinner-third fa-spin fa-bounce" aria-hidden="true"></span>  Loading...
 
 # Fun Related
 * [Automated Morning and Night Greets on iMessage](https://ptse8204.github.io/imshortcuts.md)
