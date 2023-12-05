@@ -25,6 +25,7 @@ subtitle: Page to link my projects :)
 
 - # Urban Planning Related
  - ## Recent/Current
+    * [Enhancing Access, Safety & Connectivity at Transit Hubs](https://arcg.is/HrD4u)
     * [An investigation of UC San Diego Long-Term Debt Load](https://ptse8204.github.io/2023/04/06/How-Realistic-Capital-Concerns-of-UCSD-Should-Put-More-Effort-of-Rethinking-Parking.html)
     * [Drastic Greenhouse Gas Reduction Driven by Modest Changes from Solutions:
 How Transportation Planning Could Limit Access Modes by Acknowledging the New Model, Better Communities and Discouraging Travel](https://ptse8204.github.io/assets/ghg_essay.pdf)
