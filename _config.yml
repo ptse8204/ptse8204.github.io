@@ -13,7 +13,6 @@ navbar-links:
   Current Projects:
     - Airfare Project: "https://ptse8204.github.io/flightpricebias/"
     - craveforcapes: "https://ptse8204.github.io/craveforcapes"
-  Posts on Medium: "https://medium.com/@tsepaksang8"
 
 ################
 # --- Logo --- #
@@ -45,7 +44,7 @@ social-network-links:
 #  twitter: daattali
 #  patreon: DeanAttali
 #  youtube: c/daattali
-  medium: tsepaksang8
+#  medium: tsepaksang8
 #  reddit: yourname
   linkedin: paksangtse
 #  xing: yourname
@@ -76,10 +75,10 @@ social-network-links:
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
+  #twitter: true
+  #facebook: true
   linkedin: true
-  vk: false
+  #vk: false
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
