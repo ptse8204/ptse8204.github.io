@@ -1,0 +1,19 @@
+{% if include.entry.url %}
+  {% assign archive_href = include.entry.url %}
+  {% if archive_href contains '://' %}
+    {% assign archive_link = archive_href %}
+  {% else %}
+    {% assign archive_link = archive_href | relative_url %}
+  {% endif %}
+{% endif %}
+<article class="archive-card" data-reveal>
+  <div>
+    <p class="archive-card__date">{{ include.entry.date }}</p>
+    <h3>{{ include.entry.title }}</h3>
+  </div>
+  <p>{{ include.entry.summary }}</p>
+  <p class="archive-card__lesson"><strong>What carried forward:</strong> {{ include.entry.lesson }}</p>
+  {% if include.entry.url %}
+    <a class="text-link" href="{{ archive_link }}">Open artifact</a>
+  {% endif %}
+</article>

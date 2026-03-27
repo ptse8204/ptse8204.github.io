@@ -1,6 +1,6 @@
 remote_theme: daattali/beautiful-jekyll
 title: Edwin Tse
-description: Everyone says that there is no amount of words could correctly describe him.
+description: Engineer-minded builder across data systems, analytics, and decision infrastructure.
 
 
 ###############################################
@@ -8,11 +8,11 @@ description: Everyone says that there is no amount of words could correctly desc
 ###############################################
 
 navbar-links:
-  About Me: "https://ptse8204.github.io/aboutme"
-  Projects: "https://ptse8204.github.io/projects"
-  Current Projects:
-    - Airfare Project: "https://ptse8204.github.io/flightpricebias/"
-    - craveforcapes: "https://ptse8204.github.io/craveforcapes"
+  Home: ""
+  Experience: "experience"
+  Projects: "projects"
+  About: "aboutme"
+  Resume: "EdwinTseResume.pdf"
 
 ################
 # --- Logo --- #
@@ -37,14 +37,14 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-#  email: "someone@example.com"
+  email: "tsepaksang8@gmail.com"
 #  rss: true  # remove this line if you don't want to show an RSS link at the bottom
 #  facebook: deanattali
   github: ptse8204
 #  twitter: daattali
 #  patreon: DeanAttali
 #  youtube: c/daattali
-#  medium: tsepaksang8
+  medium: tsepaksang8
 #  reddit: yourname
   linkedin: paksangtse
 #  xing: yourname
@@ -136,12 +136,12 @@ footer-hover-col: "#0085A1"
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+site-css:
+  - "/assets/css/custom-styles.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
-#site-js:
-#  - "/assets/js/custom-script.js"
+site-js:
+  - "/assets/js/site.js"
 
 #################################
 # --- Web Analytics Section --- #
@@ -240,6 +240,8 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+plugins:
+  - jekyll-remote-theme
 
 kramdown:
   input: GFM

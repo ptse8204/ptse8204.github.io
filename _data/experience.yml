@@ -1,0 +1,119 @@
+- company: EnvoyX
+  anchor: envoyx
+  role: GTM Data Engineer
+  dates: Sep 2025 - Present
+  location: Berkeley, CA
+  summary: Builds GTM data systems that turn fragmented operational signals into reliable revenue, lifecycle, and reporting workflows.
+  capabilities:
+    - Customer identity stitching and attribution
+    - ELT reliability and warehouse modeling
+    - Cross-functional metric ownership
+  proof_points:
+    - Unified CRM, GA4, product, billing, and support data into a governed Customer 360 model that raised attributable revenue coverage from 48% to 86%.
+    - Designed attribution logic and lifecycle reporting that reduced reporting lag from 6 days to 1 day for GTM stakeholders.
+    - Introduced dbt tests, Airflow monitoring, lineage, and CI patterns that pushed pipeline reliability to 99.6% and reduced bad-data incidents downstream.
+  related_projects:
+    - Customer 360 and Revenue Attribution Warehouse
+    - Modern ELT Reliability Platform
+  tools:
+    - Snowflake
+    - dbt
+    - Airflow
+    - SQL
+    - Python
+    - GA4
+    - Salesforce
+
+- company: United Parcel Service
+  anchor: ups-analyst
+  role: Data Analyst Intern
+  dates: Jun 2025 - Sep 2025
+  location: Berkeley, CA
+  summary: Replaced manual reporting with warehouse-backed operational dashboards that made logistics KPIs easier to trust, monitor, and act on.
+  capabilities:
+    - KPI governance and semantic consistency
+    - Self-serve BI and operational reporting
+    - Performance tuning for analytics workflows
+  proof_points:
+    - Consolidated 20+ conflicting business metrics into a governed KPI layer for product, operations, and finance stakeholders.
+    - Built dashboards and QA workflows that sharply reduced manual reporting time while improving executive adoption and trust.
+    - Improved refresh performance and reporting reliability through star-schema modeling, Azure SQL, and targeted DAX optimization.
+  related_projects:
+    - KPI Ownership Platform for Product and Ops
+    - Executive BizOps Control Tower
+  tools:
+    - Power BI
+    - Azure SQL
+    - DAX
+    - Power Query
+    - SQL
+
+- company: United Parcel Service
+  anchor: ups-brokerage
+  role: Brokerage Data Administrator
+  dates: 2023 - 2025
+  location: San Diego, CA
+  summary: Worked close to messy operational documents, OCR-assisted extraction, and compliance workflows, building the judgment layer between raw inputs and reliable downstream records.
+  capabilities:
+    - Semi-structured document ingestion
+    - Exception handling and QA workflows
+    - Compliance visibility and SLA support
+  proof_points:
+    - Supported OCR and NLP-assisted extraction workflows for customs brokerage inputs with validation, routing, and human review for low-confidence outputs.
+    - Improved operational transparency by standardizing records used for compliance tracking, backlog visibility, and downstream reporting.
+    - Helped turn fragile intake processes into more reliable datasets and review workflows for high-risk operational work.
+  related_projects:
+    - Modern ELT Reliability Platform
+    - Privacy and Compliance Review Operations Dashboard
+  tools:
+    - Python
+    - OCR tooling
+    - Structured QA
+    - Operational reporting
+
+- company: Zego
+  anchor: zego
+  role: Business Analyst Intern, Product Analytics
+  dates: Jun 2022 - Aug 2022
+  location: San Diego, CA
+  summary: Built product analytics and retention workflows that connected event data, experimentation, and predictive scoring to better product decisions.
+  capabilities:
+    - Funnel and cohort analysis
+    - Experiment measurement systems
+    - Churn and retention modeling
+  proof_points:
+    - Built reusable funnel and experimentation readouts that helped identify onboarding friction and improve activation and completion metrics.
+    - Delivered predictive retention workflows that prioritized high-risk cohorts and linked model outputs to intervention decisions.
+    - Improved analytics reliability with structured Snowflake refresh patterns and decision-ready reporting for product stakeholders.
+  related_projects:
+    - Funnel Deep-Dive and Experimentation Measurement System
+    - Churn and Retention Early-Warning System
+  tools:
+    - Snowflake SQL
+    - Experimentation
+    - PyTorch
+    - Python
+    - Product analytics
+
+- company: Crosswork.us
+  anchor: crosswork
+  role: Venture Capital Intern
+  dates: Aug 2022 - Dec 2022
+  location: Remote
+  summary: Applied structured analytics, prospect scoring, and lightweight experimentation to improve sourcing quality and decision readiness.
+  capabilities:
+    - Rules-based scoring and prioritization
+    - Commercial experimentation
+    - Executive reporting and synthesis
+  proof_points:
+    - Doubled weekly qualified leads by automating prospect list building and testing outreach variants with simple but disciplined measurement loops.
+    - Framed ambiguous commercial questions into structured reporting, research, and prioritization workflows for leadership.
+    - Used lightweight analytics to improve both decision speed and the quality of follow-up actions.
+  related_projects:
+    - Executive BizOps Control Tower
+    - Dynamic Pricing and Revenue Optimization Simulator
+  tools:
+    - Python
+    - Pandas
+    - A/B testing
+    - Research synthesis

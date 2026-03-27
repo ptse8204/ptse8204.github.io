@@ -1,0 +1,24 @@
+{% assign href = include.project.url %}
+{% if href contains '://' %}
+  {% assign project_href = href %}
+{% else %}
+  {% assign project_href = href | relative_url %}
+{% endif %}
+<article class="project-card" data-reveal>
+  <div class="project-card__top">
+    <p class="project-card__type">{{ include.project.type }}</p>
+    <h3>{{ include.project.title }}</h3>
+    <p>{{ include.project.summary }}</p>
+  </div>
+
+  <div class="project-card__middle">
+    <p class="project-card__why">{{ include.project.why_it_matters }}</p>
+    <div class="chip-row chip-row--muted">
+      {% for tag in include.project.tags %}
+        <span class="chip chip--muted">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </div>
+
+  <a class="project-card__cta" href="{{ project_href }}">{{ include.project.cta }}</a>
+</article>

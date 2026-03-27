@@ -1,37 +1,89 @@
 ---
 layout: page
-title: My Projects
-subtitle: Page to link my projects :)
+title: Projects
+subtitle: A project library that balances recruiter-readable summaries with enough depth for people who want the technical and domain story.
+kicker: Project library
+permalink: /projects/
 ---
+{% assign featured_projects = site.data.projects | where: "category", "featured" %}
+{% assign work_relevant_projects = site.data.projects | where: "category", "work_relevant" %}
+{% assign domain_projects = site.data.projects | where: "category", "domain" %}
+{% assign fun_projects = site.data.projects | where: "category", "fun" %}
+{% assign archive_projects = site.data.projects | where: "category", "archive" %}
 
-<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/></head>
+<div class="section-heading" data-reveal>
+  <h2>Projects that connect current experience with the longer through-line of the site.</h2>
+  <p>
+    The older version of this portfolio had the right ingredients but not enough structure. This version keeps the transportation, planning, and curiosity-driven material, but organizes it around stronger summaries, cleaner categories, and clearer signals about why each project belongs here.
+  </p>
+</div>
 
-- # Data Related
-  - ## Recent/Current
-    * [craveforcapes](https://ptse8204.github.io/craveforcapes/)
-      - A project that analyze UC San Diego's CAPE data to achieve various goals
-    * [Airfare Prediction Model and Price Discrimination Investigation Project](https://ptse8204.github.io/flightpricebias/)
-      - An investigation onto unfair practices employed by airlines towards fare pricing.
-   - ## Past Projects
-      * [How remote learning due to COVID-19 affects students’ academic performance.](https://ptse8204.github.io/final_project.pdf)
-      * [US Hate Crimes Visualization Using Hate Crimes](https://ptse8204.github.io/DSC-106-Final-Project/)
+<section id="featured-work">
+  <div class="section-heading" data-reveal>
+    <p class="section-kicker">Featured</p>
+    <h2>Best entry points for recruiters and hiring managers.</h2>
+    <p>These are the fastest paths into the strongest mix of systems work, product measurement, and distinctive domain context.</p>
+  </div>
+  <div class="project-grid">
+    {% for project in featured_projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
 
-- # Business and Economics Related
-  - ## Recent/Current
-    * [An investigation of UC San Diego Long-Term Debt Load](https://ptse8204.github.io/2023/04/06/How-Realistic-Capital-Concerns-of-UCSD-Should-Put-More-Effort-of-Rethinking-Parking.html)
+<section id="work-relevant-technical-projects">
+  <div class="section-heading" data-reveal>
+    <p class="section-kicker">Work-relevant technical projects</p>
+    <h2>Tools, analyses, and product-style builds that still reinforce the current role story.</h2>
+  </div>
+  <div class="project-grid">
+    {% for project in work_relevant_projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
 
-  - ## Past Projects
-  <i class="fa-sharp fa-solid fa-spinner fa-spin fa-lg"></i> Loading...
+<section id="transportation-and-domain-work">
+  <div class="section-heading" data-reveal>
+    <p class="section-kicker">Transportation and domain work</p>
+    <h2>Planning, policy, and systems thinking that make the portfolio feel like mine.</h2>
+    <p>
+      These projects are part of the site on purpose. They show the interests and constraints that shaped how I think about operations, incentives, throughput, fairness, and public-facing systems.
+    </p>
+  </div>
+  <div class="project-grid">
+    {% for project in domain_projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
 
-- # Urban Planning Related
- - ## Recent/Current
-    * [Enhancing Access, Safety & Connectivity at Transit Hubs](https://arcg.is/HrD4u)
-    * [An investigation of UC San Diego Long-Term Debt Load](https://ptse8204.github.io/2023/04/06/How-Realistic-Capital-Concerns-of-UCSD-Should-Put-More-Effort-of-Rethinking-Parking.html)
-    * [Drastic Greenhouse Gas Reduction Driven by Modest Changes from Solutions:
-How Transportation Planning Could Limit Access Modes by Acknowledging the New Model, Better Communities and Discouraging Travel](https://ptse8204.github.io/assets/ghg_essay.pdf)
+<section id="fun-and-utility">
+  <div class="section-heading" data-reveal>
+    <p class="section-kicker">Fun and utility</p>
+    <h2>Smaller experiments that still say something useful.</h2>
+    <p>
+      Not every project needs to be a flagship case study. Some are here because they show a habit of turning recurring annoyances into usable systems.
+    </p>
+  </div>
+  <div class="project-grid">
+    {% for project in fun_projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
 
-# Fun Related
-* [Automated Morning and Night Greets on iMessage](https://ptse8204.github.io/imshortcuts)
-
-# [Failed, dead, and shelved projects](/projectpages/deadproject)
-I think a lot of people tends to put a lot of their success on their webpage, however, equally important, I think some of my failed attempts might just be worth to be look into. It is also a better way to understand my approach to work in general, as I tend to learn through these kinds of mistakes. A lot of these projects never made it out of its infancy...
+<section id="archive-and-shelved">
+  <div class="section-heading" data-reveal>
+    <p class="section-kicker">Archive</p>
+    <h2>Failed, dead, and shelved work still belongs in the story.</h2>
+    <p>
+      Most sites hide the projects that stalled. I keep them visible because unfinished work often explains more about judgment, iteration, and changing priorities than polished output alone.
+    </p>
+  </div>
+  <div class="project-grid">
+    {% for project in archive_projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>

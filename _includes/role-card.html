@@ -1,0 +1,41 @@
+<article id="{{ include.role.anchor }}" class="role-card" data-reveal>
+  <div class="role-card__meta">
+    <p class="role-card__company">{{ include.role.company }}</p>
+    <p class="role-card__dates">{{ include.role.dates }} · {{ include.role.location }}</p>
+  </div>
+
+  <div class="role-card__body">
+    <div class="role-card__header">
+      <h3>{{ include.role.role }}</h3>
+      <p>{{ include.role.summary }}</p>
+    </div>
+
+    <div class="chip-row">
+      {% for capability in include.role.capabilities %}
+        <span class="chip">{{ capability }}</span>
+      {% endfor %}
+    </div>
+
+    <ul class="proof-list">
+      {% for point in include.role.proof_points %}
+        <li>{{ point }}</li>
+      {% endfor %}
+    </ul>
+
+    <div class="role-card__footer">
+      <div>
+        <p class="mini-label">Related project threads</p>
+        <div class="chip-row chip-row--muted">
+          {% for project in include.role.related_projects %}
+            <span class="chip chip--muted">{{ project }}</span>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div>
+        <p class="mini-label">Tools</p>
+        <p class="tool-list">{{ include.role.tools | join: " · " }}</p>
+      </div>
+    </div>
+  </div>
+</article>
