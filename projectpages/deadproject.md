@@ -8,7 +8,7 @@ permalink: /projectpages/deadproject/
 <div class="section-heading" data-reveal>
   <h2>Keeping unfinished work visible is part of the point.</h2>
   <p>
-    A portfolio made only of polished wins usually hides too much. This page stays because unfinished work says something useful about how ideas evolve, where execution broke down, and what still carried forward into later thinking.
+    A portfolio made only of polished wins usually hides too much. I keep this page because unfinished work often says something useful about feasibility, execution, and what was still worth carrying forward.
   </p>
 </div>
 
@@ -50,9 +50,9 @@ permalink: /projectpages/deadproject/
 </div>
 
 <article class="frame-card" data-reveal>
-  <p class="section-kicker">Why this page stays</p>
-  <h2>Because abandoned work can still reveal good instincts.</h2>
+  <p class="section-kicker">What the archive shows</p>
+  <h2>Not every strong idea turns into a durable project.</h2>
   <p>
-    None of these projects made it into the core portfolio because they are not the strongest evidence of current ability. They stay because they still show how I think about systems, incentives, feasibility, and the gap between an interesting concept and something that can actually be sustained.
+    None of these projects are here as flagship work. They stay because they still show how I think about systems, incentives, feasibility, and the gap between an interesting concept and something that can actually be sustained.
   </p>
 </article>

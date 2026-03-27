@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Projects
-subtitle: A project library that balances recruiter-readable summaries with enough depth for people who want the technical and domain story.
-kicker: Project library
+subtitle: A project library spanning analytics engineering, product measurement, transportation, and practical tools.
+kicker: Projects
 permalink: /projects/
 ---
 {% assign featured_projects = site.data.projects | where: "category", "featured" %}
@@ -12,17 +12,17 @@ permalink: /projects/
 {% assign archive_projects = site.data.projects | where: "category", "archive" %}
 
 <div class="section-heading" data-reveal>
-  <h2>Projects that connect current experience with the longer through-line of the site.</h2>
+  <h2>These projects show the mix of systems work and domain curiosity I keep coming back to.</h2>
   <p>
-    The older version of this portfolio had the right ingredients but not enough structure. This version keeps the transportation, planning, and curiosity-driven material, but organizes it around stronger summaries, cleaner categories, and clearer signals about why each project belongs here.
+    Some are close to the work I do professionally. Others are here because they show how I think about public systems, incentives, and the gap between a clean model and real-world use.
   </p>
 </div>
 
 <section id="featured-work">
   <div class="section-heading" data-reveal>
-    <p class="section-kicker">Featured</p>
-    <h2>Best entry points for recruiters and hiring managers.</h2>
-    <p>These are the fastest paths into the strongest mix of systems work, product measurement, and distinctive domain context.</p>
+    <p class="section-kicker">Selected work</p>
+    <h2>The strongest entry points into my portfolio.</h2>
+    <p>These projects best represent how I work across data systems, measurement, and transportation-linked analysis.</p>
   </div>
   <div class="project-grid project-grid--featured">
     {% for project in featured_projects %}
@@ -33,8 +33,8 @@ permalink: /projects/
 
 <section id="work-relevant-technical-projects">
   <div class="section-heading" data-reveal>
-    <p class="section-kicker">Work-relevant technical projects</p>
-    <h2>Tools, analyses, and product-style builds that still reinforce the current role story.</h2>
+    <p class="section-kicker">Technical projects</p>
+    <h2>Tools and analyses that reinforce the same core strengths.</h2>
   </div>
   <div class="project-grid project-grid--secondary">
     {% for project in work_relevant_projects %}
@@ -45,10 +45,10 @@ permalink: /projects/
 
 <section id="transportation-and-domain-work">
   <div class="section-heading" data-reveal>
-    <p class="section-kicker">Transportation and domain work</p>
-    <h2>Planning, policy, and systems thinking that make the portfolio feel like mine.</h2>
+    <p class="section-kicker">Transportation and planning</p>
+    <h2>I keep this work here because it shaped how I think about systems.</h2>
     <p>
-      These projects are part of the site on purpose. They show the interests and constraints that shaped how I think about operations, incentives, throughput, fairness, and public-facing systems.
+      These projects sharpened how I think about throughput, incentives, public constraints, and the difference between technically possible solutions and the ones people can actually use.
     </p>
   </div>
   <div class="project-grid project-grid--secondary">
@@ -60,10 +60,10 @@ permalink: /projects/
 
 <section id="fun-and-utility">
   <div class="section-heading" data-reveal>
-    <p class="section-kicker">Fun and utility</p>
-    <h2>Smaller experiments that still say something useful.</h2>
+    <p class="section-kicker">Smaller builds</p>
+    <h2>Smaller projects, still built with the same instinct.</h2>
     <p>
-      Not every project needs to be a flagship case study. Some are here because they show a habit of turning recurring annoyances into usable systems.
+      Not every useful project has to be large. Some are here because they show a habit of turning recurring annoyances into something more usable.
     </p>
   </div>
   <div class="project-grid project-grid--secondary">
@@ -76,9 +76,9 @@ permalink: /projects/
 <section id="archive-and-shelved">
   <div class="section-heading" data-reveal>
     <p class="section-kicker">Archive</p>
-    <h2>Failed, dead, and shelved work still belongs in the story.</h2>
+    <h2>Some unfinished work is still worth keeping visible.</h2>
     <p>
-      Most sites hide the projects that stalled. I keep them visible because unfinished work often explains more about judgment, iteration, and changing priorities than polished output alone.
+      I do not think a portfolio should only show polished wins. The archive is part of the record because it says something useful about feasibility, iteration, and judgment.
     </p>
   </div>
   <div class="project-grid project-grid--secondary">

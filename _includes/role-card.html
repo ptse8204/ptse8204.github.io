@@ -11,11 +11,7 @@
       <p>{{ include.role.summary }}</p>
     </div>
 
-    <div class="chip-row">
-      {% for capability in include.role.capabilities %}
-        <span class="chip">{{ capability }}</span>
-      {% endfor %}
-    </div>
+    <p class="role-card__capabilities">{{ include.role.capabilities | join: " · " }}</p>
 
     <ul class="proof-list">
       {% for point in include.role.proof_points %}
@@ -25,12 +21,8 @@
 
     <div class="role-card__footer">
       <div>
-        <p class="mini-label">Related project threads</p>
-        <div class="chip-row chip-row--muted">
-          {% for project in include.role.related_projects %}
-            <span class="chip chip--muted">{{ project }}</span>
-          {% endfor %}
-        </div>
+        <p class="mini-label">Related work</p>
+        <p class="tool-list">{{ include.role.related_projects | join: " · " }}</p>
       </div>
 
       <div>

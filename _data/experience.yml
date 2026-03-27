@@ -3,7 +3,7 @@
   role: GTM Data Engineer
   dates: Sep 2025 - Present
   location: Berkeley, CA
-  summary: Builds GTM data systems that turn fragmented operational signals into reliable revenue, lifecycle, and reporting workflows.
+  summary: I build GTM data systems that turn fragmented operational signals into reliable revenue, lifecycle, and reporting workflows.
   capabilities:
     - Customer identity stitching and attribution
     - ELT reliability and warehouse modeling
@@ -29,7 +29,7 @@
   role: Data Analyst Intern
   dates: Jun 2025 - Sep 2025
   location: Berkeley, CA
-  summary: Replaced manual reporting with warehouse-backed operational dashboards that made logistics KPIs easier to trust, monitor, and act on.
+  summary: I replaced manual reporting with warehouse-backed dashboards that made logistics KPIs easier to trust, monitor, and act on.
   capabilities:
     - KPI governance and semantic consistency
     - Self-serve BI and operational reporting
@@ -53,7 +53,7 @@
   role: Brokerage Data Administrator
   dates: 2023 - 2025
   location: San Diego, CA
-  summary: Worked close to messy operational documents, OCR-assisted extraction, and compliance workflows, building the judgment layer between raw inputs and reliable downstream records.
+  summary: I worked close to messy operational documents, OCR-assisted extraction, and compliance workflows, building the judgment layer between raw inputs and reliable downstream records.
   capabilities:
     - Semi-structured document ingestion
     - Exception handling and QA workflows
@@ -76,7 +76,7 @@
   role: Business Analyst Intern, Product Analytics
   dates: Jun 2022 - Aug 2022
   location: San Diego, CA
-  summary: Built product analytics and retention workflows that connected event data, experimentation, and predictive scoring to better product decisions.
+  summary: I built product analytics and retention workflows that connected event data, experimentation, and predictive scoring to better product decisions.
   capabilities:
     - Funnel and cohort analysis
     - Experiment measurement systems
@@ -100,7 +100,7 @@
   role: Venture Capital Intern
   dates: Aug 2022 - Dec 2022
   location: Remote
-  summary: Applied structured analytics, prospect scoring, and lightweight experimentation to improve sourcing quality and decision readiness.
+  summary: I used structured analytics, prospect scoring, and lightweight experimentation to improve sourcing quality and decision readiness.
   capabilities:
     - Rules-based scoring and prioritization
     - Commercial experimentation
