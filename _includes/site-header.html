@@ -2,7 +2,7 @@
   <div class="shell site-header__inner">
     <a class="site-header__brand" href="{{ '/' | relative_url }}">
       <span class="site-header__eyebrow">Edwin Tse</span>
-      <span class="site-header__title">Engineer-minded systems builder</span>
+      <span class="site-header__title">Data systems, analytics, and operational judgment</span>
     </a>
 
     <nav class="site-nav" aria-label="Primary navigation">
@@ -12,6 +12,6 @@
       <a href="{{ '/aboutme' | relative_url }}" {% if page.url contains '/aboutme' %}aria-current="page"{% endif %}>About</a>
     </nav>
 
-    <a class="button button--compact" href="{{ '/EdwinTseResume.pdf' | relative_url }}">Resume</a>
+    <a class="site-header__resume" href="{{ '/EdwinTseResume.pdf' | relative_url }}">Resume PDF</a>
   </div>
 </header>

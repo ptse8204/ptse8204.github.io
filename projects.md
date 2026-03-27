@@ -24,7 +24,7 @@ permalink: /projects/
     <h2>Best entry points for recruiters and hiring managers.</h2>
     <p>These are the fastest paths into the strongest mix of systems work, product measurement, and distinctive domain context.</p>
   </div>
-  <div class="project-grid">
+  <div class="project-grid project-grid--featured">
     {% for project in featured_projects %}
       {% include project-card.html project=project %}
     {% endfor %}
@@ -36,7 +36,7 @@ permalink: /projects/
     <p class="section-kicker">Work-relevant technical projects</p>
     <h2>Tools, analyses, and product-style builds that still reinforce the current role story.</h2>
   </div>
-  <div class="project-grid">
+  <div class="project-grid project-grid--secondary">
     {% for project in work_relevant_projects %}
       {% include project-card.html project=project %}
     {% endfor %}
@@ -51,7 +51,7 @@ permalink: /projects/
       These projects are part of the site on purpose. They show the interests and constraints that shaped how I think about operations, incentives, throughput, fairness, and public-facing systems.
     </p>
   </div>
-  <div class="project-grid">
+  <div class="project-grid project-grid--secondary">
     {% for project in domain_projects %}
       {% include project-card.html project=project %}
     {% endfor %}
@@ -66,7 +66,7 @@ permalink: /projects/
       Not every project needs to be a flagship case study. Some are here because they show a habit of turning recurring annoyances into usable systems.
     </p>
   </div>
-  <div class="project-grid">
+  <div class="project-grid project-grid--secondary">
     {% for project in fun_projects %}
       {% include project-card.html project=project %}
     {% endfor %}
@@ -81,7 +81,7 @@ permalink: /projects/
       Most sites hide the projects that stalled. I keep them visible because unfinished work often explains more about judgment, iteration, and changing priorities than polished output alone.
     </p>
   </div>
-  <div class="project-grid">
+  <div class="project-grid project-grid--secondary">
     {% for project in archive_projects %}
       {% include project-card.html project=project %}
     {% endfor %}

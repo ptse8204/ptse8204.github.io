@@ -12,8 +12,8 @@ permalink: /experience/
   </p>
 </div>
 
-<div class="split-grid">
-  <article class="surface-card" data-reveal>
+<div class="home-editorial">
+  <article class="lede-block" data-reveal>
     <p class="section-kicker">Current framing</p>
     <h2>Balanced range, strongest proof in reliable systems.</h2>
     <p>
@@ -21,13 +21,13 @@ permalink: /experience/
     </p>
   </article>
 
-  <article class="surface-card" data-reveal>
-    <p class="section-kicker">How I work</p>
-    <h2>Strongest when the process is messy and the decision matters.</h2>
-    <p>
-      I tend to gravitate toward work that sits between raw systems, business definitions, and operational edge cases. That is usually where better data handling, better metrics, and better coordination create the biggest lift.
-    </p>
-  </article>
+  <aside class="brief-panel" data-reveal>
+    <p class="section-kicker">Reading guide</p>
+    <div class="brief-panel__list">
+      <p><span class="brief-panel__value">Primary proof</span> EnvoyX and UPS Data Analyst show the clearest current fit for engineering and analytics-heavy roles.</p>
+      <p><span class="brief-panel__value">Why the older roles matter</span> They make the messy-inputs-to-trustworthy-systems narrative believable.</p>
+    </div>
+  </aside>
 </div>
 
 <div class="experience-grid">

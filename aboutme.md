@@ -5,8 +5,8 @@ subtitle: A systems builder shaped by data work, operational ambiguity, and long
 kicker: Background
 permalink: /aboutme/
 ---
-<div class="split-grid">
-  <article class="surface-card" data-reveal>
+<div class="home-editorial">
+  <article class="lede-block" data-reveal>
     <p class="section-kicker">Who I am now</p>
     <h2>A working profile, not a student-era bio.</h2>
     <p>
@@ -17,16 +17,13 @@ permalink: /aboutme/
     </p>
   </article>
 
-  <article class="surface-card" data-reveal>
+  <aside class="brief-panel" data-reveal>
     <p class="section-kicker">What ties it together</p>
-    <h2>Structured ambiguity and careful definitions.</h2>
-    <p>
-      I tend to be most useful where a problem is important, multi-team, and just messy enough that nobody fully trusts the current process. That is usually a sign that the system needs clearer definitions, more durable data handling, or a better link between analysis and action.
-    </p>
-    <p>
-      My default instinct is to make the logic legible, the workflow sturdier, and the output easier to act on.
-    </p>
-  </article>
+    <div class="brief-panel__list">
+      <p><span class="brief-panel__value">Structured ambiguity</span> I tend to be most useful where the problem matters, the process is messy, and nobody fully trusts the current workflow.</p>
+      <p><span class="brief-panel__value">Clear definitions</span> The work usually improves when the logic becomes easier to inspect, explain, and act on.</p>
+    </div>
+  </aside>
 </div>
 
 <div class="two-column">
