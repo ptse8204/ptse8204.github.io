@@ -2,6 +2,26 @@
 layout: default
 ---
 <section class="page-hero">
+  <div class="page-hero__atlas" aria-hidden="true">
+    <svg class="page-hero__routes" viewBox="0 0 960 340" xmlns="http://www.w3.org/2000/svg">
+      <path class="page-hero__route page-hero__route--primary" d="M34 232C128 210 186 124 300 118C418 112 470 216 602 214C742 212 790 134 926 86" />
+      <path class="page-hero__route page-hero__route--secondary" d="M88 72C178 96 216 180 302 208C390 236 460 172 566 188C666 204 730 274 876 286" />
+      <circle class="page-hero__node" cx="300" cy="118" r="8" />
+      <circle class="page-hero__node" cx="602" cy="214" r="8" />
+      <circle class="page-hero__node page-hero__node--accent" cx="566" cy="188" r="9" />
+    </svg>
+    <div class="page-hero__cluster page-hero__cluster--bars">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="page-hero__cluster page-hero__cluster--dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
   <div class="shell page-hero__inner" data-reveal>
     {% if page.kicker %}
       <p class="section-kicker">{{ page.kicker }}</p>

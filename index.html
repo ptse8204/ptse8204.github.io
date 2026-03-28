@@ -25,11 +25,81 @@ share-description: Portfolio for Edwin Tse featuring data engineering, analytics
     </div>
 
     <figure class="hero-figure" data-reveal>
-      <div class="hero-figure__frame">
-        <picture>
+      <div class="hero-figure__frame" data-ambient>
+        <div class="hero-figure__backdrop" aria-hidden="true"></div>
+        <picture class="hero-figure__media">
           <source srcset="{{ '/assets/img/home-hero-systems-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
           <img src="{{ '/assets/img/home-hero-systems-light.png' | relative_url }}" alt="Abstract editorial image evoking connected systems, mapped flows, and layered operational infrastructure.">
         </picture>
+        <div class="hero-atlas" aria-hidden="true">
+          <div class="hero-atlas__layer hero-atlas__layer--halo" data-parallax="0.18">
+            <div class="hero-atlas__halo hero-atlas__halo--primary"></div>
+            <div class="hero-atlas__halo hero-atlas__halo--secondary"></div>
+          </div>
+
+          <div class="hero-atlas__layer hero-atlas__layer--routes" data-parallax="0.42">
+            <svg class="hero-atlas__routes" viewBox="0 0 520 620" xmlns="http://www.w3.org/2000/svg">
+              <path class="hero-atlas__route hero-atlas__route--primary" d="M42 488C112 470 132 392 194 356C256 320 324 340 382 292C426 256 452 200 478 118" />
+              <path class="hero-atlas__route hero-atlas__route--secondary" d="M64 170C128 198 158 250 208 270C278 298 346 286 402 330C438 358 456 402 468 476" />
+              <path class="hero-atlas__route hero-atlas__route--signal" d="M100 96C170 110 214 140 260 194C304 246 346 268 410 274" />
+              <circle class="hero-atlas__node" cx="194" cy="356" r="7.5" />
+              <circle class="hero-atlas__node" cx="382" cy="292" r="8" />
+              <circle class="hero-atlas__node hero-atlas__node--accent" cx="260" cy="194" r="9" />
+              <circle class="hero-atlas__node-pulse" cx="260" cy="194" r="16" />
+            </svg>
+          </div>
+
+          <div class="hero-atlas__layer hero-atlas__layer--revenue" data-parallax="0.88">
+            <div class="hero-atlas__panel hero-atlas__panel--revenue">
+              <p class="hero-atlas__eyebrow">GTM attribution</p>
+              <div class="hero-atlas__bars">
+                <span style="--bar-size: 0.42"></span>
+                <span style="--bar-size: 0.58"></span>
+                <span style="--bar-size: 0.71"></span>
+                <span style="--bar-size: 0.9"></span>
+              </div>
+              <p class="hero-atlas__meta">coverage lift<br><strong>48% to 86%</strong></p>
+            </div>
+          </div>
+
+          <div class="hero-atlas__layer hero-atlas__layer--kpi" data-parallax="0.68">
+            <div class="hero-atlas__panel hero-atlas__panel--kpi">
+              <p class="hero-atlas__eyebrow">KPI systems</p>
+              <div class="hero-atlas__trend">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p class="hero-atlas__meta">governed metrics, reporting cadence, and experimentation traces</p>
+            </div>
+          </div>
+
+          <div class="hero-atlas__layer hero-atlas__layer--transit" data-parallax="1.02">
+            <div class="hero-atlas__panel hero-atlas__panel--transit">
+              <p class="hero-atlas__eyebrow">Transportation lens</p>
+              <div class="hero-atlas__mini-map">
+                <span class="hero-atlas__mini-stop"></span>
+                <span class="hero-atlas__mini-stop"></span>
+                <span class="hero-atlas__mini-stop"></span>
+                <span class="hero-atlas__mini-stop"></span>
+                <span class="hero-atlas__mini-line hero-atlas__mini-line--a"></span>
+                <span class="hero-atlas__mini-line hero-atlas__mini-line--b"></span>
+              </div>
+              <p class="hero-atlas__meta">access, connectivity, and incentives in real systems</p>
+            </div>
+          </div>
+
+          <div class="hero-atlas__layer hero-atlas__layer--ticker" data-parallax="0.3">
+            <div class="hero-atlas__ticker">
+              <span>warehouse models</span>
+              <span>identity stitching</span>
+              <span>experimentation</span>
+              <span>operational reporting</span>
+            </div>
+          </div>
+        </div>
       </div>
       <figcaption class="hero-figure__caption">
         My recent work spans GTM data engineering, KPI systems, experimentation, and transportation-linked analysis.
