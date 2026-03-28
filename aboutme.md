@@ -28,7 +28,7 @@ visual_density: medium
   </aside>
 </div>
 
-<article class="surface-card" data-reveal>
+<article class="surface-card surface-card--summary" data-reveal>
   <p class="section-kicker">How I think</p>
   <h2>What I bring to teams.</h2>
   <ul class="feature-list">

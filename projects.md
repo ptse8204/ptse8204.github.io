@@ -13,7 +13,7 @@ visual_density: high
 {% assign fun_projects = site.data.projects | where: "category", "fun" %}
 {% assign archive_projects = site.data.projects | where: "category", "archive" %}
 
-<div class="section-heading" data-reveal>
+<div class="section-heading section-heading--split" data-reveal>
   <h2>Projects across data systems, measurement, and domain analysis.</h2>
   <p>
     Together they show how I approach reliability, incentives, and the gap between a clean model and real-world use.
@@ -21,7 +21,7 @@ visual_density: high
 </div>
 
 <section id="featured-work" class="project-section project-section--featured">
-  <div class="section-heading" data-reveal>
+  <div class="section-heading section-heading--split" data-reveal>
     <p class="section-kicker">Selected work</p>
     <h2>The strongest entry points into my work.</h2>
     <p>These projects best represent how I approach data systems, measurement, and transportation-linked analysis.</p>
@@ -46,7 +46,7 @@ visual_density: high
 </section>
 
 <section id="transportation-and-domain-work" class="project-section project-section--domain">
-  <div class="section-heading" data-reveal>
+  <div class="section-heading section-heading--split" data-reveal>
     <p class="section-kicker">Transportation and planning</p>
     <h2>Transportation and planning work that informs my systems perspective.</h2>
     <p>
@@ -61,7 +61,7 @@ visual_density: high
 </section>
 
 <section id="fun-and-utility" class="project-section project-section--small">
-  <div class="section-heading" data-reveal>
+  <div class="section-heading section-heading--split" data-reveal>
     <p class="section-kicker">Smaller builds</p>
     <h2>Smaller projects with clear utility.</h2>
     <p>
@@ -76,7 +76,7 @@ visual_density: high
 </section>
 
 <section id="archive-and-shelved" class="project-section project-section--archive">
-  <div class="section-heading" data-reveal>
+  <div class="section-heading section-heading--split" data-reveal>
     <p class="section-kicker">Archive</p>
     <h2>Archived work that still reflects judgment and range.</h2>
     <p>
