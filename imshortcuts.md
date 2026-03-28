@@ -15,7 +15,7 @@ visual_density: low
       This project turns a recurring personal task into a lightweight iOS workflow. It reflects a pattern I value: define a repetitive process clearly, then automate only the steps worth automating.
     </p>
     <p>
-      In this case, the workflow is an iOS Shortcut that schedules a message and removes the need to remember the action manually.
+      In this case, the workflow is an iOS Shortcut that schedules a message and removes the need to remember it manually.
     </p>
   </article>
 

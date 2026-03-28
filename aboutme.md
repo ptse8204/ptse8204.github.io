@@ -12,7 +12,7 @@ visual_density: medium
     <p class="section-kicker">Who I am</p>
     <h2>I work at the intersection of implementation and judgment.</h2>
     <p>
-      I work across data engineering, analytics, and measurement systems. The through-line is practical reliability: take messy or operationally sensitive inputs and turn them into outputs people can trust and use.
+      I work across data engineering, analytics, and measurement systems. The through-line is practical reliability: take messy or operationally sensitive inputs and turn them into outputs teams can trust.
     </p>
     <p>
       That shows up in GTM data engineering, attribution, KPI governance, reporting systems, experimentation, retention analysis, and workflows close to logistics and compliance.
@@ -23,19 +23,19 @@ visual_density: medium
     <p class="section-kicker">What I care about</p>
     <div class="brief-panel__list">
       <p><span class="brief-panel__value">Structured ambiguity</span> I tend to be most useful where the problem matters, the process is messy, and the current workflow does not yet inspire confidence.</p>
-      <p><span class="brief-panel__value">Clear definitions</span> Data work improves quickly once the logic becomes easier to inspect, explain, and act on.</p>
+      <p><span class="brief-panel__value">Clear definitions</span> Data work improves quickly once the logic is easier to inspect, explain, and act on.</p>
     </div>
   </aside>
 </div>
 
 <article class="surface-card surface-card--summary" data-reveal>
   <p class="section-kicker">How I think</p>
-  <h2>What I bring to teams.</h2>
+  <h2>What teams can count on from me.</h2>
   <ul class="feature-list">
     <li>I make technical systems easier for other people to reason about.</li>
-    <li>I care about definitions, edge cases, and the operational reality behind reported numbers.</li>
-    <li>I prefer clear claims backed by mechanism and evidence over generic “data-driven” language.</li>
-    <li>I value work where implementation quality has visible decision impact.</li>
+    <li>I care about definitions, edge cases, and the operating reality behind reported numbers.</li>
+    <li>I prefer clear claims backed by mechanism and evidence over vague “data-driven” language.</li>
+    <li>I value work where implementation quality changes decisions, not just dashboards.</li>
   </ul>
 </article>
 
@@ -44,7 +44,7 @@ visual_density: medium
     <p class="section-kicker">Background</p>
     <h2>My background spans technical systems and applied economics.</h2>
     <p>
-      I studied Data Science and Business Economics at UC San Diego, with a minor in Urban Studies and Planning. That mix is part of why my work does not fit neatly into a single narrow lane. I am drawn to systems that sit between technical implementation and real-world trade-offs.
+      I studied Data Science and Business Economics at UC San Diego, with a minor in Urban Studies and Planning. That mix is part of why my work does not fit neatly into a single lane. I am drawn to systems that sit between technical implementation and real-world trade-offs.
     </p>
     <p>
       It also explains why my work spans warehouse modeling, product measurement, transportation analysis, and policy-adjacent questions.
@@ -58,14 +58,14 @@ visual_density: medium
       Transportation and urbanism shaped how I think about operations, throughput, public systems, incentives, and the downstream effects of technical decisions.
     </p>
     <p>
-      They remain part of the reason I care about trustworthy metrics, practical fairness, and systems that hold up outside of ideal conditions.
+      They remain part of why I care about trustworthy metrics, practical fairness, and systems that hold up outside ideal conditions.
     </p>
   </article>
 </div>
 
 <article class="frame-card frame-card--cta" data-reveal>
   <p class="section-kicker">Contact</p>
-  <h2>I am looking for work where strong systems thinking and clear execution both matter.</h2>
+  <h2>I’m looking for work where strong systems thinking and clear execution both matter.</h2>
   <p>
     If you would like to connect, you can reach me at <a class="text-link" href="mailto:tsepaksang8@gmail.com">tsepaksang8@gmail.com</a>.
   </p>

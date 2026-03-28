@@ -75,15 +75,34 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!ambientNodes.length || prefersReducedMotion || !canHoverPrecisely) return;
 
     ambientNodes.forEach((node) => {
+      let rafId = null;
+      let pendingX = null;
+      let pendingY = null;
+
+      const flushAmbient = () => {
+        if (pendingX !== null && pendingY !== null) {
+          node.style.setProperty("--ambient-x", `${pendingX}%`);
+          node.style.setProperty("--ambient-y", `${pendingY}%`);
+        }
+        rafId = null;
+      };
+
       node.addEventListener("pointermove", (event) => {
         const rect = node.getBoundingClientRect();
-        const x = ((event.clientX - rect.left) / rect.width) * 100;
-        const y = ((event.clientY - rect.top) / rect.height) * 100;
-        node.style.setProperty("--ambient-x", `${x}%`);
-        node.style.setProperty("--ambient-y", `${y}%`);
+        pendingX = ((event.clientX - rect.left) / rect.width) * 100;
+        pendingY = ((event.clientY - rect.top) / rect.height) * 100;
+
+        if (rafId !== null) return;
+        rafId = window.requestAnimationFrame(flushAmbient);
       });
 
       node.addEventListener("pointerleave", () => {
+        if (rafId !== null) {
+          window.cancelAnimationFrame(rafId);
+          rafId = null;
+        }
+        pendingX = null;
+        pendingY = null;
         node.style.removeProperty("--ambient-x");
         node.style.removeProperty("--ambient-y");
       });

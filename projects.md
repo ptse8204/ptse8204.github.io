@@ -24,7 +24,7 @@ visual_density: high
   <div class="section-heading section-heading--split" data-reveal>
     <p class="section-kicker">Selected work</p>
     <h2>The strongest entry points into my work.</h2>
-    <p>These projects best represent how I approach data systems, measurement, and transportation-linked analysis.</p>
+    <p>These are the clearest entry points into how I approach data systems, measurement, and transportation-linked analysis.</p>
   </div>
   <div class="project-grid project-grid--featured">
     {% for project in featured_projects %}
@@ -65,7 +65,7 @@ visual_density: high
     <p class="section-kicker">Smaller builds</p>
     <h2>Smaller projects with clear utility.</h2>
     <p>
-      These are lighter-weight builds that solve recurring problems cleanly and with minimal overhead.
+      Lighter-weight builds that solve recurring problems cleanly and with minimal overhead.
     </p>
   </div>
   <div class="project-grid project-grid--secondary">
@@ -80,7 +80,7 @@ visual_density: high
     <p class="section-kicker">Archive</p>
     <h2>Archived work that still reflects judgment and range.</h2>
     <p>
-      Not every worthwhile project becomes a flagship case study. The archive captures ideas that clarified feasibility, iteration, and trade-offs.
+      Not every worthwhile project becomes a flagship case study. This archive captures ideas that clarified feasibility, iteration, and trade-offs.
     </p>
   </div>
   <div class="project-grid project-grid--secondary">

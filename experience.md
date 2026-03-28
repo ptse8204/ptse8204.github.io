@@ -10,7 +10,7 @@ visual_density: medium
 <div class="section-heading section-heading--split" data-reveal>
   <h2>I build warehouse models, KPI systems, and reporting workflows that teams can rely on.</h2>
   <p>
-    Across these roles, I have usually been responsible for taking fragmented operational data and turning it into outputs a team can trust, explain, and use.
+    Across these roles, I have usually taken fragmented operational data and turned it into outputs a team can trust, explain, and use.
   </p>
 </div>
 
