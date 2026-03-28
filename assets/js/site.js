@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const roleCards = document.querySelectorAll(".role-card");
   const ambientNodes = document.querySelectorAll(".brief-panel, .frame-card, .surface-card, .archive-card, .hero-figure__frame");
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const canHoverPrecisely = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
   const homeHero = document.querySelector(".home-hero");
   const heroFigure = document.querySelector(".hero-figure");
   const heroDepthLayers = homeHero ? homeHero.querySelectorAll("[data-parallax]") : [];
@@ -71,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const setupAmbientTracking = () => {
-    if (!ambientNodes.length || prefersReducedMotion) return;
+    if (!ambientNodes.length || prefersReducedMotion || !canHoverPrecisely) return;
 
     ambientNodes.forEach((node) => {
       node.addEventListener("pointermove", (event) => {
@@ -90,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const setupHeroParallax = () => {
-    if (!homeHero || !heroFigure || prefersReducedMotion) return;
+    if (!homeHero || !heroFigure || prefersReducedMotion || !canHoverPrecisely) return;
 
     let currentX = 0;
     let currentY = 0;
