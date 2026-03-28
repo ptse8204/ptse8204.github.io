@@ -18,7 +18,7 @@ permalink: /projects/
   </p>
 </div>
 
-<section id="featured-work">
+<section id="featured-work" class="project-section project-section--featured">
   <div class="section-heading" data-reveal>
     <p class="section-kicker">Selected work</p>
     <h2>The strongest entry points into my portfolio.</h2>
@@ -31,7 +31,7 @@ permalink: /projects/
   </div>
 </section>
 
-<section id="work-relevant-technical-projects">
+<section id="work-relevant-technical-projects" class="project-section project-section--technical">
   <div class="section-heading" data-reveal>
     <p class="section-kicker">Technical projects</p>
     <h2>Tools and analyses that reinforce the same core strengths.</h2>
@@ -43,7 +43,7 @@ permalink: /projects/
   </div>
 </section>
 
-<section id="transportation-and-domain-work">
+<section id="transportation-and-domain-work" class="project-section project-section--domain">
   <div class="section-heading" data-reveal>
     <p class="section-kicker">Transportation and planning</p>
     <h2>I keep this work here because it shaped how I think about systems.</h2>
@@ -58,7 +58,7 @@ permalink: /projects/
   </div>
 </section>
 
-<section id="fun-and-utility">
+<section id="fun-and-utility" class="project-section project-section--small">
   <div class="section-heading" data-reveal>
     <p class="section-kicker">Smaller builds</p>
     <h2>Smaller projects, still built with the same instinct.</h2>
@@ -73,7 +73,7 @@ permalink: /projects/
   </div>
 </section>
 
-<section id="archive-and-shelved">
+<section id="archive-and-shelved" class="project-section project-section--archive">
   <div class="section-heading" data-reveal>
     <p class="section-kicker">Archive</p>
     <h2>Some unfinished work is still worth keeping visible.</h2>

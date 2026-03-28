@@ -26,7 +26,10 @@ share-description: Portfolio for Edwin Tse featuring data engineering, analytics
 
     <figure class="hero-figure" data-reveal>
       <div class="hero-figure__frame">
-        <img src="{{ '/assets/img/home-hero-systems.png' | relative_url }}" alt="Abstract editorial image evoking connected systems, mapped flows, and layered operational infrastructure.">
+        <picture>
+          <source srcset="{{ '/assets/img/home-hero-systems-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
+          <img src="{{ '/assets/img/home-hero-systems-light.png' | relative_url }}" alt="Abstract editorial image evoking connected systems, mapped flows, and layered operational infrastructure.">
+        </picture>
       </div>
       <figcaption class="hero-figure__caption">
         My recent work spans GTM data engineering, KPI systems, experimentation, and transportation-linked analysis.
@@ -35,18 +38,18 @@ share-description: Portfolio for Edwin Tse featuring data engineering, analytics
   </div>
 
   <div class="shell">
-    <div class="hero-evidence" data-reveal>
-      <article class="hero-evidence__item">
+    <div class="hero-evidence">
+      <article class="hero-evidence__item" data-reveal>
         <p class="mini-label">Recent work</p>
         <h3>GTM data engineering and attribution</h3>
         <p>Customer identity, lifecycle reporting, warehouse modeling, and reporting reliability.</p>
       </article>
-      <article class="hero-evidence__item">
+      <article class="hero-evidence__item" data-reveal>
         <p class="mini-label">Operations and BI</p>
         <h3>KPI systems that people actually use</h3>
         <p>Metric governance, dashboard workflows, and faster reporting for teams that need answers quickly.</p>
       </article>
-      <article class="hero-evidence__item">
+      <article class="hero-evidence__item" data-reveal>
         <p class="mini-label">Longer thread</p>
         <h3>Transportation, planning, and fairness</h3>
         <p>Work that keeps the portfolio grounded in incentives, public systems, and real-world trade-offs.</p>
