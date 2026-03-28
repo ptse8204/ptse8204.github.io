@@ -337,17 +337,20 @@ li {
   gap: 0.45rem;
   flex-wrap: wrap;
   justify-content: center;
+  min-width: 0;
 }
 
 .site-nav a,
 .site-header__resume {
   display: inline-flex;
   align-items: center;
-  min-height: 2.65rem;
+  justify-content: center;
+  min-height: 2.8rem;
   padding: 0.45rem 0.72rem;
   color: var(--text-soft);
   font-weight: 500;
   border-radius: 999px;
+  white-space: nowrap;
 }
 
 .site-nav a[aria-current="page"] {
@@ -1122,6 +1125,7 @@ li {
 
 .project-card {
   --project-accent: var(--accent);
+  container-type: inline-size;
   position: relative;
   display: grid;
   gap: var(--space-sm);
@@ -1240,6 +1244,7 @@ li {
 
 .project-card__type {
   color: color-mix(in srgb, var(--project-accent) 62%, var(--text-soft));
+  overflow-wrap: anywhere;
 }
 
 .project-card__top h3 {
@@ -1258,6 +1263,9 @@ li {
 
 .project-card__cta {
   color: var(--project-accent);
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
 }
 
 .project-card__cta {
@@ -1567,7 +1575,7 @@ li {
 
 .page-content__inner iframe {
   width: 100%;
-  min-height: 38rem;
+  min-height: clamp(22rem, 60vw, 38rem);
   border: 1px solid var(--line-soft);
   border-radius: var(--radius-md);
   background: var(--surface-muted);
@@ -1649,10 +1657,46 @@ main li a:focus-visible {
 }
 
 .site-footer__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
   color: var(--text-soft);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
+}
+
+@container (max-width: 44rem) {
+  .project-card__art {
+    width: 8.8rem;
+    height: 6.6rem;
+  }
+
+  .project-card__top {
+    padding-right: 9.1rem;
+  }
+}
+
+@container (max-width: 30rem) {
+  .project-card__art {
+    width: 6.3rem;
+    height: 4.9rem;
+    top: auto;
+    bottom: 0.55rem;
+    opacity: 0.72;
+  }
+
+  .project-card__top {
+    padding-right: 0;
+  }
+
+  .project-card__middle {
+    padding-right: 5.9rem;
+  }
+
+  .project-card__meter {
+    display: none;
+  }
 }
 
 [data-reveal] {
@@ -1779,7 +1823,6 @@ main li a:focus-visible {
 @media (max-width: 1100px) {
   .site-header__inner,
   .home-hero__grid,
-  .hero-evidence,
   .home-editorial,
   .split-grid,
   .two-column,
@@ -1794,6 +1837,14 @@ main li a:focus-visible {
   .project-grid--secondary,
   .archive-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-evidence {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-evidence__item:first-child {
+    grid-column: 1 / -1;
   }
 
   .page-experience .page-hero::after,
@@ -1868,6 +1919,40 @@ main li a:focus-visible {
   }
 }
 
+@media (max-width: 900px) {
+  .site-header__inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    gap: 0.85rem var(--space-md);
+  }
+
+  .site-nav {
+    grid-column: 1 / -1;
+    order: 3;
+    overflow-x: auto;
+    margin-inline: -0.15rem;
+    padding: 0.2rem 0.15rem 0.35rem;
+    flex-wrap: nowrap;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav a {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .site-header__resume {
+    padding-left: 0.72rem;
+    justify-self: end;
+  }
+}
+
 @media (max-width: 720px) {
   .shell {
     width: min(calc(100% - 1.5rem), var(--content-max));
@@ -1884,6 +1969,19 @@ main li a:focus-visible {
   .home-hero,
   .page-hero {
     padding-top: 3rem;
+  }
+
+  .site-header__inner {
+    gap: 0.7rem;
+  }
+
+  .site-nav {
+    gap: 0.35rem;
+  }
+
+  .site-nav a,
+  .site-header__resume {
+    min-height: 2.9rem;
   }
 
   .page-hero__atlas {
@@ -1903,7 +2001,12 @@ main li a:focus-visible {
   }
 
   .hero-evidence {
+    grid-template-columns: 1fr;
     margin-top: var(--space-xl);
+  }
+
+  .hero-evidence__item:first-child {
+    grid-column: auto;
   }
 
   .hero-atlas__layer--transit {
@@ -1937,6 +2040,11 @@ main li a:focus-visible {
     width: 9.8rem;
   }
 
+  .hero-figure__caption {
+    max-width: none;
+    font-size: 0.9rem;
+  }
+
   .project-card__art {
     width: 8.4rem;
     height: 6.2rem;
@@ -1956,8 +2064,18 @@ main li a:focus-visible {
     bottom: 1rem;
   }
 
+  .page-content__inner iframe {
+    min-height: 20rem;
+  }
+
   .role-card.is-active {
     transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-content__inner iframe {
+    min-height: 17rem;
   }
 }
 
