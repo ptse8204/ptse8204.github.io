@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Failed, Dead, and Shelved Work
-subtitle: Projects that stalled, what they were trying to do, and the parts that were still worth keeping.
+title: Archived and Shelved Work
+subtitle: Projects that stalled, what they aimed to do, and what remained worth carrying forward.
 kicker: Archive
 permalink: /projectpages/deadproject/
 ---
 <div class="section-heading" data-reveal>
-  <h2>Keeping unfinished work visible is part of the point.</h2>
+  <h2>Unfinished work can still be instructive.</h2>
   <p>
-    A portfolio made only of polished wins usually hides too much. I keep this page because unfinished work often says something useful about feasibility, execution, and what was still worth carrying forward.
+    These projects were not taken through to long-term execution, but each clarified something useful about feasibility, operating burden, or product-market fit.
   </p>
 </div>
 
@@ -51,8 +51,8 @@ permalink: /projectpages/deadproject/
 
 <article class="frame-card" data-reveal>
   <p class="section-kicker">What the archive shows</p>
-  <h2>Not every strong idea turns into a durable project.</h2>
+  <h2>Strong ideas still need workable execution.</h2>
   <p>
-    None of these projects are here as flagship work. They stay because they still show how I think about systems, incentives, feasibility, and the gap between an interesting concept and something that can actually be sustained.
+    These projects remain useful because they show how I think about systems, incentives, feasibility, and the gap between an interesting concept and something that can actually be sustained.
   </p>
 </article>

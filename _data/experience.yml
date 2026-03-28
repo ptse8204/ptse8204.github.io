@@ -3,15 +3,15 @@
   role: GTM Data Engineer
   dates: Sep 2025 - Present
   location: Berkeley, CA
-  summary: I build GTM data systems that turn fragmented operational signals into reliable revenue, lifecycle, and reporting workflows.
+  summary: I build GTM data systems that turn fragmented source data into reliable revenue, lifecycle, and reporting workflows.
   capabilities:
     - Customer identity stitching and attribution
     - ELT reliability and warehouse modeling
     - Cross-functional metric ownership
   proof_points:
-    - Unified CRM, GA4, product, billing, and support data into a governed Customer 360 model that raised attributable revenue coverage from 48% to 86%.
+    - Unified CRM, GA4, product, billing, and support data into a governed Customer 360 model, raising attributable revenue coverage from 48% to 86%.
     - Designed attribution logic and lifecycle reporting that reduced reporting lag from 6 days to 1 day for GTM stakeholders.
-    - Introduced dbt tests, Airflow monitoring, lineage, and CI patterns that pushed pipeline reliability to 99.6% and reduced bad-data incidents downstream.
+    - Introduced dbt tests, Airflow monitoring, lineage, and CI patterns that pushed pipeline reliability to 99.6% and reduced downstream bad-data incidents.
   related_projects:
     - Customer 360 and Revenue Attribution Warehouse
     - Modern ELT Reliability Platform
@@ -29,14 +29,14 @@
   role: Data Analyst Intern
   dates: Jun 2025 - Sep 2025
   location: Berkeley, CA
-  summary: I replaced manual reporting with warehouse-backed dashboards that made logistics KPIs easier to trust, monitor, and act on.
+  summary: I replaced manual reporting with warehouse-backed dashboards that made logistics KPIs easier to trust and act on.
   capabilities:
     - KPI governance and semantic consistency
     - Self-serve BI and operational reporting
     - Performance tuning for analytics workflows
   proof_points:
     - Consolidated 20+ conflicting business metrics into a governed KPI layer for product, operations, and finance stakeholders.
-    - Built dashboards and QA workflows that sharply reduced manual reporting time while improving executive adoption and trust.
+    - Built dashboards and QA workflows that reduced manual reporting time while improving executive adoption and trust.
     - Improved refresh performance and reporting reliability through star-schema modeling, Azure SQL, and targeted DAX optimization.
   related_projects:
     - KPI Ownership Platform for Product and Ops

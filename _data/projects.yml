@@ -1,7 +1,7 @@
 - title: Customer 360 and Revenue Attribution Warehouse
   slug: customer-360
   summary: Unified CRM, product, billing, and support data into an account-level model that made GTM revenue reporting easier to trust and use.
-  why_it_matters: This is the clearest example of identity stitching, attribution logic, and cross-functional metric governance in a messy real operating environment.
+  why_it_matters: A strong example of identity stitching, attribution logic, and cross-functional metric governance in a messy operating environment.
   category: featured
   type: Work-inspired
   url: /experience/#envoyx
@@ -14,7 +14,7 @@
 - title: Modern ELT Reliability Platform
   slug: elt-reliability
   summary: Built an ELT foundation with testing, monitoring, lineage, and reusable patterns so analytics data held up under wider use.
-  why_it_matters: It shows production-minded data engineering rather than one-off pipeline work.
+  why_it_matters: Shows production-minded data engineering rather than one-off pipeline work.
   category: featured
   type: Work-inspired
   url: /experience/#envoyx
@@ -27,7 +27,7 @@
 - title: Funnel Deep-Dive and Experimentation Measurement System
   slug: funnel-measurement
   summary: Standardized event instrumentation and experiment readouts so product changes could be tied back to activation and onboarding outcomes.
-  why_it_matters: It shows product analytics rigor, not just dashboarding.
+  why_it_matters: Shows product analytics rigor, not just dashboarding.
   category: featured
   type: Work-inspired
   url: /experience/#zego
@@ -40,7 +40,7 @@
 - title: FlightPriceBias
   slug: flightpricebias
   summary: Investigated airfare pricing and fairness risk through predictive modeling and algorithmic bias analysis.
-  why_it_matters: It keeps the portfolio tied to transportation, economics, and real fairness trade-offs.
+  why_it_matters: Combines predictive modeling with transportation economics and real fairness trade-offs.
   category: featured
   type: Personal
   url: https://ptse8204.github.io/flightpricebias/
@@ -53,7 +53,7 @@
 - title: Transit Hub Access Study
   slug: transit-hub-access
   summary: Evaluated access, safety, and connectivity around transit hubs through GIS and urban planning analysis.
-  why_it_matters: It keeps the transportation and urban systems thread visible without feeling separate from the rest of the work.
+  why_it_matters: Connects spatial analysis to access, safety, and planning decisions in public systems.
   category: featured
   type: Research
   url: /projectpages/embeddingarc_w_head_w_cover
@@ -66,7 +66,7 @@
 - title: craveforcapes
   slug: craveforcapes
   summary: Explored UC San Diego CAPE data to surface patterns, trade-offs, and decision-support insights in a live tool.
-  why_it_matters: It shows a bias toward turning analysis into something other people can actually use.
+  why_it_matters: Shows a bias toward turning analysis into something other people can actually use.
   category: work_relevant
   type: External
   url: https://ptse8204.github.io/craveforcapes
@@ -79,7 +79,7 @@
 - title: GTFS Explorer
   slug: gtfs-explorer
   summary: Built a transit-planning workflow over GTFS feeds to make route and stop analysis more actionable.
-  why_it_matters: It connects data tooling with a long-standing interest in public transportation systems.
+  why_it_matters: Connects data tooling with long-standing work in public transportation systems.
   category: work_relevant
   type: Personal
   url: /projects#transportation-and-domain-work
@@ -92,7 +92,7 @@
 - title: UCSD Long-Term Debt Load Analysis
   slug: ucsd-debt
   summary: Investigated long-term debt and planning trade-offs at UC San Diego through a business and policy lens.
-  why_it_matters: It adds economics and institutional analysis to the portfolio's systems perspective.
+  why_it_matters: Adds economics and institutional analysis to the broader systems perspective.
   category: domain
   type: Research
   url: https://ptse8204.github.io/2023/04/06/How-Realistic-Capital-Concerns-of-UCSD-Should-Put-More-Effort-of-Rethinking-Parking.html
@@ -105,7 +105,7 @@
 - title: Greenhouse Gas Reduction Essay
   slug: ghg-essay
   summary: Wrote a transportation-planning essay on how mode access and community design affect emissions outcomes.
-  why_it_matters: It keeps policy and transportation thinking in the site without diluting the technical core.
+  why_it_matters: Shows how policy and transportation questions inform the way I think about systems outcomes.
   category: domain
   type: Research
   url: /assets/ghg_essay.pdf
@@ -118,7 +118,7 @@
 - title: Automated Morning and Night Greets
   slug: imshortcuts
   summary: Built a lightweight iOS shortcut workflow that turns a repetitive personal task into a practical automation.
-  why_it_matters: It is a small but honest example of turning recurring friction into a usable system.
+  why_it_matters: A concise example of practical automation applied to a recurring task.
   category: fun
   type: Utility
   url: /imshortcuts
@@ -128,10 +128,10 @@
     - iOS
     - Personal tooling
 
-- title: Failed, Dead, and Shelved Work
+- title: Archived and Shelved Work
   slug: archive
-  summary: A candid archive of projects that stalled, what they were trying to do, and what they still taught me.
-  why_it_matters: It keeps the portfolio from flattening into a polished-but-generic list of wins.
+  summary: An archive of projects that stalled, what they aimed to do, and what they still taught me.
+  why_it_matters: Shows how I evaluate feasibility, iteration, and trade-offs, not just finished outcomes.
   category: archive
   type: Archive
   url: /projectpages/deadproject

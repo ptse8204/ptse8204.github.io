@@ -1,27 +1,27 @@
 ---
 layout: page
 title: Automated Morning and Night Greets
-subtitle: A small personal automation that turns a repetitive social task into a lightweight, usable iOS workflow.
+subtitle: A small personal automation that turns a recurring task into a lightweight, usable iOS workflow.
 kicker: Utility project
 permalink: /imshortcuts/
 ---
 <div class="split-grid">
   <article class="surface-card" data-reveal>
     <p class="section-kicker">What it is</p>
-    <h2>A deliberately small automation project.</h2>
+    <h2>A small automation project with a clear use case.</h2>
     <p>
-      This is not one of the flagship projects on the site, but it stays in the portfolio because it reflects a pattern I like: find a repetitive task, make the workflow explicit, then automate the annoying parts without overcomplicating it.
+      This project turns a recurring personal task into a lightweight iOS workflow. It reflects a pattern I value: define a repetitive process clearly, then automate only the steps worth automating.
     </p>
     <p>
-      In this case, the workflow is an iOS Shortcut that schedules a message and removes the need to remember a recurring action manually.
+      In this case, the workflow is an iOS Shortcut that schedules a message and removes the need to remember the action manually.
     </p>
   </article>
 
   <article class="surface-card" data-reveal>
-    <p class="section-kicker">Why keep it</p>
-    <h2>It adds a human-sized version of the same instinct.</h2>
+    <p class="section-kicker">What it demonstrates</p>
+    <h2>Practical automation at a small scale.</h2>
     <p>
-      The larger experience stories on this site are about operations, analytics, and reliability. This project is the same mindset at a much smaller scale: practical automation in service of a real habit.
+      The project is simple, but it shows the same bias toward usable workflows, clear steps, and low-overhead automation that appears in larger systems work.
     </p>
   </article>
 </div>
