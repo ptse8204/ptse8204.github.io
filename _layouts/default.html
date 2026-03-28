@@ -14,7 +14,7 @@
       {% endfor %}
     {% endif %}
   </head>
-  <body class="{% if page.url == '/' %}page-home{% elsif page.title %}page-{{ page.title | slugify }}{% else %}page-generic{% endif %}">
+  <body class="{% if page.url == '/' %}page-home{% elsif page.title %}page-{{ page.title | slugify }}{% else %}page-generic{% endif %} visual-variant-{{ page.visual_variant | default: 'default' }} visual-density-{{ page.visual_density | default: 'medium' }}">
     {% include site-header.html %}
 
     <main id="content">

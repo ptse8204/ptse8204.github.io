@@ -4,6 +4,8 @@ title: Automated Morning and Night Greets
 subtitle: A small personal automation that turns a recurring task into a lightweight, usable iOS workflow.
 kicker: Utility project
 permalink: /imshortcuts/
+visual_variant: utility
+visual_density: low
 ---
 <div class="split-grid">
   <article class="surface-card" data-reveal>

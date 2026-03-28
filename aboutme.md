@@ -4,6 +4,8 @@ title: About
 subtitle: I build reliable data systems and care about the operational, public, and economic systems they influence.
 kicker: About
 permalink: /aboutme/
+visual_variant: about
+visual_density: medium
 ---
 <div class="home-editorial">
   <article class="lede-block" data-reveal>

@@ -6,6 +6,21 @@
 {% endif %}
 {% assign project_class = include.project.category | replace: "_", "-" %}
 <article class="project-card project-card--{{ project_class }}" data-reveal>
+  <div class="project-card__art" aria-hidden="true">
+    <svg class="project-card__mesh" viewBox="0 0 240 170" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 136C42 128 52 88 84 84C122 79 142 118 176 116C205 114 220 91 232 48" />
+      <path d="M26 42C52 52 69 82 101 90C136 99 156 78 188 92C212 103 222 129 232 156" />
+      <circle cx="84" cy="84" r="7" />
+      <circle cx="176" cy="116" r="7" />
+      <circle cx="188" cy="92" r="8" />
+    </svg>
+    <div class="project-card__meter">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
   <div class="project-card__top">
     <p class="project-card__type">{{ include.project.type }}{% if include.project.tags and include.project.tags.size > 0 %} · {{ include.project.tags | join: " · " }}{% endif %}</p>
     <h3>{{ include.project.title }}</h3>

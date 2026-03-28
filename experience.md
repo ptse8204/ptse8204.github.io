@@ -4,6 +4,8 @@ title: Experience
 subtitle: Experience in data engineering, product analytics, and reporting systems that support confident decisions.
 kicker: Experience
 permalink: /experience/
+visual_variant: experience
+visual_density: medium
 ---
 <div class="section-heading" data-reveal>
   <h2>I build warehouse models, KPI systems, and reporting workflows that teams can rely on.</h2>

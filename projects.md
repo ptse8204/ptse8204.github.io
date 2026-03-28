@@ -4,6 +4,8 @@ title: Projects
 subtitle: Selected work across analytics engineering, product measurement, transportation, and practical tools.
 kicker: Projects
 permalink: /projects/
+visual_variant: projects
+visual_density: high
 ---
 {% assign featured_projects = site.data.projects | where: "category", "featured" %}
 {% assign work_relevant_projects = site.data.projects | where: "category", "work_relevant" %}

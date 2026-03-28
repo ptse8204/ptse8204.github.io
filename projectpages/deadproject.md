@@ -4,6 +4,8 @@ title: Archived and Shelved Work
 subtitle: Projects that stalled, what they aimed to do, and what remained worth carrying forward.
 kicker: Archive
 permalink: /projectpages/deadproject/
+visual_variant: archive
+visual_density: low
 ---
 <div class="section-heading" data-reveal>
   <h2>Unfinished work can still be instructive.</h2>
