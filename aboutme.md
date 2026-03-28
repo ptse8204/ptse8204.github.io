@@ -28,6 +28,17 @@ visual_density: medium
   </aside>
 </div>
 
+<article class="surface-card" data-reveal>
+  <p class="section-kicker">How I think</p>
+  <h2>What I bring to teams.</h2>
+  <ul class="feature-list">
+    <li>I make technical systems easier for other people to reason about.</li>
+    <li>I care about definitions, edge cases, and the operational reality behind reported numbers.</li>
+    <li>I prefer clear claims backed by mechanism and evidence over generic “data-driven” language.</li>
+    <li>I value work where implementation quality has visible decision impact.</li>
+  </ul>
+</article>
+
 <div class="two-column">
   <article class="surface-card" data-reveal>
     <p class="section-kicker">Background</p>
@@ -51,17 +62,6 @@ visual_density: medium
     </p>
   </article>
 </div>
-
-<article class="surface-card" data-reveal>
-  <p class="section-kicker">How I think</p>
-  <h2>What I bring to teams.</h2>
-  <ul class="feature-list">
-    <li>I make technical systems easier for other people to reason about.</li>
-    <li>I care about definitions, edge cases, and the operational reality behind reported numbers.</li>
-    <li>I prefer clear claims backed by mechanism and evidence over generic “data-driven” language.</li>
-    <li>I value work where implementation quality has visible decision impact.</li>
-  </ul>
-</article>
 
 <article class="frame-card frame-card--cta" data-reveal>
   <p class="section-kicker">Contact</p>
