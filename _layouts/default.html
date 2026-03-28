@@ -19,6 +19,7 @@
     {% endif %}
   </head>
   <body class="{% if page.url == '/' %}page-home{% elsif page.title %}page-{{ page.title | slugify }}{% else %}page-generic{% endif %} visual-variant-{{ page.visual_variant | default: 'default' }} visual-density-{{ page.visual_density | default: 'medium' }}">
+    <a class="skip-link" href="#content">Skip to content</a>
     {% include site-header.html %}
 
     <main id="content">

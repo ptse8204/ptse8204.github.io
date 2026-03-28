@@ -113,17 +113,17 @@ keywords: "Edwin Tse,Pak Sang Tse,Data Science,Machine Learning"
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#EAEAEA"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
-footer-hover-col: "#0085A1"
+navbar-col: "#EFF1F4"
+navbar-text-col: "#293243"
+navbar-border-col: "#D7DDE6"
+page-col: "#F4F5F7"
+text-col: "#293243"
+link-col: "#345E8B"
+hover-col: "#294A6F"
+footer-col: "#EEF0F3"
+footer-text-col: "#5D6779"
+footer-link-col: "#293243"
+footer-hover-col: "#294A6F"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
