@@ -1,28 +1,35 @@
 ---
 layout: home
 title: Edwin Tse
-subtitle: I build data systems and analytics workflows that make complex operations measurable, reliable, and decision-ready.
-share-title: Edwin Tse | Data Systems, Analytics, and Execution
-share-description: Portfolio for Edwin Tse featuring data engineering, analytics systems, product measurement, and transportation-linked work.
+subtitle: Portfolio of Edwin Tse, focused on data engineering, analytics systems, and the workflows around them.
+share-title: Edwin Tse | Data Engineering, Analytics Engineering, Product Analytics
+share-description: Personal portfolio of Edwin Tse featuring data engineering, analytics systems, product work, and selected transportation projects.
 visual_variant: homepage
 visual_density: high
 ---
 {% assign featured_projects = site.data.projects | where: "category", "featured" %}
+{% assign hero_revenue_project = site.data.projects | where: "slug", "customer-360" | first %}
+{% assign hero_reliability_project = site.data.projects | where: "slug", "elt-reliability" | first %}
+{% assign hero_transit_project = site.data.projects | where: "slug", "transit-hub-access" | first %}
 
 <section class="home-hero">
   <div class="shell home-hero__grid">
     <div class="home-hero__copy" data-reveal>
-      <p class="section-kicker">Edwin Tse</p>
-      <h1>I build data systems teams can trust.</h1>
+      <p class="home-hero__eyebrow">Data engineering, analytics systems, and workflow design</p>
+      <h1>Edwin Tse</h1>
+      <p class="home-hero__role">I help teams turn messy, hard-to-trust data into something clear and usable.</p>
       <p>
-        I work across data engineering, analytics engineering, product measurement, and operational reporting. Most projects start with fragmented systems, disputed metric definitions, and decisions that depend on getting the logic right.
+        That usually means tracing broken handoffs, fixing inconsistencies, and leaving behind a setup other teams can use with confidence. Most of the work is practical: clean up the records, make the logic clear, and make sure the result holds up after handoff.
       </p>
-      <p>
-        I turn that into warehouse models, reporting layers, and measurement workflows teams can inspect, explain, and use with confidence.
-      </p>
+      <div class="chip-row" aria-label="Primary role fit">
+        <span class="chip chip--muted">GTM data systems</span>
+        <span class="chip chip--muted">Analytics engineering</span>
+        <span class="chip chip--muted">Product analytics</span>
+        <span class="chip chip--muted">Decision infrastructure</span>
+      </div>
       <div class="home-hero__actions">
         <a class="button button--primary" href="{{ '/experience/' | relative_url }}">View experience</a>
-        <a class="button" href="{{ '/EdwinTseResume.pdf' | relative_url }}">Open resume</a>
+        <a class="button" href="{{ '/projects/' | relative_url }}">Browse case notes</a>
       </div>
     </div>
 
@@ -33,13 +40,13 @@ visual_density: high
           <source srcset="{{ '/assets/img/home-hero-systems-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
           <img src="{{ '/assets/img/home-hero-systems-light.png' | relative_url }}" alt="Abstract editorial image evoking connected systems, mapped flows, and layered operational infrastructure." width="1600" height="1920" decoding="async" loading="eager" fetchpriority="high">
         </picture>
-        <div class="hero-atlas" aria-hidden="true">
-          <div class="hero-atlas__layer hero-atlas__layer--halo" data-parallax="0.18">
+        <div class="hero-atlas" role="group" aria-label="Linked highlights from selected work">
+          <div class="hero-atlas__layer hero-atlas__layer--halo" data-parallax="0.18" aria-hidden="true">
             <div class="hero-atlas__halo hero-atlas__halo--primary"></div>
             <div class="hero-atlas__halo hero-atlas__halo--secondary"></div>
           </div>
 
-          <div class="hero-atlas__layer hero-atlas__layer--routes" data-parallax="0.42">
+          <div class="hero-atlas__layer hero-atlas__layer--routes" data-parallax="0.42" aria-hidden="true">
             <svg class="hero-atlas__routes" viewBox="0 0 520 620" xmlns="http://www.w3.org/2000/svg">
               <path class="hero-atlas__route hero-atlas__route--primary" d="M42 488C112 470 132 392 194 356C256 320 324 340 382 292C426 256 452 200 478 118" />
               <path class="hero-atlas__route hero-atlas__route--secondary" d="M64 170C128 198 158 250 208 270C278 298 346 286 402 330C438 358 456 402 468 476" />
@@ -52,51 +59,54 @@ visual_density: high
           </div>
 
           <div class="hero-atlas__layer hero-atlas__layer--revenue" data-parallax="0.88">
-            <div class="hero-atlas__panel hero-atlas__panel--revenue">
-              <p class="hero-atlas__eyebrow">GTM attribution</p>
-              <div class="hero-atlas__bars">
-                <span style="--bar-size: 0.42"></span>
-                <span style="--bar-size: 0.58"></span>
-                <span style="--bar-size: 0.71"></span>
-                <span style="--bar-size: 0.9"></span>
+            <a class="hero-atlas__hotspot hero-atlas__hotspot--revenue" href="{{ '/projects/' | relative_url }}#{{ hero_revenue_project.slug }}" aria-label="Open {{ hero_revenue_project.title | default: 'featured work' }}">
+              <div class="hero-atlas__panel hero-atlas__panel--revenue">
+                <p class="hero-atlas__eyebrow">Revenue attribution</p>
+                <div class="hero-panel-list" aria-hidden="true">
+                  <span>records matched</span>
+                  <span>shared account view</span>
+                  <span>cleaner budget calls</span>
+                </div>
+                <p class="hero-atlas__meta">One place to see the customer, the touchpoints, and the reporting logic behind the result.</p>
+                <p class="hero-atlas__link">Open related work</p>
               </div>
-              <p class="hero-atlas__meta">coverage lift<br><strong>48% to 86%</strong></p>
-            </div>
+            </a>
           </div>
 
           <div class="hero-atlas__layer hero-atlas__layer--kpi" data-parallax="0.68">
-            <div class="hero-atlas__panel hero-atlas__panel--kpi">
-              <p class="hero-atlas__eyebrow">KPI systems</p>
-              <div class="hero-atlas__trend">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+            <a class="hero-atlas__hotspot hero-atlas__hotspot--kpi" href="{{ '/projects/' | relative_url }}#{{ hero_reliability_project.slug }}" aria-label="Open {{ hero_reliability_project.title | default: 'featured work' }}">
+              <div class="hero-atlas__panel hero-atlas__panel--kpi">
+                <p class="hero-atlas__eyebrow">ELT reliability</p>
+                <div class="hero-panel-list" aria-hidden="true">
+                  <span>tests watching runs</span>
+                  <span>clear failure path</span>
+                  <span>quieter reporting week</span>
+                </div>
+                <p class="hero-atlas__meta">A pipeline with clear checks, clear ownership, and less cleanup after the fact.</p>
+                <p class="hero-atlas__link">Open related work</p>
               </div>
-              <p class="hero-atlas__meta">governed metrics, reporting cadence, and experimentation traces</p>
-            </div>
+            </a>
           </div>
 
           <div class="hero-atlas__layer hero-atlas__layer--transit" data-parallax="1.02">
-            <div class="hero-atlas__panel hero-atlas__panel--transit">
-              <p class="hero-atlas__eyebrow">Transportation lens</p>
-              <div class="hero-atlas__mini-map">
-                <span class="hero-atlas__mini-stop"></span>
-                <span class="hero-atlas__mini-stop"></span>
-                <span class="hero-atlas__mini-stop"></span>
-                <span class="hero-atlas__mini-stop"></span>
-                <span class="hero-atlas__mini-line hero-atlas__mini-line--a"></span>
-                <span class="hero-atlas__mini-line hero-atlas__mini-line--b"></span>
+            <a class="hero-atlas__hotspot hero-atlas__hotspot--transit" href="{{ '/projects/' | relative_url }}#{{ hero_transit_project.slug }}" aria-label="Open {{ hero_transit_project.title | default: 'featured work' }}">
+              <div class="hero-atlas__panel hero-atlas__panel--transit">
+                <p class="hero-atlas__eyebrow">Transit systems</p>
+                <div class="hero-panel-list" aria-hidden="true">
+                  <span>access in view</span>
+                  <span>network context kept</span>
+                  <span>trade-offs easier to read</span>
+                </div>
+                <p class="hero-atlas__meta">Planning work that explains a public system without flattening it into a single score.</p>
+                <p class="hero-atlas__link">Open case study</p>
               </div>
-              <p class="hero-atlas__meta">access, connectivity, and incentives in real systems</p>
-            </div>
+            </a>
           </div>
 
         </div>
       </div>
       <figcaption class="hero-figure__caption">
-        Recent work across GTM data engineering, KPI systems, experimentation, and transportation-linked analysis.
+        Selected work across GTM data, reporting reliability, product measurement, and transportation analysis.
       </figcaption>
     </figure>
   </div>
@@ -104,19 +114,31 @@ visual_density: high
   <div class="shell">
     <div class="hero-evidence">
       <article class="hero-evidence__item" data-reveal>
-        <p class="mini-label">Recent work</p>
-        <h3>GTM data engineering and attribution</h3>
-        <p>Identity stitching, lifecycle reporting, and warehouse modeling that make revenue reporting easier to trust.</p>
+        <p class="mini-label">Shared customer view</p>
+        <div class="outcome-board" aria-hidden="true">
+          <span>scattered records</span>
+          <span>matched accounts</span>
+          <span>cleaner planning</span>
+        </div>
+        <p>Reporting gets easier once the team is working from the same customer record.</p>
       </article>
       <article class="hero-evidence__item" data-reveal>
-        <p class="mini-label">Operations and BI</p>
-        <h3>KPI systems that people actually use</h3>
-        <p>Metric governance, dashboard workflows, and reporting cycles built for faster decisions.</p>
+        <p class="mini-label">Steadier pipeline</p>
+        <div class="outcome-board" aria-hidden="true">
+          <span>tests in place</span>
+          <span>issues easier to spot</span>
+          <span>fewer surprise breaks</span>
+        </div>
+        <p>The value is not the alert by itself. It is a calmer reporting week and a clearer fix path when something breaks.</p>
       </article>
       <article class="hero-evidence__item" data-reveal>
-        <p class="mini-label">Longer thread</p>
-        <h3>Transportation, planning, and fairness</h3>
-        <p>A systems lens shaped by public infrastructure, incentives, and real-world trade-offs.</p>
+        <p class="mini-label">Cleaner review work</p>
+        <div class="outcome-board" aria-hidden="true">
+          <span>messy intake</span>
+          <span>clear review queue</span>
+          <span>fewer avoidable holds</span>
+        </div>
+        <p>When the intake flow is clearer, people spend less time fixing preventable mistakes.</p>
       </article>
     </div>
   </div>
@@ -125,40 +147,45 @@ visual_density: high
 <section class="section">
   <div class="shell">
     <div class="section-heading section-heading--split" data-reveal>
-      <p class="section-kicker">Selected work</p>
-      <h2>Selected projects across data systems, measurement, and transportation analysis.</h2>
+      <p class="section-kicker">Selected projects</p>
+      <h2>A quick read on the kind of work I do.</h2>
       <p>
-        A concise cross-section of the systems, tools, and analyses I have built in professional and independent work.
+        These projects show the problems I tend to take on, how I approach them, and what changed for the people using the result.
       </p>
     </div>
 
-    <div class="project-grid project-grid--featured">
-      {% for project in featured_projects limit: 5 %}
-        {% include project-card.html project=project %}
-      {% endfor %}
-    </div>
+    {% if featured_projects and featured_projects.size > 0 %}
+      <div class="project-grid project-grid--featured">
+        {% for project in featured_projects limit: 5 %}
+          {% include project-card.html project=project %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <article class="frame-card" data-reveal>
+        <p class="section-kicker">Selected projects</p>
+        <h2>Featured work is being refreshed.</h2>
+        <p>Project entries are temporarily unavailable here, but the experience page still contains the current role history.</p>
+      </article>
+    {% endif %}
   </div>
 </section>
 
 <section class="section">
   <div class="shell home-editorial">
     <div class="lede-block" data-reveal>
-      <p class="section-kicker">What I bring</p>
-      <h2>I do my best work where messy processes still need clear numbers.</h2>
+      <p class="section-kicker">How I Work</p>
+      <h2>The pattern is usually the same even when the tools change.</h2>
       <p>
-        I do my best work where implementation quality and judgment both matter. That usually means defining logic clearly, building reliable data flows, and making sure the output still holds up once other teams depend on it.
-      </p>
-      <p>
-        I care about definitions, edge cases, and the operating reality behind reported numbers, whether the context is revenue reporting, product measurement, logistics workflows, or transportation analysis.
+        The work usually starts when the data exists but the usable version does not. The job is to find where the records drift, where the handoff breaks, and what needs to become clear before another team can trust the result.
       </p>
     </div>
 
     <aside class="brief-panel" data-reveal>
-      <p class="section-kicker">What that looks like</p>
+      <p class="section-kicker">Outside the day job</p>
       <div class="brief-panel__list">
-        <p><span class="brief-panel__value">Reliable warehouse systems</span> Modeling, testing, orchestration, and lineage that reduce downstream ambiguity.</p>
-        <p><span class="brief-panel__value">Metrics that hold up across teams</span> KPI definitions and reporting logic that stay consistent once a wider organization depends on them.</p>
-        <p><span class="brief-panel__value">Systems thinking grounded in constraints</span> Transportation and planning work that sharpens how I think about incentives, trade-offs, and adoption.</p>
+        <p><span class="brief-panel__value">Transportation and planning</span> I keep coming back to transit networks, access questions, and public-system trade-offs.</p>
+        <p><span class="brief-panel__value">Fairness and measurement</span> I care about projects where a strong model is not enough and the decision logic still needs to be examined.</p>
+        <p><span class="brief-panel__value">Small automation</span> I like tools that remove repeat work, even when the job itself is ordinary.</p>
       </div>
     </aside>
   </div>
@@ -167,9 +194,9 @@ visual_density: high
 <section class="section">
   <div class="shell frame-card frame-card--cta" data-reveal>
     <p class="section-kicker">Contact</p>
-    <h2>I’m interested in data engineering, analytics engineering, and product analytics roles.</h2>
+    <h2>I am interested in roles where careful systems work makes decisions clearer and day-to-day work easier to trust.</h2>
     <p>
-      If my background is relevant to your team, feel free to reach out at <a class="text-link" href="mailto:tsepaksang8@gmail.com">tsepaksang8@gmail.com</a>.
+      If that sounds useful for your team, feel free to reach out at <a class="text-link" href="mailto:tsepaksang8@gmail.com">tsepaksang8@gmail.com</a>.
     </p>
   </div>
 </section>

@@ -10,17 +10,6 @@ layout: default
       <circle class="page-hero__node" cx="602" cy="214" r="8" />
       <circle class="page-hero__node page-hero__node--accent" cx="566" cy="188" r="9" />
     </svg>
-    <div class="page-hero__cluster page-hero__cluster--bars">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="page-hero__cluster page-hero__cluster--dots">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
   </div>
   <div class="shell page-hero__inner" data-reveal>
     {% if page.kicker %}
@@ -29,6 +18,13 @@ layout: default
     <h1>{{ page.title }}</h1>
     {% if page.subtitle %}
       <p class="page-hero__lede">{{ page.subtitle }}</p>
+    {% endif %}
+    {% if page.hero_chips %}
+      <div class="chip-row page-hero__chips" aria-label="Page highlights">
+        {% for chip in page.hero_chips %}
+          <span class="chip chip--muted">{{ chip }}</span>
+        {% endfor %}
+      </div>
     {% endif %}
   </div>
 </section>

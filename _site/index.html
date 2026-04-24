@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edwin Tse</title>
+    <meta name="description" content="Personal portfolio of Edwin Tse featuring data engineering, analytics systems, product work, and selected transportation projects.">
+    
+    
+      <link rel="preload" as="image" href="/assets/img/home-hero-systems-light.png" media="(prefers-color-scheme: light)">
+      <link rel="preload" as="image" href="/assets/img/home-hero-systems-dark.png" media="(prefers-color-scheme: dark)">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+    
+      
+        <link rel="stylesheet" href="/assets/css/custom-styles.css">
+      
+    
+  </head>
+  <body class="page-home visual-variant-homepage visual-density-high">
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+  <div class="shell site-header__inner">
+    <a class="site-header__brand" href="/">
+      <span class="site-header__eyebrow">Edwin Tse</span>
+      <span class="site-header__title">Data engineering, analytics, and workflow design</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="/" aria-current="page">Home</a>
+      <a href="/experience/" >Experience</a>
+      <a href="/projects" >Projects</a>
+      <a href="/aboutme" >About</a>
+    </nav>
+
+    <a class="site-header__resume" href="/EdwinTseResume.pdf">Resume</a>
+  </div>
+</header>
+
+
+    <main id="content">
+      
+
+
+
+
+<section class="home-hero">
+  <div class="shell home-hero__grid">
+    <div class="home-hero__copy" data-reveal>
+      <p class="home-hero__eyebrow">Data engineering, analytics systems, and workflow design</p>
+      <h1>Edwin Tse</h1>
+      <p class="home-hero__role">I help teams turn messy, hard-to-trust data into something clear and usable.</p>
+      <p>
+        That usually means tracing broken handoffs, fixing inconsistencies, and leaving behind a setup other teams can use with confidence. Most of the work is practical: clean up the records, make the logic clear, and make sure the result holds up after handoff.
+      </p>
+      <div class="chip-row" aria-label="Primary role fit">
+        <span class="chip chip--muted">GTM data systems</span>
+        <span class="chip chip--muted">Analytics engineering</span>
+        <span class="chip chip--muted">Product analytics</span>
+        <span class="chip chip--muted">Decision infrastructure</span>
+      </div>
+      <div class="home-hero__actions">
+        <a class="button button--primary" href="/experience/">View experience</a>
+        <a class="button" href="/projects/">Browse case notes</a>
+      </div>
+    </div>
+
+    <figure class="hero-figure" data-reveal>
+      <div class="hero-figure__frame" data-ambient>
+        <div class="hero-figure__backdrop" aria-hidden="true"></div>
+        <picture class="hero-figure__media">
+          <source srcset="/assets/img/home-hero-systems-dark.png" media="(prefers-color-scheme: dark)">
+          <img src="/assets/img/home-hero-systems-light.png" alt="Abstract editorial image evoking connected systems, mapped flows, and layered operational infrastructure." width="1600" height="1920" decoding="async" loading="eager" fetchpriority="high">
+        </picture>
+        <div class="hero-atlas" role="group" aria-label="Linked highlights from selected work">
+          <div class="hero-atlas__layer hero-atlas__layer--halo" data-parallax="0.18" aria-hidden="true">
+            <div class="hero-atlas__halo hero-atlas__halo--primary"></div>
+            <div class="hero-atlas__halo hero-atlas__halo--secondary"></div>
+          </div>
+
+          <div class="hero-atlas__layer hero-atlas__layer--routes" data-parallax="0.42" aria-hidden="true">
+            <svg class="hero-atlas__routes" viewBox="0 0 520 620" xmlns="http://www.w3.org/2000/svg">
+              <path class="hero-atlas__route hero-atlas__route--primary" d="M42 488C112 470 132 392 194 356C256 320 324 340 382 292C426 256 452 200 478 118" />
+              <path class="hero-atlas__route hero-atlas__route--secondary" d="M64 170C128 198 158 250 208 270C278 298 346 286 402 330C438 358 456 402 468 476" />
+              <path class="hero-atlas__route hero-atlas__route--signal" d="M100 96C170 110 214 140 260 194C304 246 346 268 410 274" />
+              <circle class="hero-atlas__node" cx="194" cy="356" r="7.5" />
+              <circle class="hero-atlas__node" cx="382" cy="292" r="8" />
+              <circle class="hero-atlas__node hero-atlas__node--accent" cx="260" cy="194" r="9" />
+              <circle class="hero-atlas__node-pulse" cx="260" cy="194" r="16" />
+            </svg>
+          </div>
+
+          <div class="hero-atlas__layer hero-atlas__layer--revenue" data-parallax="0.88">
+            <a class="hero-atlas__hotspot hero-atlas__hotspot--revenue" href="/projects/#customer-360" aria-label="Open Customer 360 and Revenue Attribution">
+              <div class="hero-atlas__panel hero-atlas__panel--revenue">
+                <p class="hero-atlas__eyebrow">Revenue attribution</p>
+                <div class="hero-panel-list" aria-hidden="true">
+                  <span>records matched</span>
+                  <span>shared account view</span>
+                  <span>cleaner budget calls</span>
+                </div>
+                <p class="hero-atlas__meta">One place to see the customer, the touchpoints, and the reporting logic behind the result.</p>
+                <p class="hero-atlas__link">Open related work</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="hero-atlas__layer hero-atlas__layer--kpi" data-parallax="0.68">
+            <a class="hero-atlas__hotspot hero-atlas__hotspot--kpi" href="/projects/#elt-reliability" aria-label="Open ELT Reliability and Monitoring">
+              <div class="hero-atlas__panel hero-atlas__panel--kpi">
+                <p class="hero-atlas__eyebrow">ELT reliability</p>
+                <div class="hero-panel-list" aria-hidden="true">
+                  <span>tests watching runs</span>
+                  <span>clear failure path</span>
+                  <span>quieter reporting week</span>
+                </div>
+                <p class="hero-atlas__meta">A pipeline with clear checks, clear ownership, and less cleanup after the fact.</p>
+                <p class="hero-atlas__link">Open related work</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="hero-atlas__layer hero-atlas__layer--transit" data-parallax="1.02">
+            <a class="hero-atlas__hotspot hero-atlas__hotspot--transit" href="/projects/#transit-hub-access" aria-label="Open Transit Hub Access Study">
+              <div class="hero-atlas__panel hero-atlas__panel--transit">
+                <p class="hero-atlas__eyebrow">Transit systems</p>
+                <div class="hero-panel-list" aria-hidden="true">
+                  <span>access in view</span>
+                  <span>network context kept</span>
+                  <span>trade-offs easier to read</span>
+                </div>
+                <p class="hero-atlas__meta">Planning work that explains a public system without flattening it into a single score.</p>
+                <p class="hero-atlas__link">Open case study</p>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <figcaption class="hero-figure__caption">
+        Selected work across GTM data, reporting reliability, product measurement, and transportation analysis.
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="shell">
+    <div class="hero-evidence">
+      <article class="hero-evidence__item" data-reveal>
+        <p class="mini-label">Shared customer view</p>
+        <div class="outcome-board" aria-hidden="true">
+          <span>scattered records</span>
+          <span>matched accounts</span>
+          <span>cleaner planning</span>
+        </div>
+        <p>Reporting gets easier once the team is working from the same customer record.</p>
+      </article>
+      <article class="hero-evidence__item" data-reveal>
+        <p class="mini-label">Steadier pipeline</p>
+        <div class="outcome-board" aria-hidden="true">
+          <span>tests in place</span>
+          <span>issues easier to spot</span>
+          <span>fewer surprise breaks</span>
+        </div>
+        <p>The value is not the alert by itself. It is a calmer reporting week and a clearer fix path when something breaks.</p>
+      </article>
+      <article class="hero-evidence__item" data-reveal>
+        <p class="mini-label">Cleaner review work</p>
+        <div class="outcome-board" aria-hidden="true">
+          <span>messy intake</span>
+          <span>clear review queue</span>
+          <span>fewer avoidable holds</span>
+        </div>
+        <p>When the intake flow is clearer, people spend less time fixing preventable mistakes.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell">
+    <div class="section-heading section-heading--split" data-reveal>
+      <p class="section-kicker">Selected projects</p>
+      <h2>A quick read on the kind of work I do.</h2>
+      <p>
+        These projects show the problems I tend to take on, how I approach them, and what changed for the people using the result.
+      </p>
+    </div>
+
+    
+      <div class="project-grid project-grid--featured">
+        
+          
+
+
+<article id="customer-360" class="project-card project-card--featured" data-reveal>
+  <div class="project-card__art" aria-hidden="true">
+    <div class="story-board story-board--mini">
+      <div class="story-board__chrome" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <p>Professional work</p>
+      </div>
+      <div class="story-board__rows">
+        
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                State
+                  
+              </span>
+              <strong>one customer view</strong>
+            </div>
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                Build
+                  
+              </span>
+              <strong>shared revenue logic</strong>
+            </div>
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                Use
+                
+              </span>
+              <strong>easier budget calls</strong>
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card__top">
+    <p class="project-card__type">Professional work · GTM data · Attribution · Warehouse</p>
+    <h3>Customer 360 and Revenue Attribution</h3>
+    <p>Pulled customer, product, billing, and support records into one account view for the GTM team.</p>
+  </div>
+
+  <div class="project-card__middle">
+    <p class="project-card__why">This is a good example of the work I do most often: take scattered records and turn them into something people can actually use.</p>
+  </div>
+
+  <details class="project-card__details" data-disclosure>
+    <summary>Open project note</summary>
+    <div class="project-card__details-body">
+      
+        <p class="project-card__case-lede">Different teams were working from different customer records, so even simple reporting questions kept turning into reconciliation work.</p>
+      
+
+      
+        <div class="story-board">
+          <div class="story-board__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <p>Professional work</p>
+          </div>
+          <div class="story-board__rows">
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  State
+                    
+                </span>
+                <strong>one customer view</strong>
+              </div>
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  Build
+                    
+                </span>
+                <strong>shared revenue logic</strong>
+              </div>
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  Result
+                  
+                </span>
+                <strong>easier budget calls</strong>
+              </div>
+            
+          </div>
+        </div>
+      
+
+      <div class="story-disclosure__grid">
+        
+          <div>
+            <p class="mini-label">What changed</p>
+            <ul class="story-points">
+              
+                <li>Stitched CRM, GA4, product, billing, and support records into one account-level model.</li>
+              
+                <li>Defined shared identity, touchpoint, conversion, and revenue logic so teams were not reconciling the same customer in different ways.</li>
+              
+                <li>Added dashboards, lineage, and ownership rules so the model stayed useful after handoff.</li>
+              
+            </ul>
+          </div>
+        
+
+        
+          <div>
+            <p class="mini-label">Why it helped</p>
+            <p class="story-disclosure__story">The value was not a prettier report. The value was giving GTM teams one version of the customer so planning and budget decisions stopped breaking on record mismatch.</p>
+          </div>
+        
+      </div>
+
+      
+        <p class="tool-list">Snowflake · dbt · SQL · Salesforce · GA4</p>
+      
+    </div>
+  </details>
+
+  
+    <a class="project-card__cta" href="/experience/#envoyx">View role context</a>
+  
+</article>
+
+        
+          
+
+
+<article id="elt-reliability" class="project-card project-card--featured" data-reveal>
+  <div class="project-card__art" aria-hidden="true">
+    <div class="story-board story-board--mini">
+      <div class="story-board__chrome" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <p>Professional work</p>
+      </div>
+      <div class="story-board__rows">
+        
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                State
+                  
+              </span>
+              <strong>steadier runs</strong>
+            </div>
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                Build
+                  
+              </span>
+              <strong>clearer failure paths</strong>
+            </div>
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                Use
+                
+              </span>
+              <strong>faster new-source setup</strong>
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card__top">
+    <p class="project-card__type">Professional work · dbt · Airflow · Reliability</p>
+    <h3>ELT Reliability and Monitoring</h3>
+    <p>Built a steadier data foundation with tests, monitoring, and clearer pipeline ownership.</p>
+  </div>
+
+  <div class="project-card__middle">
+    <p class="project-card__why">It shows the production side of the work: make sure the system still works after the first launch.</p>
+  </div>
+
+  <details class="project-card__details" data-disclosure>
+    <summary>Open project note</summary>
+    <div class="project-card__details-body">
+      
+        <p class="project-card__case-lede">The pipeline worked just enough to be relied on, but not enough to be trusted.</p>
+      
+
+      
+        <div class="story-board">
+          <div class="story-board__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <p>Professional work</p>
+          </div>
+          <div class="story-board__rows">
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  State
+                    
+                </span>
+                <strong>steadier runs</strong>
+              </div>
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  Build
+                    
+                </span>
+                <strong>clearer failure paths</strong>
+              </div>
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  Result
+                  
+                </span>
+                <strong>faster new-source setup</strong>
+              </div>
+            
+          </div>
+        </div>
+      
+
+      <div class="story-disclosure__grid">
+        
+          <div>
+            <p class="mini-label">What changed</p>
+            <ul class="story-points">
+              
+                <li>Built a layered ELT flow with staging models, curated marts, and reusable onboarding patterns for new sources.</li>
+              
+                <li>Added dbt tests, freshness checks, lineage docs, and monitoring so reliability could be checked directly instead of guessed at.</li>
+              
+                <li>Used CI workflows and data contracts to catch bad changes before they reached dashboards or leadership reporting.</li>
+              
+            </ul>
+          </div>
+        
+
+        
+          <div>
+            <p class="mini-label">Why it helped</p>
+            <p class="story-disclosure__story">Once the pipeline had tests, runbooks, and visible ownership, analysts could stop treating every table like a special case.</p>
+          </div>
+        
+      </div>
+
+      
+        <p class="tool-list">Python · SQL · dbt · Airflow · GitHub Actions</p>
+      
+    </div>
+  </details>
+
+  
+    <a class="project-card__cta" href="/experience/#envoyx">View role context</a>
+  
+</article>
+
+        
+          
+
+
+<article id="funnel-measurement" class="project-card project-card--featured" data-reveal>
+  <div class="project-card__art" aria-hidden="true">
+    <div class="story-board story-board--mini">
+      <div class="story-board__chrome" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <p>Professional work</p>
+      </div>
+      <div class="story-board__rows">
+        
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                State
+                  
+              </span>
+              <strong>clearer drop-off points</strong>
+            </div>
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                Build
+                  
+              </span>
+              <strong>cleaner test readouts</strong>
+            </div>
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                Use
+                
+              </span>
+              <strong>faster product calls</strong>
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card__top">
+    <p class="project-card__type">Professional work · Experimentation · Funnel analysis · Product analytics</p>
+    <h3>Onboarding Funnel and Experiment Readouts</h3>
+    <p>Built cleaner event tracking and experiment readouts so product teams could see where onboarding was breaking.</p>
+  </div>
+
+  <div class="project-card__middle">
+    <p class="project-card__why">It shows product analytics being used as a decision tool, not just a reporting layer.</p>
+  </div>
+
+  <details class="project-card__details" data-disclosure>
+    <summary>Open project note</summary>
+    <div class="project-card__details-body">
+      
+        <p class="project-card__case-lede">Changes were shipping faster than the team could agree on what was working.</p>
+      
+
+      
+        <div class="story-board">
+          <div class="story-board__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <p>Professional work</p>
+          </div>
+          <div class="story-board__rows">
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  State
+                    
+                </span>
+                <strong>clearer drop-off points</strong>
+              </div>
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  Build
+                    
+                </span>
+                <strong>cleaner test readouts</strong>
+              </div>
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  Result
+                  
+                </span>
+                <strong>faster product calls</strong>
+              </div>
+            
+          </div>
+        </div>
+      
+
+      <div class="story-disclosure__grid">
+        
+          <div>
+            <p class="mini-label">What changed</p>
+            <ul class="story-points">
+              
+                <li>Standardized event taxonomy, exposure logging, and reusable funnel models across onboarding and checkout flows.</li>
+              
+                <li>Built experiment readout templates with guardrail metrics so results were easier to compare from one launch to the next.</li>
+              
+                <li>Added cohort and decision-tracking views that connected analysis back to the change a team actually made.</li>
+              
+            </ul>
+          </div>
+        
+
+        
+          <div>
+            <p class="mini-label">Why it helped</p>
+            <p class="story-disclosure__story">The project mattered because it turned experiments into a repeatable workflow. Teams could see the change, read the result, and make the next call faster.</p>
+          </div>
+        
+      </div>
+
+      
+        <p class="tool-list">Snowflake · SQL · Python · Experimentation · Dashboarding</p>
+      
+    </div>
+  </details>
+
+  
+    <a class="project-card__cta" href="/experience/#zego">View role context</a>
+  
+</article>
+
+        
+          
+
+
+<article id="flightpricebias" class="project-card project-card--featured" data-reveal>
+  <div class="project-card__art" aria-hidden="true">
+    <div class="story-board story-board--mini">
+      <div class="story-board__chrome" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <p>Independent project</p>
+      </div>
+      <div class="story-board__rows">
+        
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                State
+                  
+              </span>
+              <strong>fairness risk made visible</strong>
+            </div>
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                Build
+                  
+              </span>
+              <strong>trade-offs easier to explain</strong>
+            </div>
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                Use
+                
+              </span>
+              <strong>more grounded model review</strong>
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card__top">
+    <p class="project-card__type">Independent project · Fairness · Transportation · ML</p>
+    <h3>FlightPriceBias</h3>
+    <p>Used airfare data to study prediction quality and fairness risk at the same time.</p>
+  </div>
+
+  <div class="project-card__middle">
+    <p class="project-card__why">It combines model work with a question I care about: how a system can look useful while still producing uneven outcomes.</p>
+  </div>
+
+  <details class="project-card__details" data-disclosure>
+    <summary>Open project note</summary>
+    <div class="project-card__details-body">
+      
+        <p class="project-card__case-lede">The question was simple: can a fare model look strong while still hiding fairness problems?</p>
+      
+
+      
+        <div class="story-board">
+          <div class="story-board__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <p>Independent project</p>
+          </div>
+          <div class="story-board__rows">
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  State
+                    
+                </span>
+                <strong>fairness risk made visible</strong>
+              </div>
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  Build
+                    
+                </span>
+                <strong>trade-offs easier to explain</strong>
+              </div>
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  Result
+                  
+                </span>
+                <strong>more grounded model review</strong>
+              </div>
+            
+          </div>
+        </div>
+      
+
+      <div class="story-disclosure__grid">
+        
+          <div>
+            <p class="mini-label">What changed</p>
+            <ul class="story-points">
+              
+                <li>Built repeatable preprocessing over DOT DB1B-style fare tables, including joins, route aggregation, and fare-per-mile features.</li>
+              
+                <li>Benchmarked baseline classifiers alongside fairness-aware mitigation approaches using scikit-learn and AIF360.</li>
+              
+                <li>Compared predictive performance with fairness metrics so the trade-offs stayed visible.</li>
+              
+            </ul>
+          </div>
+        
+
+        
+          <div>
+            <p class="mini-label">Why it helped</p>
+            <p class="story-disclosure__story">The point was not to claim the model was fixed forever. It was to make the trade-offs clear enough for someone to make a better decision.</p>
+          </div>
+        
+      </div>
+
+      
+        <p class="tool-list">Python · scikit-learn · AIF360 · pandas · Fairness metrics</p>
+      
+    </div>
+  </details>
+
+  
+    <a class="project-card__cta" href="https://ptse8204.github.io/flightpricebias/">Open live project</a>
+  
+</article>
+
+        
+          
+
+
+<article id="transit-hub-access" class="project-card project-card--featured" data-reveal>
+  <div class="project-card__art" aria-hidden="true">
+    <div class="story-board story-board--mini">
+      <div class="story-board__chrome" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <p>Research</p>
+      </div>
+      <div class="story-board__rows">
+        
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                State
+                  
+              </span>
+              <strong>hub trade-offs made clear</strong>
+            </div>
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                Build
+                  
+              </span>
+              <strong>map story easier to read</strong>
+            </div>
+          
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                Use
+                
+              </span>
+              <strong>planning context kept intact</strong>
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card__top">
+    <p class="project-card__type">Research · Urban planning · GIS · Transportation</p>
+    <h3>Transit Hub Access Study</h3>
+    <p>Used maps and planning analysis to compare access, safety, and network fit around transit hubs.</p>
+  </div>
+
+  <div class="project-card__middle">
+    <p class="project-card__why">It shows the public-systems side of my work in a form that is still easy to read.</p>
+  </div>
+
+  <details class="project-card__details" data-disclosure>
+    <summary>Open project note</summary>
+    <div class="project-card__details-body">
+      
+        <p class="project-card__case-lede">The project needed to explain transit trade-offs, not just show a map.</p>
+      
+
+      
+        <div class="story-board">
+          <div class="story-board__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <p>Research</p>
+          </div>
+          <div class="story-board__rows">
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  State
+                    
+                </span>
+                <strong>hub trade-offs made clear</strong>
+              </div>
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  Build
+                    
+                </span>
+                <strong>map story easier to read</strong>
+              </div>
+            
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  Result
+                  
+                </span>
+                <strong>planning context kept intact</strong>
+              </div>
+            
+          </div>
+        </div>
+      
+
+      <div class="story-disclosure__grid">
+        
+          <div>
+            <p class="mini-label">What changed</p>
+            <ul class="story-points">
+              
+                <li>Analyzed hub access and surrounding conditions with a GIS workflow designed to compare several planning factors at once.</li>
+              
+                <li>Used layered maps, planning criteria, and short narrative framing to show why a hub can look strong on one measure and weak on another.</li>
+              
+                <li>Turned a planning question into a case study that someone outside a GIS classroom could still follow.</li>
+              
+            </ul>
+          </div>
+        
+
+        
+          <div>
+            <p class="mini-label">Why it helped</p>
+            <p class="story-disclosure__story">This is one of the clearest public examples of the broader context that keeps showing up in my work, even when the tools change.</p>
+          </div>
+        
+      </div>
+
+      
+        <p class="tool-list">ArcGIS · GeoPandas · Spatial analysis · Planning research</p>
+      
+    </div>
+  </details>
+
+  
+    <a class="project-card__cta" href="/projectpages/embeddingarc_w_head_w_cover/">View case study</a>
+  
+</article>
+
+        
+      </div>
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell home-editorial">
+    <div class="lede-block" data-reveal>
+      <p class="section-kicker">How I Work</p>
+      <h2>The pattern is usually the same even when the tools change.</h2>
+      <p>
+        The work usually starts when the data exists but the usable version does not. The job is to find where the records drift, where the handoff breaks, and what needs to become clear before another team can trust the result.
+      </p>
+    </div>
+
+    <aside class="brief-panel" data-reveal>
+      <p class="section-kicker">Outside the day job</p>
+      <div class="brief-panel__list">
+        <p><span class="brief-panel__value">Transportation and planning</span> I keep coming back to transit networks, access questions, and public-system trade-offs.</p>
+        <p><span class="brief-panel__value">Fairness and measurement</span> I care about projects where a strong model is not enough and the decision logic still needs to be examined.</p>
+        <p><span class="brief-panel__value">Small automation</span> I like tools that remove repeat work, even when the job itself is ordinary.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell frame-card frame-card--cta" data-reveal>
+    <p class="section-kicker">Contact</p>
+    <h2>I am interested in roles where careful systems work makes decisions clearer and day-to-day work easier to trust.</h2>
+    <p>
+      If that sounds useful for your team, feel free to reach out at <a class="text-link" href="mailto:tsepaksang8@gmail.com">tsepaksang8@gmail.com</a>.
+    </p>
+  </div>
+</section>
+
+
+    </main>
+
+    <footer class="site-footer">
+  <div class="shell site-footer__grid">
+    <div>
+      <p class="site-footer__eyebrow">Edwin Tse</p>
+      <p class="site-footer__note">
+        I build data systems and reporting workflows that make day-to-day work easier to read, trust, and use.
+      </p>
+      <p class="site-footer__placeholder">
+        Outside work I keep coming back to transit systems, public infrastructure, fairness questions, and small automation tools that remove repeat friction.
+      </p>
+    </div>
+
+    <div class="site-footer__links">
+      <a href="mailto:tsepaksang8@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/paksangtse">LinkedIn</a>
+      <a href="https://github.com/ptse8204">GitHub</a>
+      <a href="https://medium.com/@tsepaksang8">Medium</a>
+    </div>
+  </div>
+</footer>
+
+
+    
+      
+        <script src="/assets/js/site.js" defer></script>
+      
+    
+  </body>
+</html>

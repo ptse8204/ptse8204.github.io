@@ -7,12 +7,9 @@ permalink: /projectpages/deadproject/
 visual_variant: archive
 visual_density: low
 ---
-<div class="section-heading" data-reveal>
-  <h2>Unfinished work can still be instructive.</h2>
-  <p>
-    These projects were not taken through to long-term execution, but each clarified something useful about feasibility, operating burden, or product-market fit.
-  </p>
-</div>
+<p data-reveal>
+  These projects did not become long-term flagships, but each clarified something useful about feasibility, operating burden, or the gap between an interesting idea and a workable one.
+</p>
 
 <div class="archive-grid">
   <article class="archive-card" data-reveal>
@@ -50,11 +47,3 @@ visual_density: low
     <p class="archive-card__lesson"><strong>What carried forward:</strong> Security ideas become more interesting when they can widen access rather than only raise technical sophistication.</p>
   </article>
 </div>
-
-<article class="frame-card" data-reveal>
-  <p class="section-kicker">What the archive shows</p>
-  <h2>Strong ideas still need workable execution.</h2>
-  <p>
-    These projects remain useful because they show how I think about systems, incentives, feasibility, and the gap between an interesting concept and something that can actually be sustained.
-  </p>
-</article>

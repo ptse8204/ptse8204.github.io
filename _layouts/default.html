@@ -3,8 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page['share-description'] | default: page.subtitle | default: site.description }}">
+    {% if page.redirect_to %}
+      <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+      <meta http-equiv="refresh" content="0; url={{ page.redirect_to | relative_url }}">
+    {% endif %}
     {% if page.url == '/' %}
       <link rel="preload" as="image" href="{{ '/assets/img/home-hero-systems-light.png' | relative_url }}" media="(prefers-color-scheme: light)">
       <link rel="preload" as="image" href="{{ '/assets/img/home-hero-systems-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">

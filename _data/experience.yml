@@ -3,18 +3,22 @@
   role: GTM Data Engineer
   dates: Sep 2025 - Present
   location: Berkeley, CA
-  summary: I build GTM data systems that turn fragmented source data into reliable revenue, lifecycle, and reporting workflows.
+  summary: "Built GTM data systems that gave sales, marketing, and product teams a shared customer view and reporting they could trust."
   capabilities:
-    - Customer identity stitching and attribution
-    - ELT reliability and warehouse modeling
-    - Cross-functional metric ownership
+    - Customer identity stitching
+    - Attribution and lifecycle reporting
+    - ELT reliability
+  impact_metrics:
+    - shared customer view
+    - steadier reporting flow
+    - cleaner team handoff
   proof_points:
-    - Unified CRM, GA4, product, billing, and support data into a governed Customer 360 model, raising attributable revenue coverage from 48% to 86%.
-    - Designed attribution logic and lifecycle reporting that reduced reporting lag from 6 days to 1 day for GTM stakeholders.
-    - Introduced dbt tests, Airflow monitoring, lineage, and CI patterns that pushed pipeline reliability to 99.6% and reduced downstream bad-data incidents.
+    - Pulled CRM, product, billing, and support data into one model so teams could stop working from partial customer records.
+    - Reworked attribution and revenue logic so teams could answer the same question from the same source instead of separate spreadsheets.
+    - Added tests, monitoring, and reusable build patterns so the reporting stayed stable after handoff.
   related_projects:
-    - Customer 360 and Revenue Attribution Warehouse
-    - Modern ELT Reliability Platform
+    - customer-360
+    - elt-reliability
   tools:
     - Snowflake
     - dbt
@@ -29,18 +33,22 @@
   role: Data Analyst Intern
   dates: Jun 2025 - Sep 2025
   location: Berkeley, CA
-  summary: I replaced manual reporting with warehouse-backed dashboards that made logistics KPIs easier to trust and act on.
+  summary: "Built KPI and reporting systems that replaced manual updates with a clearer operating view for logistics teams."
   capabilities:
-    - KPI governance and semantic consistency
-    - Self-serve BI and operational reporting
-    - Performance tuning for analytics workflows
+    - KPI governance
+    - Self-serve operational BI
+    - Dashboard performance tuning
+  impact_metrics:
+    - one KPI language
+    - less manual work
+    - clearer weekly reviews
   proof_points:
-    - Consolidated 20+ conflicting business metrics into a governed KPI layer for product, operations, and finance stakeholders.
-    - Built dashboards and QA workflows that reduced manual reporting time while improving executive adoption and trust.
-    - Improved refresh performance and reporting reliability through star-schema modeling, Azure SQL, and targeted DAX optimization.
+    - Moved teams onto one set of KPI definitions so meetings spent less time debating the number itself.
+    - Built dashboards and QA checks that made weekly reporting easier for leaders to read and easier for analysts to maintain.
+    - Tightened the model and refresh flow so updates landed more reliably and with less manual cleanup.
   related_projects:
-    - KPI Ownership Platform for Product and Ops
-    - Executive BizOps Control Tower
+    - kpi-ownership
+    - bizops-control-tower
   tools:
     - Power BI
     - Azure SQL
@@ -51,23 +59,27 @@
 - company: United Parcel Service
   anchor: ups-brokerage
   role: Brokerage Data Administrator
-  dates: 2023 - 2025
-  location: San Diego, CA
-  summary: I worked close to messy operational documents, OCR-assisted extraction, and compliance workflows, building the judgment layer between raw inputs and reliable downstream records.
+  dates: Apr 2023 - Dec 2024
+  location: Vancouver, BC
+  summary: "Worked on brokerage intake and review flows where messy documents had to become clean, review-ready records."
   capabilities:
-    - Semi-structured document ingestion
-    - Exception handling and QA workflows
-    - Compliance visibility and SLA support
+    - OCR-assisted document intake
+    - Exception routing and QA
+    - Compliance visibility
+  impact_metrics:
+    - cleaner intake
+    - clearer review queue
+    - fewer avoidable handoffs
   proof_points:
-    - Supported OCR and NLP-assisted extraction workflows for customs brokerage inputs with validation, routing, and human review for low-confidence outputs.
-    - Improved operational transparency by standardizing records used for compliance tracking, backlog visibility, and downstream reporting.
-    - Helped turn fragile intake processes into more reliable datasets and review workflows for high-risk operational work.
+    - Helped turn OCR-assisted document intake into records that people could actually review and use.
+    - Added clearer validation rules, backlog visibility, and escalation paths for higher-risk cases.
+    - Tightened the review steps and record structure so the workflow was easier to run day to day.
   related_projects:
-    - Modern ELT Reliability Platform
-    - Privacy and Compliance Review Operations Dashboard
+    - elt-reliability
+    - privacy-compliance
   tools:
     - Python
-    - OCR tooling
+    - Tesseract OCR
     - Structured QA
     - Operational reporting
 
@@ -76,18 +88,22 @@
   role: Business Analyst Intern, Product Analytics
   dates: Jun 2022 - Aug 2022
   location: San Diego, CA
-  summary: I built product analytics and retention workflows that connected event data, experimentation, and predictive scoring to better product decisions.
+  summary: "Built product analytics workflows that helped teams understand onboarding, read experiments, and spot retention risk earlier."
   capabilities:
     - Funnel and cohort analysis
-    - Experiment measurement systems
-    - Churn and retention modeling
+    - Experiment measurement
+    - Retention modeling
+  impact_metrics:
+    - clearer onboarding story
+    - better test readouts
+    - earlier retention signal
   proof_points:
-    - Built reusable funnel and experimentation readouts that helped identify onboarding friction and improve activation and completion metrics.
-    - Delivered predictive retention workflows that prioritized high-risk cohorts and linked model outputs to intervention decisions.
-    - Improved analytics reliability with structured Snowflake refresh patterns and decision-ready reporting for product stakeholders.
+    - Built reusable funnel views and experiment readouts so product teams could see where onboarding was breaking.
+    - Connected churn scoring to follow-up actions instead of leaving it as a model output with no clear owner.
+    - Cleaned up the refresh logic and reporting flow so teams had a steadier read on what was happening.
   related_projects:
-    - Funnel Deep-Dive and Experimentation Measurement System
-    - Churn and Retention Early-Warning System
+    - funnel-measurement
+    - churn-early-warning
   tools:
     - Snowflake SQL
     - Experimentation
@@ -100,18 +116,22 @@
   role: Venture Capital Intern
   dates: Aug 2022 - Dec 2022
   location: Remote
-  summary: I used structured analytics, prospect scoring, and lightweight experimentation to improve sourcing quality and decision readiness.
+  summary: "Used scoring, lightweight experimentation, and structured research to make sourcing and early commercial decisions easier to work through."
   capabilities:
-    - Rules-based scoring and prioritization
+    - Scoring and prioritization
     - Commercial experimentation
-    - Executive reporting and synthesis
+    - Executive synthesis
+  impact_metrics:
+    - stronger lead lists
+    - faster team reviews
+    - clearer commercial choices
   proof_points:
-    - Doubled weekly qualified leads by automating prospect list building and testing outreach variants with simple but disciplined measurement loops.
-    - Framed ambiguous commercial questions into structured reporting, research, and prioritization workflows for leadership.
-    - Used lightweight analytics to improve both decision speed and the quality of follow-up actions.
+    - Automated prospect building and ranking so outreach started from a better list instead of a rough first pass.
+    - Turned fuzzy commercial questions into research and reporting that leadership could use in real discussions.
+    - Used simple analytics where it helped most: making the next decision clearer and the follow-up stronger.
   related_projects:
-    - Executive BizOps Control Tower
-    - Dynamic Pricing and Revenue Optimization Simulator
+    - bizops-control-tower
+    - dynamic-pricing
   tools:
     - Python
     - Pandas

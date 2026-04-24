@@ -1,6 +1,8 @@
 remote_theme: daattali/beautiful-jekyll
 title: Edwin Tse
-description: Engineer-minded builder across data systems, analytics, and decision infrastructure.
+description: Personal portfolio of Edwin Tse, spanning data engineering, analytics systems, product measurement, and transportation-linked work.
+url: "https://ptse8204.github.io"
+baseurl: ""
 
 
 ###############################################
@@ -105,7 +107,7 @@ edit_page_button: false
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-keywords: "Edwin Tse,Pak Sang Tse,Data Science,Machine Learning"
+keywords: "Edwin Tse,Pak Sang Tse,Data Engineer,Analytics Engineer,Product Analytics,Data Systems,Portfolio"
 
 ######################################
 # --- Colours / background image --- #

@@ -7,26 +7,13 @@ permalink: /imshortcuts/
 visual_variant: utility
 visual_density: low
 ---
-<div class="split-grid">
-  <article class="surface-card" data-reveal>
-    <p class="section-kicker">What it is</p>
-    <h2>A small automation project with a clear use case.</h2>
-    <p>
-      This project turns a recurring personal task into a lightweight iOS workflow. It reflects a pattern I value: define a repetitive process clearly, then automate only the steps worth automating.
-    </p>
-    <p>
-      In this case, the workflow is an iOS Shortcut that schedules a message and removes the need to remember it manually.
-    </p>
-  </article>
-
-  <article class="surface-card" data-reveal>
-    <p class="section-kicker">What it demonstrates</p>
-    <h2>Practical automation at a small scale.</h2>
-    <p>
-      The project is simple, but it shows the same bias toward usable workflows, clear steps, and low-overhead automation that appears in larger systems work.
-    </p>
-  </article>
-</div>
+<article class="surface-card surface-card--summary" data-reveal>
+  <p class="section-kicker">What it is</p>
+  <h2>A small automation project built to remove a recurring manual task.</h2>
+  <p>
+    This shortcut schedules a recurring message so the task stops depending on memory and repetition. It is a small project, but it reflects the same instinct toward usable workflows and low-overhead automation that shows up in larger systems work.
+  </p>
+</article>
 
 <article class="surface-card" data-reveal>
   <p class="section-kicker">How to use the shortcut</p>

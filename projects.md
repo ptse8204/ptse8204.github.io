@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: Selected work across analytics engineering, product measurement, transportation, and practical tools.
+subtitle: "A selection of projects that show the kind of work I do most often: make something clearer, more reliable, and easier for another person to use."
 kicker: Projects
 permalink: /projects/
 visual_variant: projects
@@ -12,80 +12,81 @@ visual_density: high
 {% assign domain_projects = site.data.projects | where: "category", "domain" %}
 {% assign fun_projects = site.data.projects | where: "category", "fun" %}
 {% assign archive_projects = site.data.projects | where: "category", "archive" %}
+{% assign more_builds_count = work_relevant_projects.size | plus: fun_projects.size %}
 
-<div class="section-heading section-heading--split" data-reveal>
-  <h2>Projects across data systems, measurement, and domain analysis.</h2>
+<article class="surface-card surface-card--summary" data-reveal>
+  <p class="section-kicker">How to read this page</p>
+  <h2>These are case notes, not thumbnails.</h2>
   <p>
-    Together they show how I approach reliability, incentives, and the gap between a clean model and real-world use.
+    Each project opens into a short note on the problem, what was built, and what changed. The page is meant to stay easy to scan before it asks for more attention.
   </p>
-</div>
+</article>
 
 <section id="featured-work" class="project-section project-section--featured">
   <div class="section-heading section-heading--split" data-reveal>
-    <p class="section-kicker">Selected work</p>
-    <h2>The strongest entry points into my work.</h2>
-    <p>These are the clearest entry points into how I approach data systems, measurement, and transportation-linked analysis.</p>
+    <p class="section-kicker">Featured work</p>
+    <h2>The fastest way to understand how I work.</h2>
+    <p>Start here for the clearest read on the problems I take on and the kind of systems I tend to leave behind.</p>
   </div>
-  <div class="project-grid project-grid--featured">
-    {% for project in featured_projects %}
-      {% include project-card.html project=project %}
-    {% endfor %}
-  </div>
+  {% if featured_projects and featured_projects.size > 0 %}
+    <div class="project-grid project-grid--featured" data-disclosure-group>
+      {% for project in featured_projects %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+  {% else %}
+    <article class="frame-card" data-reveal>
+      <h2>Featured work is being refreshed.</h2>
+      <p>Project entries are temporarily unavailable here. Check back after the next content update.</p>
+    </article>
+  {% endif %}
 </section>
 
-<section id="work-relevant-technical-projects" class="project-section project-section--technical">
+<section id="more-builds" class="project-section project-section--technical">
   <div class="section-heading" data-reveal>
-    <p class="section-kicker">Technical projects</p>
-    <h2>Tools and analyses that extend the same core strengths.</h2>
+    <h2>More builds</h2>
+    <p>More systems and smaller builds that show the same preference for useful outputs and clear handoffs.</p>
   </div>
-  <div class="project-grid project-grid--secondary">
-    {% for project in work_relevant_projects %}
-      {% include project-card.html project=project %}
-    {% endfor %}
-  </div>
+  {% if more_builds_count > 0 %}
+    <div class="project-grid project-grid--secondary" data-disclosure-group>
+      {% for project in work_relevant_projects %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+      {% for project in fun_projects %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+  {% else %}
+    <p data-reveal>Additional builds will appear here once they are ready to surface.</p>
+  {% endif %}
 </section>
 
 <section id="transportation-and-domain-work" class="project-section project-section--domain">
-  <div class="section-heading section-heading--split" data-reveal>
-    <p class="section-kicker">Transportation and planning</p>
-    <h2>Transportation and planning work that informs my systems perspective.</h2>
-    <p>
-      These projects sharpened how I think about throughput, incentives, public constraints, and the difference between technically possible solutions and the ones people can actually use.
-    </p>
+  <div class="section-heading" data-reveal>
+    <h2>Transportation and planning</h2>
+    <p>Work that shows the wider context behind the rest of the portfolio.</p>
   </div>
-  <div class="project-grid project-grid--secondary">
-    {% for project in domain_projects %}
-      {% include project-card.html project=project %}
-    {% endfor %}
-  </div>
+  {% if domain_projects and domain_projects.size > 0 %}
+    <div class="project-grid project-grid--secondary" data-disclosure-group>
+      {% for project in domain_projects %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+  {% else %}
+    <p data-reveal>Domain work will appear here when there is something worth keeping live.</p>
+  {% endif %}
 </section>
 
-<section id="fun-and-utility" class="project-section project-section--small">
-  <div class="section-heading section-heading--split" data-reveal>
-    <p class="section-kicker">Smaller builds</p>
-    <h2>Smaller projects with clear utility.</h2>
-    <p>
-      Lighter-weight builds that solve recurring problems cleanly and with minimal overhead.
-    </p>
-  </div>
-  <div class="project-grid project-grid--secondary">
-    {% for project in fun_projects %}
-      {% include project-card.html project=project %}
-    {% endfor %}
-  </div>
-</section>
-
-<section id="archive-and-shelved" class="project-section project-section--archive">
-  <div class="section-heading section-heading--split" data-reveal>
-    <p class="section-kicker">Archive</p>
-    <h2>Archived work that still reflects judgment and range.</h2>
-    <p>
-      Not every worthwhile project becomes a flagship case study. This archive captures ideas that clarified feasibility, iteration, and trade-offs.
-    </p>
-  </div>
-  <div class="project-grid project-grid--secondary">
-    {% for project in archive_projects %}
-      {% include project-card.html project=project %}
-    {% endfor %}
-  </div>
-</section>
+<details id="archive-and-shelved" class="archive-disclosure" data-reveal>
+  <summary>Archive and shelved work</summary>
+  <p>Older work that still says something useful about judgment, constraints, or where a project stopped.</p>
+  {% if archive_projects and archive_projects.size > 0 %}
+    <div class="project-grid project-grid--secondary" data-disclosure-group>
+      {% for project in archive_projects %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>No archive entries are currently published.</p>
+  {% endif %}
+</details>

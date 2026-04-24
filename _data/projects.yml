@@ -1,98 +1,360 @@
-- title: Customer 360 and Revenue Attribution Warehouse
+- title: Customer 360 and Revenue Attribution
   slug: customer-360
-  summary: Unified CRM, product, billing, and support data into an account-level model that made GTM revenue reporting easier to trust and use.
-  why_it_matters: A strong example of identity stitching, attribution logic, and cross-functional metric governance in a messy operating environment.
+  summary: "Pulled customer, product, billing, and support records into one account view for the GTM team."
+  why_it_matters: "This is a good example of the work I do most often: take scattered records and turn them into something people can actually use."
   category: featured
-  type: Work-inspired
+  type: Professional work
   url: /experience/#envoyx
-  cta: View experience
+  experience_anchor: envoyx
+  cta: View role context
   tags:
     - GTM data
     - Attribution
     - Warehouse
+  challenge: "Different teams were working from different customer records, so even simple reporting questions kept turning into reconciliation work."
+  system_points:
+    - "Stitched CRM, GA4, product, billing, and support records into one account-level model."
+    - "Defined shared identity, touchpoint, conversion, and revenue logic so teams were not reconciling the same customer in different ways."
+    - "Added dashboards, lineage, and ownership rules so the model stayed useful after handoff."
+  outcomes:
+    - one customer view
+    - shared revenue logic
+    - easier budget calls
+  story: "The value was not a prettier report. The value was giving GTM teams one version of the customer so planning and budget decisions stopped breaking on record mismatch."
+  tools:
+    - Snowflake
+    - dbt
+    - SQL
+    - Salesforce
+    - GA4
 
-- title: Modern ELT Reliability Platform
+- title: ELT Reliability and Monitoring
   slug: elt-reliability
-  summary: Built an ELT foundation with testing, monitoring, lineage, and reusable patterns so analytics data held up under wider use.
-  why_it_matters: Shows production-minded data engineering rather than one-off pipeline work.
+  summary: "Built a steadier data foundation with tests, monitoring, and clearer pipeline ownership."
+  why_it_matters: "It shows the production side of the work: make sure the system still works after the first launch."
   category: featured
-  type: Work-inspired
+  type: Professional work
   url: /experience/#envoyx
-  cta: Read the role story
+  experience_anchor: envoyx
+  cta: View role context
   tags:
     - dbt
     - Airflow
     - Reliability
+  challenge: "The pipeline worked just enough to be relied on, but not enough to be trusted."
+  system_points:
+    - "Built a layered ELT flow with staging models, curated marts, and reusable onboarding patterns for new sources."
+    - "Added dbt tests, freshness checks, lineage docs, and monitoring so reliability could be checked directly instead of guessed at."
+    - "Used CI workflows and data contracts to catch bad changes before they reached dashboards or leadership reporting."
+  outcomes:
+    - steadier runs
+    - clearer failure paths
+    - faster new-source setup
+  story: "Once the pipeline had tests, runbooks, and visible ownership, analysts could stop treating every table like a special case."
+  tools:
+    - Python
+    - SQL
+    - dbt
+    - Airflow
+    - GitHub Actions
 
-- title: Funnel Deep-Dive and Experimentation Measurement System
+- title: Onboarding Funnel and Experiment Readouts
   slug: funnel-measurement
-  summary: Standardized event instrumentation and experiment readouts so product changes could be tied back to activation and onboarding outcomes.
-  why_it_matters: Shows product analytics rigor, not just dashboarding.
+  summary: "Built cleaner event tracking and experiment readouts so product teams could see where onboarding was breaking."
+  why_it_matters: "It shows product analytics being used as a decision tool, not just a reporting layer."
   category: featured
-  type: Work-inspired
+  type: Professional work
   url: /experience/#zego
-  cta: View experience
+  experience_anchor: zego
+  cta: View role context
   tags:
     - Experimentation
     - Funnel analysis
     - Product analytics
+  challenge: "Changes were shipping faster than the team could agree on what was working."
+  system_points:
+    - "Standardized event taxonomy, exposure logging, and reusable funnel models across onboarding and checkout flows."
+    - "Built experiment readout templates with guardrail metrics so results were easier to compare from one launch to the next."
+    - "Added cohort and decision-tracking views that connected analysis back to the change a team actually made."
+  outcomes:
+    - clearer drop-off points
+    - cleaner test readouts
+    - faster product calls
+  story: "The project mattered because it turned experiments into a repeatable workflow. Teams could see the change, read the result, and make the next call faster."
+  tools:
+    - Snowflake
+    - SQL
+    - Python
+    - Experimentation
+    - Dashboarding
 
 - title: FlightPriceBias
   slug: flightpricebias
-  summary: Investigated airfare pricing and fairness risk through predictive modeling and algorithmic bias analysis.
-  why_it_matters: Combines predictive modeling with transportation economics and real fairness trade-offs.
+  summary: "Used airfare data to study prediction quality and fairness risk at the same time."
+  why_it_matters: "It combines model work with a question I care about: how a system can look useful while still producing uneven outcomes."
   category: featured
-  type: Personal
+  type: Independent project
   url: https://ptse8204.github.io/flightpricebias/
   cta: Open live project
   tags:
     - Fairness
     - Transportation
     - ML
+  challenge: "The question was simple: can a fare model look strong while still hiding fairness problems?"
+  system_points:
+    - "Built repeatable preprocessing over DOT DB1B-style fare tables, including joins, route aggregation, and fare-per-mile features."
+    - "Benchmarked baseline classifiers alongside fairness-aware mitigation approaches using scikit-learn and AIF360."
+    - "Compared predictive performance with fairness metrics so the trade-offs stayed visible."
+  outcomes:
+    - fairness risk made visible
+    - trade-offs easier to explain
+    - more grounded model review
+  story: "The point was not to claim the model was fixed forever. It was to make the trade-offs clear enough for someone to make a better decision."
+  tools:
+    - Python
+    - scikit-learn
+    - AIF360
+    - pandas
+    - Fairness metrics
 
 - title: Transit Hub Access Study
   slug: transit-hub-access
-  summary: Evaluated access, safety, and connectivity around transit hubs through GIS and urban planning analysis.
-  why_it_matters: Connects spatial analysis to access, safety, and planning decisions in public systems.
+  summary: "Used maps and planning analysis to compare access, safety, and network fit around transit hubs."
+  why_it_matters: "It shows the public-systems side of my work in a form that is still easy to read."
   category: featured
   type: Research
-  url: /projectpages/embeddingarc_w_head_w_cover
+  url: /projectpages/embeddingarc_w_head_w_cover/
   cta: View case study
   tags:
     - Urban planning
     - GIS
     - Transportation
+  challenge: "The project needed to explain transit trade-offs, not just show a map."
+  system_points:
+    - "Analyzed hub access and surrounding conditions with a GIS workflow designed to compare several planning factors at once."
+    - "Used layered maps, planning criteria, and short narrative framing to show why a hub can look strong on one measure and weak on another."
+    - "Turned a planning question into a case study that someone outside a GIS classroom could still follow."
+  outcomes:
+    - hub trade-offs made clear
+    - map story easier to read
+    - planning context kept intact
+  story: "This is one of the clearest public examples of the broader context that keeps showing up in my work, even when the tools change."
+  tools:
+    - ArcGIS
+    - GeoPandas
+    - Spatial analysis
+    - Planning research
+
+- title: Shared KPI Layer for Product and Ops
+  slug: kpi-ownership
+  summary: "Built a KPI layer that gave product, ops, and finance teams one shared reporting language."
+  why_it_matters: "It shows that good reporting starts before the chart, at the definition and ownership layer."
+  category: work_relevant
+  type: Professional work
+  url: /experience/#ups-analyst
+  experience_anchor: ups-analyst
+  cta: View role context
+  tags:
+    - KPI governance
+    - Semantic layer
+    - BI
+  challenge: "Leadership meetings kept stalling because each team had its own version of the same KPI."
+  system_points:
+    - "Unified event, warehouse, and reporting logic behind a governed metric layer instead of dashboard-specific calculations."
+    - "Added QA checks, ownership metadata, and freshness monitoring so executive metrics behaved like maintained products."
+    - "Supported drill-down workflows for operators and leaders instead of a single static dashboard."
+  outcomes:
+    - one KPI language
+    - cleaner weekly reviews
+    - less reporting churn
+  story: "The dashboard only became useful once the definitions settled down. After that, the meeting could move from reconciliation to decision."
+  tools:
+    - SQL
+    - dbt
+    - Power BI
+    - Azure SQL
+    - QA monitoring
+
+- title: BizOps Control Tower
+  slug: bizops-control-tower
+  summary: "Built a leadership view that pulled blockers, priorities, and weekly operating signals into one place."
+  why_it_matters: "It shows analytics helping leaders decide what to do next, not just summarize what already happened."
+  category: work_relevant
+  type: Professional work
+  url: /experience/#ups-analyst
+  experience_anchor: ups-analyst
+  cta: View role context
+  tags:
+    - BizOps
+    - Executive reporting
+    - Prioritization
+  challenge: "Important updates were spread across decks, sheets, and team dashboards, so blockers stayed hidden too long."
+  system_points:
+    - "Combined initiative tracking, KPI monitoring, and bottleneck views into one reporting surface."
+    - "Built drill-down views and weekly review packs so leadership could move from status collection to prioritization."
+    - "Made trade-offs explicit by tying project health back to shared business measures instead of isolated team updates."
+  outcomes:
+    - clearer priorities
+    - faster leadership prep
+    - better view of blockers
+  story: "The key shift was simple: the review stopped being a recap and started acting like a working control room."
+  tools:
+    - SQL
+    - Power BI
+    - Excel
+    - Operational reporting
+    - KPI design
+
+- title: Churn and Retention Early Warning
+  slug: churn-early-warning
+  summary: "Turned product, billing, and support signals into a workflow that helped teams spot retention risk earlier."
+  why_it_matters: "It shows model work being used inside a real operating loop instead of ending at a score."
+  category: work_relevant
+  type: Professional work
+  url: /experience/#zego
+  experience_anchor: zego
+  cta: View role context
+  tags:
+    - Retention
+    - ML
+    - Intervention design
+  challenge: "A churn score by itself was not useful enough. The team still needed a clear order of action and a way to know when the model had gone stale."
+  system_points:
+    - "Combined behavioral, billing, and support features into a ranked risk model for at-risk accounts."
+    - "Focused evaluation on actionability with calibration checks and intervention-aware thresholds."
+    - "Added CRM integration, drift checks, and outcome feedback so the model stayed useful after launch."
+  outcomes:
+    - earlier risk signal
+    - clearer outreach order
+    - model stays useful longer
+  story: "The model only became valuable once it helped a team decide who to contact first and when the scoring needed another look."
+  tools:
+    - Python
+    - SQL
+    - scikit-learn
+    - Snowflake
+    - Monitoring
+
+- title: Compliance Review Operations
+  slug: privacy-compliance
+  summary: "Turned compliance intake, backlog, and review status into a workflow leaders could actually manage."
+  why_it_matters: "It shows operations work in a high-stakes setting where the queue itself has to be easy to inspect."
+  category: work_relevant
+  type: Professional work
+  url: /experience/#ups-brokerage
+  experience_anchor: ups-brokerage
+  cta: View role context
+  tags:
+    - Compliance
+    - SLA monitoring
+    - Operational analytics
+  challenge: "The review queue was hard to read, which made delays and audit follow-up harder than they needed to be."
+  system_points:
+    - "Centralized intake, inventory, review status, and evidence tracking into one operating view."
+    - "Added structured status language, aging logic, and escalation alerts so SLA risk became visible earlier."
+    - "Organized artifacts into a searchable repository that made audits and follow-up easier."
+  outcomes:
+    - visible review queue
+    - cleaner status language
+    - faster audit follow-up
+  story: "The project worked because it made the queue easy to read. Once the workflow had clear status language and a shared structure, leadership could manage risk with less guesswork."
+  tools:
+    - SQL
+    - Power BI
+    - Workflow tooling
+    - Documentation
+    - Reporting
+
+- title: Pricing Scenario Workbench
+  slug: dynamic-pricing
+  summary: "Built a pricing workbench that let teams compare trade-offs before making a pricing move."
+  why_it_matters: "It treats pricing as a decision process, not a single answer from a model."
+  category: work_relevant
+  type: Professional work
+  url: /experience/#crosswork
+  experience_anchor: crosswork
+  cta: View role context
+  tags:
+    - Pricing
+    - Simulation
+    - Revenue analytics
+  challenge: "The team needed a better way to compare pricing paths without arguing from instinct alone."
+  system_points:
+    - "Modeled historical price-demand behavior with business-rule constraints such as margin floors and segment-level trade-offs."
+    - "Built a scenario engine and dashboard that let operators compare candidate prices instead of accepting one opaque answer."
+    - "Tracked realized versus predicted lift so the model could earn trust over time."
+  outcomes:
+    - clearer pricing trade-offs
+    - same-day scenario review
+    - more trustworthy rollout checks
+  story: "The useful part was transparency. People could see the assumptions, compare paths, and check whether the recommendation held up after rollout."
+  tools:
+    - Python
+    - SQL
+    - Optimization logic
+    - Power BI
+    - Scenario modeling
 
 - title: craveforcapes
   slug: craveforcapes
-  summary: Explored UC San Diego CAPE data to surface patterns, trade-offs, and decision-support insights in a live tool.
-  why_it_matters: Shows a bias toward turning analysis into something other people can actually use.
+  summary: "Turned UC San Diego CAPE data into a live course-selection tool."
+  why_it_matters: "It is a smaller project, but it shows the same habit of turning raw data into something directly useful."
   category: work_relevant
-  type: External
+  type: Independent build
   url: https://ptse8204.github.io/craveforcapes
   cta: Open live project
   tags:
     - Analytics
     - Data product
     - Education
+  challenge: "Course evaluation data is only useful if people can compare it quickly enough to make a decision."
+  system_points:
+    - "Pulled and structured CAPE data into a usable exploration surface."
+    - "Focused the interface on direct comparison and decision support instead of a raw table dump."
+    - "Kept the project lightweight enough to feel more like a tool than an analysis artifact."
+  outcomes:
+    - usable course explorer
+    - faster class comparison
+    - data turned into a tool
+  story: "It is a small project, but it makes the same point as the bigger ones: information becomes more valuable when someone can act on it quickly."
+  tools:
+    - JavaScript
+    - Data wrangling
+    - UI implementation
 
 - title: GTFS Explorer
   slug: gtfs-explorer
-  summary: Built a transit-planning workflow over GTFS feeds to make route and stop analysis more actionable.
-  why_it_matters: Connects data tooling with long-standing work in public transportation systems.
+  summary: "Built a GTFS tool that makes route and stop analysis easier to search and explore."
+  why_it_matters: "It connects transit systems work with a tool that feels closer to something an operator could actually use."
   category: work_relevant
-  type: Personal
-  url: /projects#transportation-and-domain-work
-  cta: Explore the library
+  type: Independent build
+  url: https://gtfs-explorer.streamlit.app
+  cta: Open live demo
   tags:
     - GTFS
     - Transit
     - Tooling
+  challenge: "The goal was to build something closer to an operator tool than a notebook: responsive enough for schedule exploration, but still capable of search-based planning."
+  system_points:
+    - "Normalized GTFS tables for stops, routes, trips, stop times, and calendars so the data could support interactive use."
+    - "Added cached indexing and fast timetable lookup patterns to keep the interface usable on larger feeds."
+    - "Implemented coverage-guided adaptive beam search so multi-stop planning stayed feasible under real compute limits."
+  outcomes:
+    - planner-friendly GTFS view
+    - faster schedule lookup
+    - search that stays usable
+  story: "This sits in a part of the work I enjoy a lot: technical logic that still has to become a usable tool for another person."
+  tools:
+    - Python
+    - Streamlit
+    - NumPy
+    - pandas
+    - Search heuristics
 
-- title: UCSD Long-Term Debt Load Analysis
+- title: UC San Diego Debt and Planning Analysis
   slug: ucsd-debt
-  summary: Investigated long-term debt and planning trade-offs at UC San Diego through a business and policy lens.
-  why_it_matters: Adds economics and institutional analysis to the broader systems perspective.
+  summary: "Looked at long-term debt and campus planning trade-offs at UC San Diego through a business and policy lens."
+  why_it_matters: "It adds institutional analysis and economic reasoning to the broader systems perspective running through the rest of the portfolio."
   category: domain
   type: Research
   url: https://ptse8204.github.io/2023/04/06/How-Realistic-Capital-Concerns-of-UCSD-Should-Put-More-Effort-of-Rethinking-Parking.html
@@ -101,11 +363,19 @@
     - Economics
     - Planning
     - Policy
+  challenge: "The project asked whether capital decisions and parking strategy were being framed too narrowly in a campus planning context."
+  system_points:
+    - "Combined institutional finance, planning constraints, and narrative analysis."
+    - "Used the project to reason about incentives instead of isolated infrastructure choices."
+  outcomes:
+    - finance trade-offs easier to read
+    - planning context made visible
+  story: "It is a quieter project, but it helps explain why incentives and public-system design keep showing up in how I frame technical work."
 
 - title: Greenhouse Gas Reduction Essay
   slug: ghg-essay
-  summary: Wrote a transportation-planning essay on how mode access and community design affect emissions outcomes.
-  why_it_matters: Shows how policy and transportation questions inform the way I think about systems outcomes.
+  summary: "Wrote a transportation planning essay on how mode access and community design affect emissions outcomes."
+  why_it_matters: "It shows how transportation and policy questions continue to shape the way I think about system-level outcomes."
   category: domain
   type: Research
   url: /assets/ghg_essay.pdf
@@ -114,11 +384,19 @@
     - Sustainability
     - Transportation
     - Writing
+  challenge: "The essay tried to connect emissions outcomes back to planning choices instead of treating them as a purely technical problem."
+  system_points:
+    - "Framed emissions through access, mode choice, and urban form."
+    - "Used policy writing to make systems trade-offs clear without a technical stack."
+  outcomes:
+    - systems argument made clear
+    - policy trade-offs easier to follow
+  story: "It belongs here because the portfolio would feel incomplete without the public-systems questions that keep shaping my technical taste."
 
-- title: Automated Morning and Night Greets
+- title: Morning and Night Automation
   slug: imshortcuts
-  summary: Built a lightweight iOS shortcut workflow that turns a repetitive personal task into a practical automation.
-  why_it_matters: A concise example of practical automation applied to a recurring task.
+  summary: "Built a lightweight iOS shortcut workflow that turns a repetitive personal task into a simple automation."
+  why_it_matters: "It is a small example of the same instinct toward removing manual overhead with a direct solution."
   category: fun
   type: Utility
   url: /imshortcuts
@@ -127,11 +405,19 @@
     - Automation
     - iOS
     - Personal tooling
+  challenge: "The problem was deliberately ordinary: if a task repeats often enough, it deserves a workflow instead of another reminder."
+  system_points:
+    - "Built a small automation that removed a recurring manual step."
+    - "Kept the flow simple enough that using it never became its own maintenance burden."
+  outcomes:
+    - small task removed
+    - routine feels automatic
+  story: "It is a tiny project, but it follows the same instinct as the bigger work: remove friction and leave behind a simpler process."
 
 - title: Archived and Shelved Work
   slug: archive
-  summary: An archive of projects that stalled, what they aimed to do, and what they still taught me.
-  why_it_matters: Shows how I evaluate feasibility, iteration, and trade-offs, not just finished outcomes.
+  summary: "An archive of projects that stalled, what they aimed to do, and what they still taught me."
+  why_it_matters: "I keep this here because abandoned work can still say something useful about judgment, constraints, and how a project was evaluated."
   category: archive
   type: Archive
   url: /projectpages/deadproject
@@ -140,3 +426,10 @@
     - Archive
     - Reflection
     - Process
+  challenge: "Some work is useful mainly because it clarifies what was not worth continuing."
+  system_points:
+    - "Captured project intent, stopping conditions, and the lesson that still carried forward."
+  outcomes:
+    - stopped work still teaches
+    - constraints kept visible
+  story: "The archive stays because good judgment includes knowing when to stop and being honest about why."

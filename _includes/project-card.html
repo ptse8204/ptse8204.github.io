@@ -1,35 +1,117 @@
-{% assign href = include.project.url %}
-{% if href contains '://' %}
+{% assign href = include.project.url | default: "" %}
+{% if href == "" %}
+  {% assign project_href = "" %}
+{% elsif href contains '://' %}
   {% assign project_href = href %}
 {% else %}
   {% assign project_href = href | relative_url %}
 {% endif %}
 {% assign project_class = include.project.category | replace: "_", "-" %}
-<article class="project-card project-card--{{ project_class }}" data-reveal>
+<article id="{{ include.project.slug }}" class="project-card project-card--{{ project_class }}" data-reveal>
   <div class="project-card__art" aria-hidden="true">
-    <svg class="project-card__mesh" viewBox="0 0 240 170" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 136C42 128 52 88 84 84C122 79 142 118 176 116C205 114 220 91 232 48" />
-      <path d="M26 42C52 52 69 82 101 90C136 99 156 78 188 92C212 103 222 129 232 156" />
-      <circle cx="84" cy="84" r="7" />
-      <circle cx="176" cy="116" r="7" />
-      <circle cx="188" cy="92" r="8" />
-    </svg>
-    <div class="project-card__meter">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="story-board story-board--mini">
+      <div class="story-board__chrome" aria-hidden="true">
+        <span></span><span></span><span></span>
+        <p>{{ include.project.type }}</p>
+      </div>
+      <div class="story-board__rows">
+        {% if include.project.outcomes and include.project.outcomes.size > 0 %}
+          {% for outcome in include.project.outcomes limit: 3 %}
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">
+                {% case forloop.index %}
+                  {% when 1 %}State
+                  {% when 2 %}Build
+                  {% else %}Use
+                {% endcase %}
+              </span>
+              <strong>{{ outcome }}</strong>
+            </div>
+          {% endfor %}
+        {% elsif include.project.tags and include.project.tags.size > 0 %}
+          {% for tag in include.project.tags limit: 3 %}
+            <div class="story-board__row">
+              <span class="story-board__signal" aria-hidden="true"></span>
+              <span class="story-board__step">Tag</span>
+              <strong>{{ tag }}</strong>
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
     </div>
   </div>
+
   <div class="project-card__top">
     <p class="project-card__type">{{ include.project.type }}{% if include.project.tags and include.project.tags.size > 0 %} · {{ include.project.tags | join: " · " }}{% endif %}</p>
     <h3>{{ include.project.title }}</h3>
-    <p>{{ include.project.summary }}</p>
+    <p>{{ include.project.summary | default: "Summary coming soon." }}</p>
   </div>
 
   <div class="project-card__middle">
-    <p class="project-card__why">{{ include.project.why_it_matters }}</p>
+    <p class="project-card__why">{{ include.project.why_it_matters | default: "Additional context coming soon." }}</p>
   </div>
 
-  <a class="project-card__cta" href="{{ project_href }}">{{ include.project.cta }}</a>
+  <details class="project-card__details" data-disclosure>
+    <summary>Open project note</summary>
+    <div class="project-card__details-body">
+      {% if include.project.challenge %}
+        <p class="project-card__case-lede">{{ include.project.challenge }}</p>
+      {% endif %}
+
+      {% if include.project.outcomes and include.project.outcomes.size > 0 %}
+        <div class="story-board">
+          <div class="story-board__chrome" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <p>{{ include.project.type }}</p>
+          </div>
+          <div class="story-board__rows">
+            {% for outcome in include.project.outcomes limit: 3 %}
+              <div class="story-board__row">
+                <span class="story-board__signal" aria-hidden="true"></span>
+                <span class="story-board__step">
+                  {% case forloop.index %}
+                    {% when 1 %}State
+                    {% when 2 %}Build
+                    {% else %}Result
+                  {% endcase %}
+                </span>
+                <strong>{{ outcome }}</strong>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="story-disclosure__grid">
+        {% if include.project.system_points and include.project.system_points.size > 0 %}
+          <div>
+            <p class="mini-label">What changed</p>
+            <ul class="story-points">
+              {% for point in include.project.system_points %}
+                <li>{{ point }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+
+        {% if include.project.story %}
+          <div>
+            <p class="mini-label">Why it helped</p>
+            <p class="story-disclosure__story">{{ include.project.story }}</p>
+          </div>
+        {% endif %}
+      </div>
+
+      {% if include.project.tools and include.project.tools.size > 0 %}
+        <p class="tool-list">{{ include.project.tools | join: " · " }}</p>
+      {% endif %}
+    </div>
+  </details>
+
+  {% if project_href != "" %}
+    <a class="project-card__cta" href="{{ project_href }}">{{ include.project.cta | default: "View project" }}</a>
+  {% else %}
+    <p class="project-card__cta project-card__cta--muted">Details will be added here</p>
+  {% endif %}
 </article>

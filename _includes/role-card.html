@@ -8,26 +8,149 @@
   <div class="role-card__body">
     <div class="role-card__header">
       <h3>{{ include.role.role }}</h3>
-      <p>{{ include.role.summary }}</p>
+      <p>{{ include.role.summary | default: "Role summary coming soon." }}</p>
     </div>
 
-    <p class="role-card__capabilities">{{ include.role.capabilities | join: " · " }}</p>
+    {% if include.role.impact_metrics and include.role.impact_metrics.size > 0 %}
+      <div class="outcome-rack outcome-rack--role" aria-label="Role outcomes">
+        {% for metric in include.role.impact_metrics %}
+          <article class="signal-panel signal-panel--role">
+            <div class="signal-panel__chrome" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="signal-panel__label">
+              {% case forloop.index %}
+                {% when 1 %}Team view
+                {% when 2 %}Working flow
+                {% else %}Decision use
+              {% endcase %}
+            </p>
+            <p class="signal-panel__text">{{ metric }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
 
-    <ul class="proof-list">
-      {% for point in include.role.proof_points %}
-        <li>{{ point }}</li>
-      {% endfor %}
-    </ul>
+    {% if include.role.capabilities and include.role.capabilities.size > 0 %}
+      <p class="role-card__capabilities">{{ include.role.capabilities | join: " · " }}</p>
+    {% endif %}
+
+    {% if include.role.proof_points and include.role.proof_points.size > 0 %}
+      <ul class="proof-list">
+        {% for point in include.role.proof_points %}
+          <li>{{ point }}</li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="role-card__empty">Highlights coming soon.</p>
+    {% endif %}
+
+    {% if include.role.related_projects and include.role.related_projects.size > 0 %}
+      <div class="role-card__stories" data-disclosure-group>
+        <p class="mini-label">Project notes</p>
+        <p class="role-card__story-intro">Open the related notes to see the problem, what changed, and why it helped.</p>
+        {% for project_ref in include.role.related_projects %}
+          {% assign project_record = site.data.projects | where: "slug", project_ref | first %}
+          {% unless project_record %}
+            {% assign project_record = site.data.projects | where: "title", project_ref | first %}
+          {% endunless %}
+          {% if project_record %}
+            <details class="story-disclosure" data-disclosure>
+              <summary class="story-disclosure__summary">
+                <span class="story-disclosure__title">{{ project_record.title }}</span>
+                <span class="story-disclosure__hint">Open note</span>
+              </summary>
+              <div class="story-disclosure__body">
+                {% if project_record.challenge %}
+                  <p class="story-disclosure__lede">{{ project_record.challenge }}</p>
+                {% endif %}
+
+                {% if project_record.outcomes and project_record.outcomes.size > 0 %}
+                  <div class="story-board">
+                    <div class="story-board__chrome" aria-hidden="true">
+                      <span></span><span></span><span></span>
+                      <p>{{ project_record.type }}</p>
+                    </div>
+                    <div class="story-board__rows">
+                      {% for outcome in project_record.outcomes limit: 3 %}
+                        <div class="story-board__row">
+                          <span class="story-board__signal" aria-hidden="true"></span>
+                          <span class="story-board__step">
+                            {% case forloop.index %}
+                              {% when 1 %}State
+                              {% when 2 %}System
+                              {% else %}Result
+                            {% endcase %}
+                          </span>
+                          <strong>{{ outcome }}</strong>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                {% endif %}
+
+                <div class="story-disclosure__grid">
+                  {% if project_record.system_points and project_record.system_points.size > 0 %}
+                    <div>
+                      <p class="mini-label">What changed</p>
+                      <ul class="story-points">
+                        {% for point in project_record.system_points %}
+                          <li>{{ point }}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  {% endif %}
+
+                  {% if project_record.story %}
+                    <div>
+                      <p class="mini-label">Why it helped</p>
+                      <p class="story-disclosure__story">{{ project_record.story }}</p>
+                    </div>
+                  {% endif %}
+                </div>
+
+                {% if project_record.tools and project_record.tools.size > 0 %}
+                  <p class="tool-list">{{ project_record.tools | join: " · " }}</p>
+                {% endif %}
+
+                <a class="text-link" href="{{ '/projects/' | relative_url }}#{{ project_record.slug }}">See full project note</a>
+              </div>
+            </details>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
 
     <div class="role-card__footer">
       <div>
         <p class="mini-label">Related work</p>
-        <p class="tool-list">{{ include.role.related_projects | join: " · " }}</p>
+        {% if include.role.related_projects and include.role.related_projects.size > 0 %}
+          <p class="tool-list tool-list--linked">
+            {% for project_ref in include.role.related_projects %}
+              {% assign project_record = site.data.projects | where: "slug", project_ref | first %}
+              {% unless project_record %}
+                {% assign project_record = site.data.projects | where: "title", project_ref | first %}
+              {% endunless %}
+              {% if project_record %}
+                <a class="tool-list__link" href="{{ '/projects/' | relative_url }}#{{ project_record.slug }}">{{ project_record.title }}</a>
+              {% else %}
+                <span>{{ project_ref }}</span>
+              {% endif %}
+              {% unless forloop.last %}<span aria-hidden="true"> · </span>{% endunless %}
+            {% endfor %}
+          </p>
+        {% else %}
+          <p class="tool-list">Related work will be added here.</p>
+        {% endif %}
       </div>
 
       <div>
         <p class="mini-label">Tools</p>
-        <p class="tool-list">{{ include.role.tools | join: " · " }}</p>
+        {% if include.role.tools and include.role.tools.size > 0 %}
+          <p class="tool-list">{{ include.role.tools | join: " · " }}</p>
+        {% else %}
+          <p class="tool-list">Tooling details will be added here.</p>
+        {% endif %}
       </div>
     </div>
   </div>
