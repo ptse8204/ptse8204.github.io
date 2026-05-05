@@ -1,17 +1,17 @@
 ---
 layout: page
 title: About
-subtitle: I work across data engineering, analytics, and operations-facing problem solving, with a long-standing interest in infrastructure, planning, and how real systems behave in practice.
+subtitle: I work across data engineering, analytics, and operations-facing problem solving, with a long-running interest in infrastructure, planning, and systems that have to work in practice.
 kicker: About
 permalink: /aboutme/
 visual_variant: about
 visual_density: medium
 ---
 <article class="surface-card surface-card--summary" data-reveal>
-  <p class="section-kicker">Working Style</p>
-  <h2>I usually start by asking which number or workflow people no longer trust.</h2>
+  <p class="section-kicker">Working style</p>
+  <h2>I usually start with the number or workflow people no longer trust.</h2>
   <p>
-    Most of my work starts the same way: the data exists, but the usable version does not. I like the point where operations, logic, and implementation meet because that is where vague definitions and edge cases finally become concrete.
+    Most of my work starts the same way: the data exists, but the usable version does not. I like the point where operations, logic, and implementation meet because vague definitions and edge cases finally become concrete there.
   </p>
   <div class="outcome-rack">
     <article class="signal-panel">
@@ -35,7 +35,7 @@ visual_density: medium
 <div class="two-column">
   <article class="surface-card" data-reveal>
     <p class="section-kicker">Background</p>
-    <h2>My background is one reason this site does not fit neatly into one category.</h2>
+    <h2>My background mixes data systems, business context, and public infrastructure.</h2>
     <p>
       I studied Data Science and Business Economics at UC San Diego, with a minor in Urban Studies and Planning. That mix left me equally interested in technical systems, incentives, and the institutions those systems sit inside.
     </p>
@@ -46,7 +46,7 @@ visual_density: medium
 
   <article class="surface-card" data-reveal>
     <p class="section-kicker">Perspective</p>
-    <h2>Transportation and planning still shape the way I think.</h2>
+    <h2>Transportation and planning still shape how I think about data work.</h2>
     <p>
       Transportation and planning gave me a durable interest in throughput, access, incentives, and the downstream effects of technical choices.
     </p>
@@ -68,9 +68,9 @@ visual_density: medium
 
 <section class="quiz-shell" data-reveal>
   <div class="section-heading">
-    <p class="section-kicker">What To Expect</p>
-    <h2>What people can usually expect from my work.</h2>
-    <p>The pattern is usually straightforward. I try to make the problem easier to see, the logic easier to follow, and the handoff easier for the next team.</p>
+    <p class="section-kicker">What to expect</p>
+    <h2>A practical bias toward useful, inspectable systems.</h2>
+    <p>The pattern is straightforward. I try to make the problem easier to see, the logic easier to follow, and the handoff easier for the next team.</p>
   </div>
   <div class="quiz-grid">
     <article class="quiz-card">

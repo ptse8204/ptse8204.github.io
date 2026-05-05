@@ -7,6 +7,7 @@
 
   <div class="role-card__body">
     <div class="role-card__header">
+      <p class="mini-label">Role context</p>
       <h3>{{ include.role.role }}</h3>
       <p>{{ include.role.summary | default: "Role summary coming soon." }}</p>
     </div>
@@ -32,10 +33,12 @@
     {% endif %}
 
     {% if include.role.capabilities and include.role.capabilities.size > 0 %}
+      <p class="mini-label">Capabilities</p>
       <p class="role-card__capabilities">{{ include.role.capabilities | join: " · " }}</p>
     {% endif %}
 
     {% if include.role.proof_points and include.role.proof_points.size > 0 %}
+      <p class="mini-label">Proof points</p>
       <ul class="proof-list">
         {% for point in include.role.proof_points %}
           <li>{{ point }}</li>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: "A selection of projects that show the kind of work I do most often: make something clearer, more reliable, and easier for another person to use."
+subtitle: "Case notes for the work behind the resume: messy inputs, clearer systems, and more dependable decisions."
 kicker: Projects
 permalink: /projects/
 visual_variant: projects
@@ -15,18 +15,18 @@ visual_density: high
 {% assign more_builds_count = work_relevant_projects.size | plus: fun_projects.size %}
 
 <article class="surface-card surface-card--summary" data-reveal>
-  <p class="section-kicker">How to read this page</p>
-  <h2>These are case notes, not thumbnails.</h2>
+  <p class="section-kicker">How to scan</p>
+  <h2>Each note answers three recruiter questions.</h2>
   <p>
-    Each project opens into a short note on the problem, what was built, and what changed. The page is meant to stay easy to scan before it asks for more attention.
+    What was unclear or brittle? What system or workflow changed? What became easier for the people using it? Open a card when you want the short version behind a resume line.
   </p>
 </article>
 
 <section id="featured-work" class="project-section project-section--featured">
   <div class="section-heading section-heading--split" data-reveal>
     <p class="section-kicker">Featured work</p>
-    <h2>The fastest way to understand how I work.</h2>
-    <p>Start here for the clearest read on the problems I take on and the kind of systems I tend to leave behind.</p>
+    <h2>The clearest examples of my data systems work.</h2>
+    <p>Start here for customer identity, ELT reliability, product measurement, fairness review, and transportation analysis.</p>
   </div>
   {% if featured_projects and featured_projects.size > 0 %}
     <div class="project-grid project-grid--featured" data-disclosure-group>
@@ -44,8 +44,8 @@ visual_density: high
 
 <section id="more-builds" class="project-section project-section--technical">
   <div class="section-heading" data-reveal>
-    <h2>More builds</h2>
-    <p>More systems and smaller builds that show the same preference for useful outputs and clear handoffs.</p>
+    <h2>More systems and workflow builds</h2>
+    <p>Additional examples with the same pattern: make the work clearer, easier to maintain, and easier to use.</p>
   </div>
   {% if more_builds_count > 0 %}
     <div class="project-grid project-grid--secondary" data-disclosure-group>
@@ -64,7 +64,7 @@ visual_density: high
 <section id="transportation-and-domain-work" class="project-section project-section--domain">
   <div class="section-heading" data-reveal>
     <h2>Transportation and planning</h2>
-    <p>Work that shows the wider context behind the rest of the portfolio.</p>
+    <p>Domain work that explains why I care about infrastructure, access, measurement, and practical trade-offs.</p>
   </div>
   {% if domain_projects and domain_projects.size > 0 %}
     <div class="project-grid project-grid--secondary" data-disclosure-group>

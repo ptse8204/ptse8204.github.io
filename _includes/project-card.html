@@ -49,13 +49,15 @@
   </div>
 
   <div class="project-card__middle">
+    <p class="mini-label">Recruiter read</p>
     <p class="project-card__why">{{ include.project.why_it_matters | default: "Additional context coming soon." }}</p>
   </div>
 
   <details class="project-card__details" data-disclosure>
-    <summary>Open project note</summary>
+    <summary>Open case note</summary>
     <div class="project-card__details-body">
       {% if include.project.challenge %}
+        <p class="mini-label">Problem</p>
         <p class="project-card__case-lede">{{ include.project.challenge }}</p>
       {% endif %}
 
@@ -86,7 +88,7 @@
       <div class="story-disclosure__grid">
         {% if include.project.system_points and include.project.system_points.size > 0 %}
           <div>
-            <p class="mini-label">What changed</p>
+            <p class="mini-label">System change</p>
             <ul class="story-points">
               {% for point in include.project.system_points %}
                 <li>{{ point }}</li>
@@ -97,7 +99,7 @@
 
         {% if include.project.story %}
           <div>
-            <p class="mini-label">Why it helped</p>
+            <p class="mini-label">Why it mattered</p>
             <p class="story-disclosure__story">{{ include.project.story }}</p>
           </div>
         {% endif %}

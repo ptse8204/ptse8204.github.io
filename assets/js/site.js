@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const revealNodes = document.querySelectorAll("[data-reveal]");
   const roleCards = document.querySelectorAll(".role-card");
   const ambientNodes = document.querySelectorAll(
-    ".brief-panel, .frame-card, .surface-card, .archive-card, .hero-figure__frame, .signal-panel, .project-card__details, .story-disclosure, .quiz-card, .quiz-result, .hero-atlas__panel"
+    ".brief-panel, .frame-card, .surface-card, .archive-card, .hero-figure__frame, .signal-panel, .snapshot-panel, .role-strip__item, .project-card__details, .story-disclosure, .quiz-card, .quiz-result, .hero-atlas__panel"
   );
   const prefersReducedMotion = safeMatchMedia("(prefers-reduced-motion: reduce)").matches;
   const canHoverPrecisely = safeMatchMedia("(hover: hover) and (pointer: fine)").matches;

@@ -8,155 +8,81 @@ visual_variant: homepage
 visual_density: high
 ---
 {% assign featured_projects = site.data.projects | where: "category", "featured" %}
-{% assign hero_revenue_project = site.data.projects | where: "slug", "customer-360" | first %}
-{% assign hero_reliability_project = site.data.projects | where: "slug", "elt-reliability" | first %}
-{% assign hero_transit_project = site.data.projects | where: "slug", "transit-hub-access" | first %}
+{% assign recent_roles = site.data.experience | slice: 0, 3 %}
 
-<section class="home-hero">
+<section class="home-hero home-hero--recruiter">
   <div class="shell home-hero__grid">
     <div class="home-hero__copy" data-reveal>
-      <p class="home-hero__eyebrow">Data engineering, analytics systems, and workflow design</p>
+      <p class="home-hero__eyebrow">Data engineering · analytics engineering · product analytics</p>
       <h1>Edwin Tse</h1>
-      <p class="home-hero__role">I help teams turn messy, hard-to-trust data into something clear and usable.</p>
-      <p>
-        That usually means tracing broken handoffs, fixing inconsistencies, and leaving behind a setup other teams can use with confidence. Most of the work is practical: clean up the records, make the logic clear, and make sure the result holds up after handoff.
+      <p class="home-hero__role">I build data systems that make decisions easier to trust.</p>
+      <p class="home-hero__lede">
+        I work where scattered records, brittle reporting, and unclear definitions are slowing teams down. The useful output is usually a cleaner source of truth, a steadier workflow, and a handoff another team can keep using.
       </p>
-      <div class="chip-row" aria-label="Primary role fit">
-        <span class="chip chip--muted">GTM data systems</span>
-        <span class="chip chip--muted">Analytics engineering</span>
-        <span class="chip chip--muted">Product analytics</span>
-        <span class="chip chip--muted">Decision infrastructure</span>
-      </div>
+
       <div class="home-hero__actions">
-        <a class="button button--primary" href="{{ '/experience/' | relative_url }}">View experience</a>
-        <a class="button" href="{{ '/projects/' | relative_url }}">Browse case notes</a>
+        <a class="button button--primary" href="{{ '/experience/' | relative_url }}">Scan experience</a>
+        <a class="button" href="{{ '/projects/' | relative_url }}">Read project notes</a>
+        <a class="button button--quiet" href="{{ '/EdwinTseResume.pdf' | relative_url }}">Open resume</a>
       </div>
     </div>
 
-    <figure class="hero-figure" data-reveal>
+    <figure class="hero-figure hero-figure--recruiter" data-reveal>
       <div class="hero-figure__frame" data-ambient>
-        <div class="hero-figure__backdrop" aria-hidden="true"></div>
         <picture class="hero-figure__media">
-          <source srcset="{{ '/assets/img/home-hero-systems-dark.png' | relative_url }}" media="(prefers-color-scheme: dark)">
-          <img src="{{ '/assets/img/home-hero-systems-light.png' | relative_url }}" alt="Abstract editorial image evoking connected systems, mapped flows, and layered operational infrastructure." width="1600" height="1920" decoding="async" loading="eager" fetchpriority="high">
+          <img src="{{ '/assets/img/recruiter-systems-hero.svg' | relative_url }}" alt="Abstract systems visual showing connected data layers, review queues, and decision paths." width="1600" height="1920" decoding="async" loading="eager" fetchpriority="high">
         </picture>
-        <div class="hero-atlas" role="group" aria-label="Linked highlights from selected work">
-          <div class="hero-atlas__layer hero-atlas__layer--halo" data-parallax="0.18" aria-hidden="true">
-            <div class="hero-atlas__halo hero-atlas__halo--primary"></div>
-            <div class="hero-atlas__halo hero-atlas__halo--secondary"></div>
-          </div>
-
-          <div class="hero-atlas__layer hero-atlas__layer--routes" data-parallax="0.42" aria-hidden="true">
-            <svg class="hero-atlas__routes" viewBox="0 0 520 620" xmlns="http://www.w3.org/2000/svg">
-              <path class="hero-atlas__route hero-atlas__route--primary" d="M42 488C112 470 132 392 194 356C256 320 324 340 382 292C426 256 452 200 478 118" />
-              <path class="hero-atlas__route hero-atlas__route--secondary" d="M64 170C128 198 158 250 208 270C278 298 346 286 402 330C438 358 456 402 468 476" />
-              <path class="hero-atlas__route hero-atlas__route--signal" d="M100 96C170 110 214 140 260 194C304 246 346 268 410 274" />
-              <circle class="hero-atlas__node" cx="194" cy="356" r="7.5" />
-              <circle class="hero-atlas__node" cx="382" cy="292" r="8" />
-              <circle class="hero-atlas__node hero-atlas__node--accent" cx="260" cy="194" r="9" />
-              <circle class="hero-atlas__node-pulse" cx="260" cy="194" r="16" />
-            </svg>
-          </div>
-
-          <div class="hero-atlas__layer hero-atlas__layer--revenue" data-parallax="0.88">
-            <a class="hero-atlas__hotspot hero-atlas__hotspot--revenue" href="{{ '/projects/' | relative_url }}#{{ hero_revenue_project.slug }}" aria-label="Open {{ hero_revenue_project.title | default: 'featured work' }}">
-              <div class="hero-atlas__panel hero-atlas__panel--revenue">
-                <p class="hero-atlas__eyebrow">Revenue attribution</p>
-                <div class="hero-panel-list" aria-hidden="true">
-                  <span>records matched</span>
-                  <span>shared account view</span>
-                  <span>cleaner budget calls</span>
-                </div>
-                <p class="hero-atlas__meta">One place to see the customer, the touchpoints, and the reporting logic behind the result.</p>
-                <p class="hero-atlas__link">Open related work</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="hero-atlas__layer hero-atlas__layer--kpi" data-parallax="0.68">
-            <a class="hero-atlas__hotspot hero-atlas__hotspot--kpi" href="{{ '/projects/' | relative_url }}#{{ hero_reliability_project.slug }}" aria-label="Open {{ hero_reliability_project.title | default: 'featured work' }}">
-              <div class="hero-atlas__panel hero-atlas__panel--kpi">
-                <p class="hero-atlas__eyebrow">ELT reliability</p>
-                <div class="hero-panel-list" aria-hidden="true">
-                  <span>tests watching runs</span>
-                  <span>clear failure path</span>
-                  <span>quieter reporting week</span>
-                </div>
-                <p class="hero-atlas__meta">A pipeline with clear checks, clear ownership, and less cleanup after the fact.</p>
-                <p class="hero-atlas__link">Open related work</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="hero-atlas__layer hero-atlas__layer--transit" data-parallax="1.02">
-            <a class="hero-atlas__hotspot hero-atlas__hotspot--transit" href="{{ '/projects/' | relative_url }}#{{ hero_transit_project.slug }}" aria-label="Open {{ hero_transit_project.title | default: 'featured work' }}">
-              <div class="hero-atlas__panel hero-atlas__panel--transit">
-                <p class="hero-atlas__eyebrow">Transit systems</p>
-                <div class="hero-panel-list" aria-hidden="true">
-                  <span>access in view</span>
-                  <span>network context kept</span>
-                  <span>trade-offs easier to read</span>
-                </div>
-                <p class="hero-atlas__meta">Planning work that explains a public system without flattening it into a single score.</p>
-                <p class="hero-atlas__link">Open case study</p>
-              </div>
-            </a>
-          </div>
-
+        <div class="hero-proof-card hero-proof-card--top">
+          <p class="mini-label">Best fit</p>
+          <strong>Data systems with business users attached</strong>
+        </div>
+        <div class="hero-proof-card hero-proof-card--bottom">
+          <p class="mini-label">Working style</p>
+          <strong>Definitions first, dashboards second</strong>
         </div>
       </div>
       <figcaption class="hero-figure__caption">
-        Selected work across GTM data, reporting reliability, product measurement, and transportation analysis.
+        Selected work spans GTM data, ELT reliability, product measurement, KPI ownership, and transportation analysis.
       </figcaption>
     </figure>
   </div>
 
   <div class="shell">
-    <div class="hero-evidence">
-      <article class="hero-evidence__item" data-reveal>
-        <p class="mini-label">Shared customer view</p>
-        <div class="outcome-board" aria-hidden="true">
-          <span>scattered records</span>
-          <span>matched accounts</span>
-          <span>cleaner planning</span>
-        </div>
-        <p>Reporting gets easier once the team is working from the same customer record.</p>
+    <div class="recruiter-snapshot" aria-label="Recruiter summary">
+      <article class="snapshot-panel" data-reveal>
+        <p class="mini-label">Role fit</p>
+        <h2>Analytics engineering with operator empathy.</h2>
+        <p>I am strongest in roles that need technical cleanup, practical modeling, and clear communication with business or product teams.</p>
       </article>
-      <article class="hero-evidence__item" data-reveal>
-        <p class="mini-label">Steadier pipeline</p>
-        <div class="outcome-board" aria-hidden="true">
-          <span>tests in place</span>
-          <span>issues easier to spot</span>
-          <span>fewer surprise breaks</span>
-        </div>
-        <p>The value is not the alert by itself. It is a calmer reporting week and a clearer fix path when something breaks.</p>
+      <article class="snapshot-panel" data-reveal>
+        <p class="mini-label">Core work</p>
+        <ul class="snapshot-list">
+          <li>Customer identity and attribution logic</li>
+          <li>dbt-style modeling, tests, lineage, and monitoring</li>
+          <li>Product funnels, experiments, and KPI definitions</li>
+        </ul>
       </article>
-      <article class="hero-evidence__item" data-reveal>
-        <p class="mini-label">Cleaner review work</p>
-        <div class="outcome-board" aria-hidden="true">
-          <span>messy intake</span>
-          <span>clear review queue</span>
-          <span>fewer avoidable holds</span>
-        </div>
-        <p>When the intake flow is clearer, people spend less time fixing preventable mistakes.</p>
+      <article class="snapshot-panel snapshot-panel--tools" data-reveal>
+        <p class="mini-label">Tools</p>
+        <p>Snowflake · dbt · SQL · Python · Airflow · Power BI · GA4 · Salesforce</p>
       </article>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section section--tight">
   <div class="shell">
     <div class="section-heading section-heading--split" data-reveal>
-      <p class="section-kicker">Selected projects</p>
-      <h2>A quick read on the kind of work I do.</h2>
+      <p class="section-kicker">Selected proof</p>
+      <h2>Projects framed around the problem, the system, and the handoff.</h2>
       <p>
-        These projects show the problems I tend to take on, how I approach them, and what changed for the people using the result.
+        The fastest way to read the work is to look for the messy starting point, the structure added, and what became easier for the next team.
       </p>
     </div>
 
     {% if featured_projects and featured_projects.size > 0 %}
       <div class="project-grid project-grid--featured">
-        {% for project in featured_projects limit: 5 %}
+        {% for project in featured_projects limit: 4 %}
           {% include project-card.html project=project %}
         {% endfor %}
       </div>
@@ -170,22 +96,51 @@ visual_density: high
   </div>
 </section>
 
+<section class="section section--tight">
+  <div class="shell home-roles">
+    <div class="section-heading" data-reveal>
+      <p class="section-kicker">Recent roles</p>
+      <h2>Experience with data systems that have to survive real workflows.</h2>
+      <p>Across roles, the recurring job has been to make inputs cleaner, definitions more explicit, and reporting easier to maintain.</p>
+    </div>
+
+    <div class="role-strip">
+      {% for role in recent_roles %}
+        <article class="role-strip__item" data-reveal>
+          <p class="mini-label">{{ role.company }}</p>
+          <h3>{{ role.role }}</h3>
+          <p>{{ role.summary }}</p>
+          {% if role.impact_metrics and role.impact_metrics.size > 0 %}
+            <div class="chip-row">
+              {% for metric in role.impact_metrics limit: 3 %}
+                <span class="chip chip--muted">{{ metric }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+
+    <a class="text-link" href="{{ '/experience/' | relative_url }}">Open full experience timeline</a>
+  </div>
+</section>
+
 <section class="section">
-  <div class="shell home-editorial">
+  <div class="shell home-editorial home-editorial--recruiter">
     <div class="lede-block" data-reveal>
       <p class="section-kicker">How I Work</p>
-      <h2>The pattern is usually the same even when the tools change.</h2>
+      <h2>The dashboard is rarely the first problem.</h2>
       <p>
-        The work usually starts when the data exists but the usable version does not. The job is to find where the records drift, where the handoff breaks, and what needs to become clear before another team can trust the result.
+        I usually start where trust has broken: mismatched customer records, unclear metric definitions, manual review queues, or pipelines people rely on but cannot inspect. The design goal is a calmer operating surface, not a busier one.
       </p>
     </div>
 
     <aside class="brief-panel" data-reveal>
-      <p class="section-kicker">Outside the day job</p>
+      <p class="section-kicker">Useful pattern</p>
       <div class="brief-panel__list">
-        <p><span class="brief-panel__value">Transportation and planning</span> I keep coming back to transit networks, access questions, and public-system trade-offs.</p>
-        <p><span class="brief-panel__value">Fairness and measurement</span> I care about projects where a strong model is not enough and the decision logic still needs to be examined.</p>
-        <p><span class="brief-panel__value">Small automation</span> I like tools that remove repeat work, even when the job itself is ordinary.</p>
+        <p><span class="brief-panel__value">Find the drift</span> Identify where records, definitions, or ownership stopped matching the workflow.</p>
+        <p><span class="brief-panel__value">Make the logic visible</span> Put tests, lineage, and assumptions where another person can inspect them.</p>
+        <p><span class="brief-panel__value">Leave a better handoff</span> Ship something that keeps working after the first analysis or dashboard review.</p>
       </div>
     </aside>
   </div>
@@ -196,7 +151,7 @@ visual_density: high
     <p class="section-kicker">Contact</p>
     <h2>I am interested in roles where careful systems work makes decisions clearer and day-to-day work easier to trust.</h2>
     <p>
-      If that sounds useful for your team, feel free to reach out at <a class="text-link" href="mailto:tsepaksang8@gmail.com">tsepaksang8@gmail.com</a>.
+      Reach me at <a class="text-link" href="mailto:tsepaksang8@gmail.com">tsepaksang8@gmail.com</a>, or start with the <a class="text-link" href="{{ '/EdwinTseResume.pdf' | relative_url }}">resume</a>.
     </p>
   </div>
 </section>

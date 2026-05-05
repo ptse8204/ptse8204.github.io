@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Experience
-subtitle: "Roles across data engineering, analytics, and operations-facing reporting, with the same basic job each time: make important workflows and numbers dependable."
+subtitle: "Roles across data engineering, analytics engineering, and operations-facing reporting. The common thread is dependable data, clear definitions, and workflows another team can keep using."
 kicker: Experience
 permalink: /experience/
 visual_variant: experience
@@ -12,26 +12,26 @@ hero_chips:
   - Product analytics
 ---
 <article class="surface-card surface-card--summary" data-reveal>
-  <p class="section-kicker">Fast read</p>
-  <h2>The job has been similar in each role.</h2>
+  <p class="section-kicker">Recruiter read</p>
+  <h2>I work best where analytics and operations meet.</h2>
   <p>
-    The starting point is usually some mix of messy inputs, unclear definitions, or brittle reporting. The work is to turn that into something another team can use without needing constant support.
+    The roles below are different on paper, but the work has a consistent shape: clean up the source, make the logic inspectable, and turn the result into a reporting or workflow surface people can trust.
   </p>
   <div class="outcome-rack">
     <article class="signal-panel">
       <div class="signal-panel__chrome" aria-hidden="true"><span></span><span></span><span></span></div>
-      <p class="signal-panel__label">Data</p>
-      <p class="signal-panel__text">shared source</p>
+      <p class="signal-panel__label">Strength</p>
+      <p class="signal-panel__text">modeling messy inputs</p>
     </article>
     <article class="signal-panel">
       <div class="signal-panel__chrome" aria-hidden="true"><span></span><span></span><span></span></div>
-      <p class="signal-panel__label">Workflow</p>
-      <p class="signal-panel__text">clean handoffs</p>
+      <p class="signal-panel__label">Proof</p>
+      <p class="signal-panel__text">tests, lineage, ownership</p>
     </article>
     <article class="signal-panel">
       <div class="signal-panel__chrome" aria-hidden="true"><span></span><span></span><span></span></div>
-      <p class="signal-panel__label">Use</p>
-      <p class="signal-panel__text">clear reporting view</p>
+      <p class="signal-panel__label">Outcome</p>
+      <p class="signal-panel__text">clearer team decisions</p>
     </article>
   </div>
 </article>
