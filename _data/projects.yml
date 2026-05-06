@@ -1,5 +1,8 @@
 - title: Customer 360 and Revenue Attribution
   slug: customer-360
+  image: /assets/img/projects/customer-360-ui.webp
+  image_alt: "Account intelligence workspace with identity graph, attribution timeline, and revenue panels."
+  image_caption: "Identity graph and attribution workspace"
   summary: "Account-level customer view for GTM reporting."
   why_it_matters: "Customer data from several systems, brought into one account view."
   category: featured
@@ -7,6 +10,7 @@
   url: /experience/#envoyx
   experience_anchor: envoyx
   cta: →
+  cta_label: View work
   tags:
     - GTM data
     - Attribution
@@ -30,6 +34,9 @@
 
 - title: ELT Reliability and Monitoring
   slug: elt-reliability
+  image: /assets/img/projects/elt-reliability-ui.webp
+  image_alt: "Dark data operations board with pipeline runs, freshness incidents, and dbt test status."
+  image_caption: "Pipeline health and test monitoring"
   summary: "Tests and monitoring for steadier ELT."
   why_it_matters: "Pipeline work focused on tests, monitoring, and ownership."
   category: featured
@@ -37,6 +44,7 @@
   url: /experience/#envoyx
   experience_anchor: envoyx
   cta: →
+  cta_label: View work
   tags:
     - dbt
     - Airflow
@@ -60,6 +68,9 @@
 
 - title: Onboarding Funnel and Experiment Readouts
   slug: funnel-measurement
+  image: /assets/img/projects/funnel-measurement-ui.webp
+  image_alt: "Product analytics workspace with funnel ribbon, experiment cards, cohort matrix, and decision memo."
+  image_caption: "Funnel and experiment readout workspace"
   summary: "Funnel tracking and experiment readouts."
   why_it_matters: "Product analytics for onboarding funnels and experiment readouts."
   category: featured
@@ -67,6 +78,7 @@
   url: /experience/#zego
   experience_anchor: zego
   cta: →
+  cta_label: View work
   tags:
     - Experimentation
     - Funnel analysis
@@ -90,12 +102,16 @@
 
 - title: FlightPriceBias
   slug: flightpricebias
+  image: /assets/img/projects/flightpricebias-ui.webp
+  image_alt: "Model review workspace with fairness metrics, route table, and mitigation trade-off chart."
+  image_caption: "Model review and fairness audit"
   summary: "Airfare model review with fairness metrics."
   why_it_matters: "A machine learning project about prediction quality and fairness metrics."
   category: featured
   type: Project
   url: https://ptse8204.github.io/flightpricebias/
   cta: →
+  cta_label: Open project
   tags:
     - Fairness
     - Transportation
@@ -119,12 +135,16 @@
 
 - title: Transit Hub Access Study
   slug: transit-hub-access
+  image: /assets/img/projects/transit-hub-access-ui.webp
+  image_alt: "Map-first transit planning interface with access rings, route overlays, and hub score panels."
+  image_caption: "Map-first transit access analysis"
   summary: "GIS study of transit hub access."
   why_it_matters: "A GIS and planning project about access around transit hubs."
   category: featured
   type: Research
   url: /projectpages/embeddingarc_w_head_w_cover/
   cta: →
+  cta_label: Read case
   tags:
     - Urban planning
     - GIS
@@ -147,6 +167,9 @@
 
 - title: Shared KPI Layer for Product and Ops
   slug: kpi-ownership
+  image: /assets/img/projects/kpi-ownership-ui.webp
+  image_alt: "Metric catalog workspace with KPI definitions, lineage map, certification status, and quality checks."
+  image_caption: "Metric catalog and governance workspace"
   summary: "Shared KPI definitions for product and ops."
   why_it_matters: "A shared KPI layer for product, operations, and finance."
   category: work_relevant
@@ -154,6 +177,7 @@
   url: /experience/#ups-analyst
   experience_anchor: ups-analyst
   cta: →
+  cta_label: View work
   tags:
     - KPI governance
     - Semantic layer
@@ -177,6 +201,9 @@
 
 - title: BizOps Control Tower
   slug: bizops-control-tower
+  image: /assets/img/projects/bizops-control-tower-ui.webp
+  image_alt: "Dark operations wall with priority lanes, blocker queue, initiative health, and risk strip."
+  image_caption: "Weekly priorities and blocker control room"
   summary: "Weekly view for blockers and priorities."
   why_it_matters: "A reporting surface for blockers, priorities, and weekly operating signals."
   category: work_relevant
@@ -184,6 +211,7 @@
   url: /experience/#ups-analyst
   experience_anchor: ups-analyst
   cta: →
+  cta_label: View work
   tags:
     - BizOps
     - Executive reporting
@@ -207,6 +235,9 @@
 
 - title: Churn and Retention Early Warning
   slug: churn-early-warning
+  image: /assets/img/projects/churn-early-warning-ui.webp
+  image_alt: "Retention intervention workspace with risk queue, signal waterfall, model health, and playbook panel."
+  image_caption: "Retention risk and intervention queue"
   summary: "Retention-risk workflow from product and support signals."
   why_it_matters: "A retention workflow built around product, billing, and support signals."
   category: work_relevant
@@ -214,6 +245,7 @@
   url: /experience/#zego
   experience_anchor: zego
   cta: →
+  cta_label: View work
   tags:
     - Retention
     - ML
@@ -237,6 +269,9 @@
 
 - title: Compliance Review Operations
   slug: privacy-compliance
+  image: /assets/img/projects/privacy-compliance-ui.webp
+  image_alt: "Compliance document review cockpit with intake queue, evidence checklist, SLA aging, and validation panel."
+  image_caption: "Document review and SLA operations"
   summary: "Compliance queue visibility for intake and review."
   why_it_matters: "A compliance workflow for intake, review status, and backlog visibility."
   category: work_relevant
@@ -244,6 +279,7 @@
   url: /experience/#ups-brokerage
   experience_anchor: ups-brokerage
   cta: →
+  cta_label: View work
   tags:
     - Compliance
     - SLA monitoring
@@ -267,6 +303,9 @@
 
 - title: Pricing Scenario Workbench
   slug: dynamic-pricing
+  image: /assets/img/projects/dynamic-pricing-ui.webp
+  image_alt: "Pricing simulation workbench with scenario sliders, elasticity curve, segment cards, and rollout checklist."
+  image_caption: "Pricing simulation and rollout checks"
   summary: "Scenario workbench for pricing trade-offs."
   why_it_matters: "A pricing workflow for comparing scenarios before rollout."
   category: work_relevant
@@ -274,6 +313,7 @@
   url: /experience/#crosswork
   experience_anchor: crosswork
   cta: →
+  cta_label: View work
   tags:
     - Pricing
     - Simulation
@@ -297,12 +337,16 @@
 
 - title: craveforcapes
   slug: craveforcapes
+  image: /assets/img/projects/craveforcapes-ui.webp
+  image_alt: "Lightweight course explorer with search filters, comparison cards, workload chart, and shortlist panel."
+  image_caption: "Student-built course comparison tool"
   summary: "Course explorer built from UCSD CAPE data."
   why_it_matters: "A small course-selection tool built from UC San Diego CAPE data."
   category: work_relevant
   type: Build
   url: https://ptse8204.github.io/craveforcapes
   cta: →
+  cta_label: Open build
   tags:
     - Analytics
     - Data product
@@ -324,12 +368,16 @@
 
 - title: GTFS Explorer
   slug: gtfs-explorer
+  image: /assets/img/projects/gtfs-explorer-ui.webp
+  image_alt: "Streamlit-style transit explorer with route map, stop search, timetable table, and frequency chart."
+  image_caption: "GTFS route and timetable explorer"
   summary: "GTFS route and stop explorer."
   why_it_matters: "A GTFS exploration tool for routes, stops, and schedules."
   category: work_relevant
   type: Build
   url: https://gtfs-explorer.streamlit.app
   cta: →
+  cta_label: Open build
   tags:
     - GTFS
     - Transit
@@ -353,12 +401,16 @@
 
 - title: UC San Diego Debt and Planning Analysis
   slug: ucsd-debt
+  image: /assets/img/projects/ucsd-debt-ui.webp
+  image_alt: "Longform planning analysis page with capital cost chart, debt capacity line, trade-off table, and annotated notes."
+  image_caption: "Planning analysis article with evidence graphics"
   summary: "Campus finance and planning analysis."
   why_it_matters: "A policy and economics piece about campus planning trade-offs."
   category: domain
   type: Research
   url: https://ptse8204.github.io/2023/04/06/How-Realistic-Capital-Concerns-of-UCSD-Should-Put-More-Effort-of-Rethinking-Parking.html
   cta: →
+  cta_label: Read essay
   tags:
     - Economics
     - Planning
@@ -374,12 +426,16 @@
 
 - title: Greenhouse Gas Reduction Essay
   slug: ghg-essay
+  image: /assets/img/projects/ghg-essay-ui.webp
+  image_alt: "Policy PDF page with emissions chart, mode choice table, access map thumbnail, and highlighted planning notes."
+  image_caption: "Transportation policy essay and evidence graphics"
   summary: "Essay on access, mode choice, and emissions."
   why_it_matters: "A transportation planning essay about access, mode choice, and emissions."
   category: domain
   type: Research
   url: /assets/ghg_essay.pdf
   cta: →
+  cta_label: Read essay
   tags:
     - Sustainability
     - Transportation
@@ -395,12 +451,16 @@
 
 - title: Morning and Night Automation
   slug: imshortcuts
+  image: /assets/img/projects/imshortcuts-ui.webp
+  image_alt: "Mobile automation flow with trigger cards, action blocks, notification preview, and run history panel."
+  image_caption: "Personal routine automation flow"
   summary: "Small iOS Shortcut for a repeated routine."
   why_it_matters: "A small iOS shortcut for a repeated personal routine."
   category: fun
   type: Utility
   url: /imshortcuts
   cta: →
+  cta_label: Open utility
   tags:
     - Automation
     - iOS
@@ -416,12 +476,16 @@
 
 - title: Archived and Shelved Work
   slug: archive
+  image: /assets/img/projects/archive-ui.webp
+  image_alt: "Project archive board with shelved work cards, stopping-condition tags, lessons timeline, and notes panel."
+  image_caption: "Project archive and postmortem board"
   summary: "Notes on older and shelved work."
   why_it_matters: "Older projects, including notes on why they stopped."
   category: archive
   type: Archive
   url: /projectpages/deadproject
   cta: →
+  cta_label: Open archive
   tags:
     - Archive
     - Reflection
