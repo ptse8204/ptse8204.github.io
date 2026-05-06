@@ -11,14 +11,6 @@
       <p>{{ include.role.summary | default: "Role summary coming soon." }}</p>
     </div>
 
-    {% if include.role.capabilities and include.role.capabilities.size > 0 %}
-      <div class="chip-row role-card__capabilities" aria-label="Role capabilities">
-        {% for capability in include.role.capabilities %}
-          <span class="chip chip--muted">{{ capability }}</span>
-        {% endfor %}
-      </div>
-    {% endif %}
-
     {% if include.role.proof_points and include.role.proof_points.size > 0 %}
       <ul class="proof-list">
         {% for point in include.role.proof_points %}

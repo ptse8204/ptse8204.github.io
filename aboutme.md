@@ -39,9 +39,9 @@ visual_density: low
 <section class="about-section" data-reveal>
   <h2>Interests</h2>
   <div class="brief-panel__list">
-    <p><span class="brief-panel__value">Transit</span> Access, planning, trade-offs.</p>
-    <p><span class="brief-panel__value">Fairness</span> Models, incentives, outcomes.</p>
-    <p><span class="brief-panel__value">Automation</span> Less repeated manual work.</p>
+    <p><span class="brief-panel__value">Transit</span></p>
+    <p><span class="brief-panel__value">Fairness</span></p>
+    <p><span class="brief-panel__value">Automation</span></p>
   </div>
 </section>
 

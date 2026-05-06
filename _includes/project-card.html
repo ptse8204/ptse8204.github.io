@@ -7,42 +7,18 @@
   {% assign project_href = href | relative_url %}
 {% endif %}
 {% assign project_class = include.project.category | replace: "_", "-" %}
-{% assign project_cta = include.project.cta_label | default: include.project.cta | default: "Open" %}
+{% assign project_cta = include.project.cta | default: "→" %}
 <article id="{{ include.project.slug }}" class="project-card project-card--{{ project_class }}{% if include.project.image %} project-card--has-image{% endif %}" data-reveal>
   {% if include.project.image %}
     <figure class="project-card__media">
       <img src="{{ include.project.image | relative_url }}" alt="{{ include.project.image_alt | default: include.project.title }}" width="1280" height="800" loading="lazy" decoding="async">
-      {% if include.project.image_caption %}
-        <figcaption>{{ include.project.image_caption }}</figcaption>
-      {% endif %}
     </figure>
   {% endif %}
 
   <div class="project-card__top">
-    <p class="project-card__type">{{ include.project.type }}</p>
     <h3>{{ include.project.title }}</h3>
     <p>{{ include.project.summary | default: "Summary coming soon." }}</p>
   </div>
-
-  {% if include.project.why_it_matters %}
-    <p class="project-card__why">{{ include.project.why_it_matters }}</p>
-  {% endif %}
-
-  {% if include.project.outcomes and include.project.outcomes.size > 0 %}
-    <ul class="project-card__outcomes" aria-label="Project outcomes">
-      {% for outcome in include.project.outcomes limit: 3 %}
-        <li>{{ outcome }}</li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
-  {% if include.project.tags and include.project.tags.size > 0 %}
-    <div class="chip-row project-card__tags" aria-label="Project tags">
-      {% for tag in include.project.tags limit: 3 %}
-        <span class="chip chip--muted">{{ tag }}</span>
-      {% endfor %}
-    </div>
-  {% endif %}
 
   {% if project_href != "" %}
     <a class="project-card__cta" href="{{ project_href }}" aria-label="Open {{ include.project.title }}">{{ project_cta }}</a>

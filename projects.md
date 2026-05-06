@@ -17,7 +17,6 @@ visual_density: low
 <section id="featured-work" class="project-section project-section--featured">
   <div class="section-heading section-heading--split" data-reveal>
     <h2>Featured projects</h2>
-    <p>Work samples focused on the operating problem, the model, and the interface that made the work easier to use.</p>
   </div>
   {% if featured_projects and featured_projects.size > 0 %}
     <div class="project-grid project-grid--featured" data-disclosure-group>
@@ -36,7 +35,6 @@ visual_density: low
 <section id="more-builds" class="project-section project-section--technical">
   <div class="section-heading" data-reveal>
     <h2>More projects</h2>
-    <p>Additional builds, research, and utility projects across analytics, transportation, policy, and automation.</p>
   </div>
   {% if more_builds_count > 0 %}
     <div class="project-grid project-grid--secondary" data-disclosure-group>
