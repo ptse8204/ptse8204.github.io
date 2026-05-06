@@ -4280,7 +4280,8 @@ body {
   grid-template-areas:
     "media top cta"
     "media why cta"
-    "media outcomes tags";
+    "media outcomes cta"
+    "media tags cta";
   gap: clamp(0.85rem, 2vw, 1.35rem) clamp(1rem, 3vw, 2.2rem);
   align-items: start;
   padding-block: clamp(1.35rem, 2.6vw, 2rem);
@@ -4330,10 +4331,12 @@ body {
 
 .project-card__top {
   align-self: start;
+  min-width: 0;
 }
 
 .project-card__why {
   align-self: start;
+  min-width: 0;
   padding-top: 0.1rem;
 }
 
@@ -4356,10 +4359,20 @@ body {
 
 .project-card__tags {
   align-self: end;
+  justify-self: start;
+  min-width: 0;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
 .project-card__outcomes {
   align-self: end;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.project-card__outcomes li {
+  min-width: 0;
 }
 
 .page-projects .project-grid--featured .project-card:first-child {
@@ -4369,6 +4382,66 @@ body {
 .page-projects .project-card,
 .page-projects .project-card--featured {
   grid-template-columns: minmax(28rem, 0.78fr) minmax(0, 1fr) auto;
+}
+
+.page-projects .page-hero {
+  min-height: auto !important;
+  padding-block: clamp(3.2rem, 6vw, 5rem) clamp(1.2rem, 3vw, 2rem) !important;
+}
+
+.page-projects .page-hero__inner {
+  max-width: 62rem;
+  padding-block: 0 !important;
+}
+
+.page-projects .page-hero__inner h1 {
+  letter-spacing: 0;
+  line-height: 0.88;
+}
+
+.page-projects .page-hero__lede {
+  hyphens: none;
+  overflow-wrap: normal;
+}
+
+.page-projects .project-section {
+  margin-top: clamp(1.8rem, 4vw, 3.5rem);
+}
+
+.page-projects .page-content__inner {
+  gap: clamp(1.6rem, 3vw, 2.6rem);
+}
+
+.page-projects .section-heading {
+  margin-bottom: clamp(1.1rem, 2.5vw, 1.8rem);
+}
+
+.page-projects #craveforcapes .project-card__media,
+.page-projects #gtfs-explorer .project-card__media,
+.page-projects #ucsd-debt .project-card__media,
+.page-projects #ghg-essay .project-card__media,
+.page-projects #imshortcuts .project-card__media,
+.page-projects #archive .project-card__media {
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--surface) 92%, white), color-mix(in srgb, var(--surface-muted) 88%, var(--accent-warm-soft)));
+}
+
+.page-projects #craveforcapes .project-card__media img,
+.page-projects #gtfs-explorer .project-card__media img,
+.page-projects #ucsd-debt .project-card__media img,
+.page-projects #ghg-essay .project-card__media img,
+.page-projects #imshortcuts .project-card__media img,
+.page-projects #archive .project-card__media img {
+  object-fit: contain;
+}
+
+.page-projects #ucsd-debt .project-card__media img,
+.page-projects #ghg-essay .project-card__media img {
+  object-position: top center;
+}
+
+.page-projects #imshortcuts .project-card__media img {
+  object-position: center;
 }
 
 .page-home .project-card,
@@ -4411,6 +4484,23 @@ body {
 }
 
 @media (max-width: 720px) {
+  .page-projects .page-hero {
+    padding-block: 2.4rem 1rem !important;
+  }
+
+  .page-projects .project-section {
+    margin-top: clamp(1.4rem, 8vw, 2.4rem);
+  }
+
+  .page-projects .section-heading--split {
+    grid-template-columns: 1fr !important;
+    gap: 0.9rem;
+  }
+
+  .page-projects .section-heading--split p:last-child {
+    max-width: min(100%, 34ch) !important;
+  }
+
   .site-header__inner {
     grid-template-columns: 1fr;
     gap: 0.55rem;

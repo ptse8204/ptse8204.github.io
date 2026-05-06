@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-subtitle: "Data systems, analysis tools, and planning work with enough shape to judge the thinking behind them."
+subtitle: "Data systems, analysis tools, and planning work with enough shape to judge the decisions behind them."
 kicker: Projects
 permalink: /projects/
 visual_variant: projects
