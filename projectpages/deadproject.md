@@ -8,7 +8,7 @@ visual_variant: archive
 visual_density: low
 ---
 <p data-reveal>
-  These projects did not become long-term flagships, but each clarified something useful about feasibility, operating burden, or the gap between an interesting idea and a workable one.
+  These projects did not become long-term flagships, but each clarified something about feasibility, operating burden, or the gap between an interesting idea and a workable one.
 </p>
 
 <div class="archive-grid">
@@ -42,7 +42,7 @@ visual_density: low
       <h3>Multiple QR-Code Verification Method</h3>
     </div>
     <p>
-      A security concept for multi-step QR-based verification intended for lower-cost authentication flows. It never moved past the grant-seeking stage, but the idea came from a real concern about how weaker transaction environments handle identity and trust.
+      A security concept for multi-step QR-based verification intended for lower-cost authentication flows. It never moved past the grant-seeking stage, but the idea came from a real concern about identity in weaker transaction environments.
     </p>
     <p class="archive-card__lesson"><strong>What carried forward:</strong> Security ideas become more interesting when they can widen access rather than only raise technical sophistication.</p>
   </article>

@@ -3,7 +3,7 @@
   role: GTM Data Engineer
   dates: Sep 2025 - Present
   location: Berkeley, CA
-  summary: "Built GTM data systems that gave sales, marketing, and product teams a shared customer view and reporting they could trust."
+  summary: "GTM data for customer identity and reporting."
   capabilities:
     - Customer identity stitching
     - Attribution and lifecycle reporting
@@ -13,9 +13,9 @@
     - steadier reporting flow
     - cleaner team handoff
   proof_points:
-    - Pulled CRM, product, billing, and support data into one model so teams could stop working from partial customer records.
-    - Reworked attribution and revenue logic so teams could answer the same question from the same source instead of separate spreadsheets.
-    - Added tests, monitoring, and reusable build patterns so the reporting stayed stable after handoff.
+    - Pulled CRM, product, billing, and support data into one account model.
+    - Reworked attribution and revenue logic across shared reporting.
+    - Added tests, monitoring, and reusable build patterns.
   related_projects:
     - customer-360
     - elt-reliability
@@ -33,7 +33,7 @@
   role: Data Analyst Intern
   dates: Jun 2025 - Sep 2025
   location: Berkeley, CA
-  summary: "Built KPI and reporting systems that replaced manual updates with a clearer operating view for logistics teams."
+  summary: "KPI reporting for logistics teams."
   capabilities:
     - KPI governance
     - Self-serve operational BI
@@ -43,9 +43,9 @@
     - less manual work
     - clearer weekly reviews
   proof_points:
-    - Moved teams onto one set of KPI definitions so meetings spent less time debating the number itself.
-    - Built dashboards and QA checks that made weekly reporting easier for leaders to read and easier for analysts to maintain.
-    - Tightened the model and refresh flow so updates landed more reliably and with less manual cleanup.
+    - Helped standardize KPI definitions across teams.
+    - Built dashboards and QA checks for weekly reporting.
+    - Improved model and refresh flows to reduce manual cleanup.
   related_projects:
     - kpi-ownership
     - bizops-control-tower
@@ -61,7 +61,7 @@
   role: Brokerage Data Administrator
   dates: Apr 2023 - Dec 2024
   location: Vancouver, BC
-  summary: "Worked on brokerage intake and review flows where messy documents had to become clean, review-ready records."
+  summary: "Brokerage intake and compliance reporting."
   capabilities:
     - OCR-assisted document intake
     - Exception routing and QA
@@ -71,9 +71,9 @@
     - clearer review queue
     - fewer avoidable handoffs
   proof_points:
-    - Helped turn OCR-assisted document intake into records that people could actually review and use.
-    - Added clearer validation rules, backlog visibility, and escalation paths for higher-risk cases.
-    - Tightened the review steps and record structure so the workflow was easier to run day to day.
+    - Helped structure OCR-assisted document intake.
+    - Added validation rules, backlog visibility, and escalation paths.
+    - Improved review steps and record structure.
   related_projects:
     - elt-reliability
     - privacy-compliance
@@ -88,7 +88,7 @@
   role: Business Analyst Intern, Product Analytics
   dates: Jun 2022 - Aug 2022
   location: San Diego, CA
-  summary: "Built product analytics workflows that helped teams understand onboarding, read experiments, and spot retention risk earlier."
+  summary: "Product analytics for onboarding and retention."
   capabilities:
     - Funnel and cohort analysis
     - Experiment measurement
@@ -98,9 +98,9 @@
     - better test readouts
     - earlier retention signal
   proof_points:
-    - Built reusable funnel views and experiment readouts so product teams could see where onboarding was breaking.
-    - Connected churn scoring to follow-up actions instead of leaving it as a model output with no clear owner.
-    - Cleaned up the refresh logic and reporting flow so teams had a steadier read on what was happening.
+    - Built reusable funnel views and experiment readouts.
+    - Connected churn scoring to follow-up actions.
+    - Improved refresh logic and reporting flow.
   related_projects:
     - funnel-measurement
     - churn-early-warning
@@ -116,7 +116,7 @@
   role: Venture Capital Intern
   dates: Aug 2022 - Dec 2022
   location: Remote
-  summary: "Used scoring, lightweight experimentation, and structured research to make sourcing and early commercial decisions easier to work through."
+  summary: "Sourcing, scoring, and market research."
   capabilities:
     - Scoring and prioritization
     - Commercial experimentation
@@ -126,9 +126,9 @@
     - faster team reviews
     - clearer commercial choices
   proof_points:
-    - Automated prospect building and ranking so outreach started from a better list instead of a rough first pass.
-    - Turned fuzzy commercial questions into research and reporting that leadership could use in real discussions.
-    - Used simple analytics where it helped most: making the next decision clearer and the follow-up stronger.
+    - Automated prospect building and ranking.
+    - Turned commercial questions into research and reporting.
+    - Used lightweight analytics for follow-up and prioritization.
   related_projects:
     - bizops-control-tower
     - dynamic-pricing
