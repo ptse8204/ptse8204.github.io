@@ -87,27 +87,27 @@ function DemoApp() {
         <section className="transport-demo__notes" aria-labelledby="transport-demo-notes-heading">
           <div className="transport-demo__section-header">
             <div>
-              <p className="transport-demo__eyebrow">Implementation notes</p>
-              <h2 id="transport-demo-notes-heading">Simplifications kept on purpose</h2>
+              <p className="transport-demo__eyebrow">Fidelity notes</p>
+              <h2 id="transport-demo-notes-heading">Remaining deviations are narrow</h2>
             </div>
           </div>
 
           <div className="transport-demo__note-grid">
             <article>
-              <h3>Reduced micro-detail</h3>
-              <p>Window counts, route-board text, distant building cuts, and individual passenger poses are simplified to keep the SVG readable and maintainable.</p>
+              <h3>Tiny marks</h3>
+              <p>Route-board glyphs, window mullions, and a few far-background line cuts are still compressed compared with the raster originals.</p>
             </article>
             <article>
-              <h3>Shared primitives</h3>
-              <p>Mountains, trees, figures, shelters, canopies, and vehicle bodies are reusable primitives rather than one-off traced vectors.</p>
+              <h3>Human silhouettes</h3>
+              <p>Passenger and worker poses are closer to the references now, but they are still compact silhouettes rather than full traced figures.</p>
             </article>
             <article>
               <h3>Responsive cropping</h3>
-              <p>Tablet and mobile views crop outer scenery first by anchoring each scene around the primary vehicle instead of preserving every edge detail.</p>
+              <p>Tablet and mobile still crop edge scenery before the primary vehicle, which is intentional so the transport mode remains legible at small widths.</p>
             </article>
             <article>
-              <h3>Motion scope</h3>
-              <p>Interaction motion is limited to hover parallax and selected-state emphasis. Reduced-motion mode disables the parallax layer shifts.</p>
+              <h3>Motion fallback</h3>
+              <p>Ambient SVG motion is active by default on capable devices, while reduced-motion mode still disables the moving mist, pulses, and streak animations.</p>
             </article>
           </div>
         </section>

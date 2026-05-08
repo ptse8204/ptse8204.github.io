@@ -5031,3 +5031,8 @@ body {
     padding-left: 0;
   }
 }
+
+/* Cloud replacement for the former portrait. */
+.home-profile img {
+  border-radius: clamp(0.9rem, 2vw, 1.35rem);
+}
