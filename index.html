@@ -11,6 +11,17 @@ visual_density: low
 {% assign recent_roles = site.data.experience | slice: 0, 3 %}
 
 <section class="home-hero home-hero--systems">
+  <div class="transport-slideshow" aria-hidden="true">
+    <img class="transport-slide transport-slide--1" src="{{ '/assets/img/transport-background/transport-bg-01.webp' | relative_url }}" alt="" width="819" height="211" decoding="async" loading="eager" fetchpriority="high">
+    <img class="transport-slide transport-slide--2" src="{{ '/assets/img/transport-background/transport-bg-02.webp' | relative_url }}" alt="" width="821" height="211" decoding="async" loading="lazy">
+    <img class="transport-slide transport-slide--3" src="{{ '/assets/img/transport-background/transport-bg-03.webp' | relative_url }}" alt="" width="819" height="207" decoding="async" loading="lazy">
+    <img class="transport-slide transport-slide--4" src="{{ '/assets/img/transport-background/transport-bg-04.webp' | relative_url }}" alt="" width="821" height="207" decoding="async" loading="lazy">
+    <img class="transport-slide transport-slide--5" src="{{ '/assets/img/transport-background/transport-bg-05.webp' | relative_url }}" alt="" width="819" height="196" decoding="async" loading="lazy">
+    <img class="transport-slide transport-slide--6" src="{{ '/assets/img/transport-background/transport-bg-06.webp' | relative_url }}" alt="" width="821" height="196" decoding="async" loading="lazy">
+    <img class="transport-slide transport-slide--7" src="{{ '/assets/img/transport-background/transport-bg-07.webp' | relative_url }}" alt="" width="819" height="224" decoding="async" loading="lazy">
+    <img class="transport-slide transport-slide--8" src="{{ '/assets/img/transport-background/transport-bg-08.webp' | relative_url }}" alt="" width="821" height="224" decoding="async" loading="lazy">
+  </div>
+
   <div class="shell home-hero__grid">
     <div class="home-hero__copy" data-reveal>
       <h1>Edwin Tse</h1>
@@ -51,10 +62,7 @@ visual_density: low
 <section class="section section--tight">
   <div class="shell">
     <div class="section-heading section-heading--split" data-reveal>
-      <h2>Selected systems work</h2>
-      <p>
-        Project notes focused on the problem, the model, and how the work became useful.
-      </p>
+      <h2>Featured work</h2>
     </div>
 
     {% if featured_projects and featured_projects.size > 0 %}
@@ -75,8 +83,7 @@ visual_density: low
 <section class="section section--tight">
   <div class="shell home-roles">
     <div class="section-heading" data-reveal>
-      <h2>Recent roles</h2>
-      <p>Data work across GTM, logistics, product analytics, and operations.</p>
+      <h2>Work experience</h2>
     </div>
 
     <div class="role-strip">

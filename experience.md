@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Experience
-subtitle: "Recent roles."
 kicker: Experience
 permalink: /experience/
 visual_variant: experience

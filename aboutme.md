@@ -1,7 +1,6 @@
 ---
 layout: page
-title: About
-subtitle: Data, analytics, and planning.
+title: About Me
 kicker: About
 permalink: /aboutme/
 visual_variant: about

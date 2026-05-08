@@ -1,0 +1,13 @@
+{
+  "name": "ptse8204-transport-banners",
+  "private": true,
+  "scripts": {
+    "build:transport-banners": "tsc -p tsconfig.transport-banners.json",
+    "check:transport-banners": "tsc -p tsconfig.transport-banners.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "typescript": "^5.8.3"
+  }
+}
